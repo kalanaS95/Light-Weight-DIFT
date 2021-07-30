@@ -1,0 +1,1140 @@
+EXEC: PID=6711 CMD=/usr/lib/ConsoleKit/run-seat.d/udev-acl.ck seat_removed 
+FORK: PID=6712 PPID=767 
+EXEC: PID=6712 CMD=/usr/lib/ConsoleKit/ck-collect-session-info --uid 0 --pid 6635 
+FORK: PID=6713 PPID=767 
+EXEC: PID=6713 CMD=/usr/lib/ConsoleKit/run-seat.d/udev-acl.ck seat_added 
+FORK: PID=6714 PPID=767 
+EXEC: PID=6714 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_added 
+EXEC: PID=6714 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_added 
+FORK: PID=6715 PPID=6635 
+EXEC: PID=6715 CMD=sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin /bin/run-parts --lsbsysinit /etc/update-motd.d > /var/run/motd.new 
+FORK: PID=6716 PPID=6715 
+EXEC: PID=6716 CMD=/usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin /bin/run-parts --lsbsysinit /etc/update-motd.d 
+EXEC: PID=6716 CMD=/bin/run-parts --lsbsysinit /etc/update-motd.d 
+FORK: PID=6717 PPID=6716 
+EXEC: PID=6717 CMD=/bin/sh /etc/update-motd.d/00-header 
+EXEC: PID=6717 CMD=/bin/sh /etc/update-motd.d/00-header 
+FORK: PID=6718 PPID=6717 
+EXEC: PID=6718 CMD=uname -a 
+FORK: PID=6719 PPID=6717 
+EXEC: PID=6719 CMD=/usr/bin/python /usr/bin/lsb_release -s -d 
+EXEC: PID=6719 CMD=/usr/bin/python /usr/bin/lsb_release -s -d 
+FORK: PID=6720 PPID=6716 
+EXEC: PID=6720 CMD=/bin/sh /etc/update-motd.d/10-help-text 
+EXEC: PID=6720 CMD=/bin/sh /etc/update-motd.d/10-help-text 
+FORK: PID=6721 PPID=6720 
+FORK: PID=6722 PPID=6720 
+EXEC: PID=6722 CMD=grep -qs \-server 
+EXEC: PID=6721 CMD=uname -r 
+FORK: PID=6723 PPID=6716 
+EXEC: PID=6723 CMD=/bin/sh /etc/update-motd.d/20-cpu-checker 
+EXEC: PID=6723 CMD=/bin/sh /etc/update-motd.d/20-cpu-checker 
+EXEC: PID=6723 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-cpu-checker 
+EXEC: PID=6723 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-cpu-checker 
+FORK: PID=6724 PPID=6723 
+EXEC: PID=6724 CMD=/bin/sh /usr/bin/check-bios-nx 
+EXEC: PID=6724 CMD=/bin/sh /usr/bin/check-bios-nx 
+FORK: PID=6725 PPID=6724 
+EXEC: PID=6725 CMD=getopt -o h --long verbose,help -n check-bios-nx -- 
+FORK: PID=6726 PPID=6724 
+EXEC: PID=6726 CMD=awk -f - /proc/cpuinfo 
+FORK: PID=6727 PPID=6726 
+EXEC: PID=6727 CMD=sh -c uname -m 
+FORK: PID=6728 PPID=6727 
+EXEC: PID=6728 CMD=uname -m 
+FORK: PID=6729 PPID=6716 
+EXEC: PID=6729 CMD=/bin/sh /etc/update-motd.d/90-updates-available 
+EXEC: PID=6729 CMD=/bin/sh /etc/update-motd.d/90-updates-available 
+EXEC: PID=6729 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-updates-available 
+EXEC: PID=6729 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-updates-available 
+FORK: PID=6730 PPID=6729 
+EXEC: PID=6730 CMD=stat -c %Y /var/lib/update-notifier/updates-available 
+FORK: PID=6731 PPID=6729 
+EXEC: PID=6731 CMD=apt-config shell StateDir Dir::State 
+FORK: PID=6732 PPID=6729 
+EXEC: PID=6732 CMD=apt-config shell ListDir Dir::State::Lists 
+FORK: PID=6733 PPID=6729 
+EXEC: PID=6733 CMD=stat -c %Y /var/lib/apt//lists//lock 
+FORK: PID=6734 PPID=6729 
+EXEC: PID=6734 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_Release 
+FORK: PID=6735 PPID=6729 
+EXEC: PID=6735 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_Release.gpg 
+FORK: PID=6736 PPID=6729 
+EXEC: PID=6736 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_main_binary-i386_Packages 
+FORK: PID=6737 PPID=6729 
+EXEC: PID=6737 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_main_source_Sources 
+FORK: PID=6738 PPID=6729 
+EXEC: PID=6738 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_multiverse_binary-i386_Packages 
+FORK: PID=6739 PPID=6729 
+EXEC: PID=6739 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_multiverse_source_Sources 
+FORK: PID=6740 PPID=6729 
+EXEC: PID=6740 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_restricted_binary-i386_Packages 
+FORK: PID=6741 PPID=6729 
+EXEC: PID=6741 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_restricted_source_Sources 
+FORK: PID=6742 PPID=6729 
+EXEC: PID=6742 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_universe_binary-i386_Packages 
+FORK: PID=6743 PPID=6729 
+EXEC: PID=6743 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_universe_source_Sources 
+FORK: PID=6744 PPID=6729 
+EXEC: PID=6744 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_Release 
+FORK: PID=6745 PPID=6729 
+EXEC: PID=6745 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_Release.gpg 
+FORK: PID=6746 PPID=6729 
+EXEC: PID=6746 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_main_binary-i386_Packages 
+FORK: PID=6747 PPID=6729 
+EXEC: PID=6747 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_main_source_Sources 
+FORK: PID=6748 PPID=6729 
+EXEC: PID=6748 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_multiverse_binary-i386_Packages 
+FORK: PID=6749 PPID=6729 
+EXEC: PID=6749 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_multiverse_source_Sources 
+FORK: PID=6750 PPID=6729 
+EXEC: PID=6750 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_restricted_binary-i386_Packages 
+FORK: PID=6751 PPID=6729 
+EXEC: PID=6751 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_restricted_source_Sources 
+FORK: PID=6752 PPID=6729 
+EXEC: PID=6752 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_universe_binary-i386_Packages 
+FORK: PID=6753 PPID=6729 
+EXEC: PID=6753 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_universe_source_Sources 
+FORK: PID=6754 PPID=6729 
+EXEC: PID=6754 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_Release 
+FORK: PID=6755 PPID=6729 
+EXEC: PID=6755 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=6756 PPID=6729 
+EXEC: PID=6756 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=6757 PPID=6729 
+EXEC: PID=6757 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_main_source_Sources 
+FORK: PID=6758 PPID=6729 
+EXEC: PID=6758 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_multiverse_binary-i386_Packages 
+FORK: PID=6759 PPID=6729 
+EXEC: PID=6759 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_multiverse_source_Sources 
+FORK: PID=6760 PPID=6729 
+EXEC: PID=6760 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_restricted_binary-i386_Packages 
+FORK: PID=6761 PPID=6729 
+EXEC: PID=6761 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_restricted_source_Sources 
+FORK: PID=6762 PPID=6729 
+EXEC: PID=6762 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_universe_binary-i386_Packages 
+FORK: PID=6763 PPID=6729 
+EXEC: PID=6763 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_universe_source_Sources 
+FORK: PID=6764 PPID=6729 
+EXEC: PID=6764 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_Release 
+FORK: PID=6765 PPID=6729 
+EXEC: PID=6765 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=6766 PPID=6729 
+EXEC: PID=6766 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=6767 PPID=6729 
+EXEC: PID=6767 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_Release 
+FORK: PID=6768 PPID=6729 
+EXEC: PID=6768 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=6769 PPID=6729 
+EXEC: PID=6769 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=6770 PPID=6729 
+EXEC: PID=6770 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_Release 
+FORK: PID=6771 PPID=6729 
+EXEC: PID=6771 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=6772 PPID=6729 
+EXEC: PID=6772 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=6773 PPID=6729 
+EXEC: PID=6773 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_Release 
+FORK: PID=6774 PPID=6729 
+EXEC: PID=6774 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=6775 PPID=6729 
+EXEC: PID=6775 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=6776 PPID=6729 
+EXEC: PID=6776 CMD=apt-config shell EtcDir Dir::Etc 
+FORK: PID=6777 PPID=6729 
+EXEC: PID=6777 CMD=apt-config shell SourceList Dir::Etc::sourcelist 
+FORK: PID=6778 PPID=6729 
+EXEC: PID=6778 CMD=stat -c %Y /etc/apt//sources.list 
+FORK: PID=6779 PPID=6729 
+EXEC: PID=6779 CMD=cat /var/lib/update-notifier/updates-available 
+FORK: PID=6780 PPID=6716 
+EXEC: PID=6780 CMD=/bin/sh /etc/update-motd.d/91-release-upgrade 
+EXEC: PID=6780 CMD=/bin/sh /etc/update-motd.d/91-release-upgrade 
+EXEC: PID=6780 CMD=/bin/sh -e /usr/lib/update-manager/release-upgrade-motd 
+EXEC: PID=6780 CMD=/bin/sh -e /usr/lib/update-manager/release-upgrade-motd 
+FORK: PID=6781 PPID=6780 
+EXEC: PID=6781 CMD=cat /var/lib/update-notifier/release-upgrade-available 
+FORK: PID=6782 PPID=6716 
+EXEC: PID=6782 CMD=/bin/sh /etc/update-motd.d/98-reboot-required 
+EXEC: PID=6782 CMD=/bin/sh /etc/update-motd.d/98-reboot-required 
+EXEC: PID=6782 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-reboot-required 
+EXEC: PID=6782 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-reboot-required 
+FORK: PID=6783 PPID=6716 
+EXEC: PID=6783 CMD=/bin/sh /etc/update-motd.d/99-footer 
+EXEC: PID=6783 CMD=/bin/sh /etc/update-motd.d/99-footer 
+FORK: PID=6784 PPID=6635 
+FORK: PID=6785 PPID=6784 
+EXEC: PID=6785 CMD=bash -c scp -t /tmp 
+EXEC: PID=6785 CMD=scp -t /tmp 
+FORK: PID=6786 PPID=767 
+EXEC: PID=6786 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_removed 
+EXEC: PID=6786 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_removed 
+FORK: PID=6787 PPID=767 
+FORK: PID=6788 PPID=578 
+EXEC: PID=6788 CMD=/usr/sbin/sshd -D -R 
+EXEC: PID=6787 CMD=/usr/lib/ConsoleKit/run-seat.d/udev-acl.ck seat_removed 
+FORK: PID=6789 PPID=6788 
+FORK: PID=6790 PPID=767 
+EXEC: PID=6790 CMD=/usr/lib/ConsoleKit/ck-collect-session-info --uid 0 --pid 6788 
+FORK: PID=6791 PPID=767 
+EXEC: PID=6791 CMD=/usr/lib/ConsoleKit/run-seat.d/udev-acl.ck seat_added 
+FORK: PID=6792 PPID=767 
+EXEC: PID=6792 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_added 
+EXEC: PID=6792 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_added 
+FORK: PID=6793 PPID=6788 
+EXEC: PID=6793 CMD=sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin /bin/run-parts --lsbsysinit /etc/update-motd.d > /var/run/motd.new 
+FORK: PID=6794 PPID=6793 
+EXEC: PID=6794 CMD=/usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin /bin/run-parts --lsbsysinit /etc/update-motd.d 
+EXEC: PID=6794 CMD=/bin/run-parts --lsbsysinit /etc/update-motd.d 
+FORK: PID=6795 PPID=6794 
+EXEC: PID=6795 CMD=/bin/sh /etc/update-motd.d/00-header 
+EXEC: PID=6795 CMD=/bin/sh /etc/update-motd.d/00-header 
+FORK: PID=6796 PPID=6795 
+EXEC: PID=6796 CMD=uname -a 
+FORK: PID=6797 PPID=6795 
+EXEC: PID=6797 CMD=/usr/bin/python /usr/bin/lsb_release -s -d 
+EXEC: PID=6797 CMD=/usr/bin/python /usr/bin/lsb_release -s -d 
+FORK: PID=6798 PPID=6794 
+EXEC: PID=6798 CMD=/bin/sh /etc/update-motd.d/10-help-text 
+EXEC: PID=6798 CMD=/bin/sh /etc/update-motd.d/10-help-text 
+FORK: PID=6799 PPID=6798 
+FORK: PID=6800 PPID=6798 
+EXEC: PID=6800 CMD=grep -qs \-server 
+EXEC: PID=6799 CMD=uname -r 
+FORK: PID=6801 PPID=6794 
+EXEC: PID=6801 CMD=/bin/sh /etc/update-motd.d/20-cpu-checker 
+EXEC: PID=6801 CMD=/bin/sh /etc/update-motd.d/20-cpu-checker 
+EXEC: PID=6801 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-cpu-checker 
+EXEC: PID=6801 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-cpu-checker 
+FORK: PID=6802 PPID=6801 
+EXEC: PID=6802 CMD=/bin/sh /usr/bin/check-bios-nx 
+EXEC: PID=6802 CMD=/bin/sh /usr/bin/check-bios-nx 
+FORK: PID=6803 PPID=6802 
+EXEC: PID=6803 CMD=getopt -o h --long verbose,help -n check-bios-nx -- 
+FORK: PID=6804 PPID=6802 
+EXEC: PID=6804 CMD=awk -f - /proc/cpuinfo 
+FORK: PID=6805 PPID=6804 
+EXEC: PID=6805 CMD=sh -c uname -m 
+FORK: PID=6806 PPID=6805 
+EXEC: PID=6806 CMD=uname -m 
+FORK: PID=6807 PPID=6794 
+EXEC: PID=6807 CMD=/bin/sh /etc/update-motd.d/90-updates-available 
+EXEC: PID=6807 CMD=/bin/sh /etc/update-motd.d/90-updates-available 
+EXEC: PID=6807 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-updates-available 
+EXEC: PID=6807 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-updates-available 
+FORK: PID=6808 PPID=6807 
+EXEC: PID=6808 CMD=stat -c %Y /var/lib/update-notifier/updates-available 
+FORK: PID=6809 PPID=6807 
+EXEC: PID=6809 CMD=apt-config shell StateDir Dir::State 
+FORK: PID=6810 PPID=6807 
+EXEC: PID=6810 CMD=apt-config shell ListDir Dir::State::Lists 
+FORK: PID=6811 PPID=6807 
+EXEC: PID=6811 CMD=stat -c %Y /var/lib/apt//lists//lock 
+FORK: PID=6812 PPID=6807 
+EXEC: PID=6812 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_Release 
+FORK: PID=6813 PPID=6807 
+EXEC: PID=6813 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_Release.gpg 
+FORK: PID=6814 PPID=6807 
+EXEC: PID=6814 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_main_binary-i386_Packages 
+FORK: PID=6815 PPID=6807 
+EXEC: PID=6815 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_main_source_Sources 
+FORK: PID=6816 PPID=6807 
+EXEC: PID=6816 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_multiverse_binary-i386_Packages 
+FORK: PID=6817 PPID=6807 
+EXEC: PID=6817 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_multiverse_source_Sources 
+FORK: PID=6818 PPID=6807 
+EXEC: PID=6818 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_restricted_binary-i386_Packages 
+FORK: PID=6819 PPID=6807 
+EXEC: PID=6819 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_restricted_source_Sources 
+FORK: PID=6820 PPID=6807 
+EXEC: PID=6820 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_universe_binary-i386_Packages 
+FORK: PID=6821 PPID=6807 
+EXEC: PID=6821 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_universe_source_Sources 
+FORK: PID=6822 PPID=6807 
+EXEC: PID=6822 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_Release 
+FORK: PID=6823 PPID=6807 
+EXEC: PID=6823 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_Release.gpg 
+FORK: PID=6824 PPID=6807 
+EXEC: PID=6824 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_main_binary-i386_Packages 
+FORK: PID=6825 PPID=6807 
+EXEC: PID=6825 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_main_source_Sources 
+FORK: PID=6826 PPID=6807 
+EXEC: PID=6826 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_multiverse_binary-i386_Packages 
+FORK: PID=6827 PPID=6807 
+EXEC: PID=6827 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_multiverse_source_Sources 
+FORK: PID=6828 PPID=6807 
+EXEC: PID=6828 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_restricted_binary-i386_Packages 
+FORK: PID=6829 PPID=6807 
+EXEC: PID=6829 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_restricted_source_Sources 
+FORK: PID=6830 PPID=6807 
+EXEC: PID=6830 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_universe_binary-i386_Packages 
+FORK: PID=6831 PPID=6807 
+EXEC: PID=6831 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_universe_source_Sources 
+FORK: PID=6832 PPID=6807 
+EXEC: PID=6832 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_Release 
+FORK: PID=6833 PPID=6807 
+EXEC: PID=6833 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=6834 PPID=6807 
+EXEC: PID=6834 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=6835 PPID=6807 
+EXEC: PID=6835 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_main_source_Sources 
+FORK: PID=6836 PPID=6807 
+EXEC: PID=6836 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_multiverse_binary-i386_Packages 
+FORK: PID=6837 PPID=6807 
+EXEC: PID=6837 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_multiverse_source_Sources 
+FORK: PID=6838 PPID=6807 
+EXEC: PID=6838 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_restricted_binary-i386_Packages 
+FORK: PID=6839 PPID=6807 
+EXEC: PID=6839 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_restricted_source_Sources 
+FORK: PID=6840 PPID=6807 
+EXEC: PID=6840 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_universe_binary-i386_Packages 
+FORK: PID=6841 PPID=6807 
+EXEC: PID=6841 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_universe_source_Sources 
+FORK: PID=6842 PPID=6807 
+EXEC: PID=6842 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_Release 
+FORK: PID=6843 PPID=6807 
+EXEC: PID=6843 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=6844 PPID=6807 
+EXEC: PID=6844 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=6845 PPID=6807 
+EXEC: PID=6845 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_Release 
+FORK: PID=6846 PPID=6807 
+EXEC: PID=6846 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=6847 PPID=6807 
+EXEC: PID=6847 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=6848 PPID=6807 
+EXEC: PID=6848 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_Release 
+FORK: PID=6849 PPID=6807 
+EXEC: PID=6849 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=6850 PPID=6807 
+EXEC: PID=6850 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=6851 PPID=6807 
+EXEC: PID=6851 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_Release 
+FORK: PID=6852 PPID=6807 
+EXEC: PID=6852 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=6853 PPID=6807 
+EXEC: PID=6853 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=6854 PPID=6807 
+EXEC: PID=6854 CMD=apt-config shell EtcDir Dir::Etc 
+FORK: PID=6855 PPID=6807 
+EXEC: PID=6855 CMD=apt-config shell SourceList Dir::Etc::sourcelist 
+FORK: PID=6856 PPID=6807 
+EXEC: PID=6856 CMD=stat -c %Y /etc/apt//sources.list 
+FORK: PID=6857 PPID=6807 
+EXEC: PID=6857 CMD=cat /var/lib/update-notifier/updates-available 
+FORK: PID=6858 PPID=6794 
+EXEC: PID=6858 CMD=/bin/sh /etc/update-motd.d/91-release-upgrade 
+EXEC: PID=6858 CMD=/bin/sh /etc/update-motd.d/91-release-upgrade 
+EXEC: PID=6858 CMD=/bin/sh -e /usr/lib/update-manager/release-upgrade-motd 
+EXEC: PID=6858 CMD=/bin/sh -e /usr/lib/update-manager/release-upgrade-motd 
+FORK: PID=6859 PPID=6858 
+EXEC: PID=6859 CMD=cat /var/lib/update-notifier/release-upgrade-available 
+FORK: PID=6860 PPID=6794 
+EXEC: PID=6860 CMD=/bin/sh /etc/update-motd.d/98-reboot-required 
+EXEC: PID=6860 CMD=/bin/sh /etc/update-motd.d/98-reboot-required 
+EXEC: PID=6860 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-reboot-required 
+EXEC: PID=6860 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-reboot-required 
+FORK: PID=6861 PPID=6794 
+EXEC: PID=6861 CMD=/bin/sh /etc/update-motd.d/99-footer 
+EXEC: PID=6861 CMD=/bin/sh /etc/update-motd.d/99-footer 
+FORK: PID=6862 PPID=6788 
+FORK: PID=6863 PPID=6862 
+EXEC: PID=6863 CMD=bash -c cd /tmp; unzip screengrab.zip; cd screengrab; sudo apt-get install libx11-dev libpng-dev; make clean; make; ./screengrab /home/kalana/Desktop/attack 
+FORK: PID=6864 PPID=6863 
+EXEC: PID=6864 CMD=unzip screengrab.zip 
+FORK: PID=6865 PPID=6863 
+EXEC: PID=6865 CMD=sudo apt-get install libx11-dev libpng-dev 
+EXEC: PID=6865 CMD=apt-get install libx11-dev libpng-dev 
+FORK: PID=6866 PPID=6863 
+EXEC: PID=6866 CMD=make clean 
+FORK: PID=6867 PPID=6866 
+EXEC: PID=6867 CMD=rm screengrab implant implant-1 implant-send sock_server 
+FORK: PID=6868 PPID=6863 
+EXEC: PID=6868 CMD=make 
+FORK: PID=6869 PPID=6868 
+EXEC: PID=6869 CMD=gcc -O3 screengrab.c -o screengrab -lpng -lm -lX11 
+FORK: PID=6870 PPID=6869 
+EXEC: PID=6870 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/cc1 -quiet screengrab.c -D_FORTIFY_SOURCE=2 -quiet -dumpbase screengrab.c -mtune=generic -march=i486 -auxbase screengrab -O3 -fstack-protector -o /tmp/cc3De6qk.s 
+FORK: PID=6871 PPID=6869 
+EXEC: PID=6871 CMD=as -Qy -o /tmp/cc46gSbS.o /tmp/cc3De6qk.s 
+FORK: PID=6872 PPID=6869 
+EXEC: PID=6872 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/collect2 --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o screengrab -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/cc46gSbS.o -lpng -lm -lX11 -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=6873 PPID=6872 
+EXEC: PID=6873 CMD=/usr/bin/ld --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o screengrab -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/cc46gSbS.o -lpng -lm -lX11 -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=6874 PPID=6868 
+EXEC: PID=6874 CMD=gcc -o implant implant-core.c 
+FORK: PID=6875 PPID=6874 
+EXEC: PID=6875 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/cc1 -quiet implant-core.c -D_FORTIFY_SOURCE=2 -quiet -dumpbase implant-core.c -mtune=generic -march=i486 -auxbase implant-core -fstack-protector -o /tmp/ccKBH91p.s 
+FORK: PID=6876 PPID=6874 
+EXEC: PID=6876 CMD=as -Qy -o /tmp/ccgspsVX.o /tmp/ccKBH91p.s 
+FORK: PID=6877 PPID=6874 
+EXEC: PID=6877 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/collect2 --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o implant -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/ccgspsVX.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=6878 PPID=6877 
+EXEC: PID=6878 CMD=/usr/bin/ld --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o implant -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/ccgspsVX.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=6879 PPID=6868 
+EXEC: PID=6879 CMD=gcc -o implant-1 implant-core-1.c 
+FORK: PID=6880 PPID=6879 
+EXEC: PID=6880 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/cc1 -quiet implant-core-1.c -D_FORTIFY_SOURCE=2 -quiet -dumpbase implant-core-1.c -mtune=generic -march=i486 -auxbase implant-core-1 -fstack-protector -o /tmp/ccMHe8qo.s 
+FORK: PID=6881 PPID=6879 
+EXEC: PID=6881 CMD=as -Qy -o /tmp/ccZhhIrW.o /tmp/ccMHe8qo.s 
+FORK: PID=6882 PPID=6879 
+EXEC: PID=6882 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/collect2 --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o implant-1 -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/ccZhhIrW.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=6883 PPID=6882 
+EXEC: PID=6883 CMD=/usr/bin/ld --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o implant-1 -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/ccZhhIrW.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=6884 PPID=6868 
+EXEC: PID=6884 CMD=gcc -o implant-send implant-send.c 
+FORK: PID=6885 PPID=6884 
+EXEC: PID=6885 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/cc1 -quiet implant-send.c -D_FORTIFY_SOURCE=2 -quiet -dumpbase implant-send.c -mtune=generic -march=i486 -auxbase implant-send -fstack-protector -o /tmp/cczUgJyr.s 
+FORK: PID=6886 PPID=6884 
+EXEC: PID=6886 CMD=as -Qy -o /tmp/ccmdl8GZ.o /tmp/cczUgJyr.s 
+FORK: PID=6887 PPID=6884 
+EXEC: PID=6887 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/collect2 --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o implant-send -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/ccmdl8GZ.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=6888 PPID=6887 
+EXEC: PID=6888 CMD=/usr/bin/ld --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o implant-send -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/ccmdl8GZ.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=6889 PPID=6868 
+EXEC: PID=6889 CMD=gcc -o sock_server sock_server.c 
+FORK: PID=6890 PPID=6889 
+EXEC: PID=6890 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/cc1 -quiet sock_server.c -D_FORTIFY_SOURCE=2 -quiet -dumpbase sock_server.c -mtune=generic -march=i486 -auxbase sock_server -fstack-protector -o /tmp/ccSYdwQu.s 
+FORK: PID=6891 PPID=6889 
+EXEC: PID=6891 CMD=as -Qy -o /tmp/cccX1l62.o /tmp/ccSYdwQu.s 
+FORK: PID=6892 PPID=6889 
+EXEC: PID=6892 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/collect2 --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o sock_server -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/cccX1l62.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=6893 PPID=6892 
+EXEC: PID=6893 CMD=/usr/bin/ld --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o sock_server -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/cccX1l62.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=6894 PPID=6863 
+EXEC: PID=6894 CMD=./screengrab /home/kalana/Desktop/attack 
+FORK: PID=6895 PPID=1473 
+EXEC: PID=6895 CMD=
+FORK: PID=6896 PPID=1473 
+FORK: PID=6897 PPID=1473 
+FORK: PID=6898 PPID=1562 
+EXEC: PID=6898 CMD=
+FORK: PID=6899 PPID=1562 
+FORK: PID=6900 PPID=1403 
+FORK: PID=6901 PPID=1562 
+FORK: PID=6902 PPID=1403 
+FORK: PID=6903 PPID=1403 
+FORK: PID=6904 PPID=1403 
+FORK: PID=6905 PPID=767 
+EXEC: PID=6905 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_removed 
+EXEC: PID=6905 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_removed 
+FORK: PID=6906 PPID=767 
+FORK: PID=6907 PPID=578 
+EXEC: PID=6907 CMD=/usr/sbin/sshd -D -R 
+EXEC: PID=6906 CMD=/usr/lib/ConsoleKit/run-seat.d/udev-acl.ck seat_removed 
+FORK: PID=6908 PPID=6907 
+FORK: PID=6909 PPID=767 
+EXEC: PID=6909 CMD=/usr/lib/ConsoleKit/ck-collect-session-info --uid 0 --pid 6907 
+FORK: PID=6910 PPID=767 
+EXEC: PID=6910 CMD=/usr/lib/ConsoleKit/run-seat.d/udev-acl.ck seat_added 
+FORK: PID=6911 PPID=767 
+EXEC: PID=6911 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_added 
+EXEC: PID=6911 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_added 
+FORK: PID=6912 PPID=6907 
+EXEC: PID=6912 CMD=sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin /bin/run-parts --lsbsysinit /etc/update-motd.d > /var/run/motd.new 
+FORK: PID=6913 PPID=6912 
+EXEC: PID=6913 CMD=/usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin /bin/run-parts --lsbsysinit /etc/update-motd.d 
+EXEC: PID=6913 CMD=/bin/run-parts --lsbsysinit /etc/update-motd.d 
+FORK: PID=6914 PPID=6913 
+EXEC: PID=6914 CMD=/bin/sh /etc/update-motd.d/00-header 
+EXEC: PID=6914 CMD=/bin/sh /etc/update-motd.d/00-header 
+FORK: PID=6915 PPID=6914 
+EXEC: PID=6915 CMD=uname -a 
+FORK: PID=6916 PPID=6914 
+EXEC: PID=6916 CMD=/usr/bin/python /usr/bin/lsb_release -s -d 
+EXEC: PID=6916 CMD=/usr/bin/python /usr/bin/lsb_release -s -d 
+FORK: PID=6917 PPID=6913 
+EXEC: PID=6917 CMD=/bin/sh /etc/update-motd.d/10-help-text 
+EXEC: PID=6917 CMD=/bin/sh /etc/update-motd.d/10-help-text 
+FORK: PID=6918 PPID=6917 
+FORK: PID=6919 PPID=6917 
+EXEC: PID=6919 CMD=grep -qs \-server 
+EXEC: PID=6918 CMD=uname -r 
+FORK: PID=6920 PPID=6913 
+EXEC: PID=6920 CMD=/bin/sh /etc/update-motd.d/20-cpu-checker 
+EXEC: PID=6920 CMD=/bin/sh /etc/update-motd.d/20-cpu-checker 
+EXEC: PID=6920 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-cpu-checker 
+EXEC: PID=6920 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-cpu-checker 
+FORK: PID=6921 PPID=6920 
+EXEC: PID=6921 CMD=/bin/sh /usr/bin/check-bios-nx 
+EXEC: PID=6921 CMD=/bin/sh /usr/bin/check-bios-nx 
+FORK: PID=6922 PPID=6921 
+EXEC: PID=6922 CMD=getopt -o h --long verbose,help -n check-bios-nx -- 
+FORK: PID=6923 PPID=6921 
+EXEC: PID=6923 CMD=awk -f - /proc/cpuinfo 
+FORK: PID=6924 PPID=6923 
+EXEC: PID=6924 CMD=sh -c uname -m 
+FORK: PID=6925 PPID=6924 
+EXEC: PID=6925 CMD=uname -m 
+FORK: PID=6926 PPID=6913 
+EXEC: PID=6926 CMD=/bin/sh /etc/update-motd.d/90-updates-available 
+EXEC: PID=6926 CMD=/bin/sh /etc/update-motd.d/90-updates-available 
+EXEC: PID=6926 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-updates-available 
+EXEC: PID=6926 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-updates-available 
+FORK: PID=6927 PPID=6926 
+EXEC: PID=6927 CMD=stat -c %Y /var/lib/update-notifier/updates-available 
+FORK: PID=6928 PPID=6926 
+EXEC: PID=6928 CMD=apt-config shell StateDir Dir::State 
+FORK: PID=6929 PPID=6926 
+EXEC: PID=6929 CMD=apt-config shell ListDir Dir::State::Lists 
+FORK: PID=6930 PPID=6926 
+EXEC: PID=6930 CMD=stat -c %Y /var/lib/apt//lists//lock 
+FORK: PID=6931 PPID=6926 
+EXEC: PID=6931 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_Release 
+FORK: PID=6932 PPID=6926 
+EXEC: PID=6932 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_Release.gpg 
+FORK: PID=6933 PPID=6926 
+EXEC: PID=6933 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_main_binary-i386_Packages 
+FORK: PID=6934 PPID=6926 
+EXEC: PID=6934 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_main_source_Sources 
+FORK: PID=6935 PPID=6926 
+EXEC: PID=6935 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_multiverse_binary-i386_Packages 
+FORK: PID=6936 PPID=6926 
+EXEC: PID=6936 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_multiverse_source_Sources 
+FORK: PID=6937 PPID=6926 
+EXEC: PID=6937 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_restricted_binary-i386_Packages 
+FORK: PID=6938 PPID=6926 
+EXEC: PID=6938 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_restricted_source_Sources 
+FORK: PID=6939 PPID=6926 
+EXEC: PID=6939 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_universe_binary-i386_Packages 
+FORK: PID=6940 PPID=6926 
+EXEC: PID=6940 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_universe_source_Sources 
+FORK: PID=6941 PPID=6926 
+EXEC: PID=6941 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_Release 
+FORK: PID=6942 PPID=6926 
+EXEC: PID=6942 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_Release.gpg 
+FORK: PID=6943 PPID=6926 
+EXEC: PID=6943 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_main_binary-i386_Packages 
+FORK: PID=6944 PPID=6926 
+EXEC: PID=6944 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_main_source_Sources 
+FORK: PID=6945 PPID=6926 
+EXEC: PID=6945 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_multiverse_binary-i386_Packages 
+FORK: PID=6946 PPID=6926 
+EXEC: PID=6946 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_multiverse_source_Sources 
+FORK: PID=6947 PPID=6926 
+EXEC: PID=6947 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_restricted_binary-i386_Packages 
+FORK: PID=6948 PPID=6926 
+EXEC: PID=6948 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_restricted_source_Sources 
+FORK: PID=6949 PPID=6926 
+EXEC: PID=6949 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_universe_binary-i386_Packages 
+FORK: PID=6950 PPID=6926 
+EXEC: PID=6950 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_universe_source_Sources 
+FORK: PID=6951 PPID=6926 
+EXEC: PID=6951 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_Release 
+FORK: PID=6952 PPID=6926 
+EXEC: PID=6952 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=6953 PPID=6926 
+EXEC: PID=6953 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=6954 PPID=6926 
+EXEC: PID=6954 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_main_source_Sources 
+FORK: PID=6955 PPID=6926 
+EXEC: PID=6955 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_multiverse_binary-i386_Packages 
+FORK: PID=6956 PPID=6926 
+EXEC: PID=6956 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_multiverse_source_Sources 
+FORK: PID=6957 PPID=6926 
+EXEC: PID=6957 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_restricted_binary-i386_Packages 
+FORK: PID=6958 PPID=6926 
+EXEC: PID=6958 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_restricted_source_Sources 
+FORK: PID=6959 PPID=6926 
+EXEC: PID=6959 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_universe_binary-i386_Packages 
+FORK: PID=6960 PPID=6926 
+EXEC: PID=6960 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_universe_source_Sources 
+FORK: PID=6961 PPID=6926 
+EXEC: PID=6961 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_Release 
+FORK: PID=6962 PPID=6926 
+EXEC: PID=6962 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=6963 PPID=6926 
+EXEC: PID=6963 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=6964 PPID=6926 
+EXEC: PID=6964 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_Release 
+FORK: PID=6965 PPID=6926 
+EXEC: PID=6965 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=6966 PPID=6926 
+EXEC: PID=6966 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=6967 PPID=6926 
+EXEC: PID=6967 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_Release 
+FORK: PID=6968 PPID=6926 
+EXEC: PID=6968 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=6969 PPID=6926 
+EXEC: PID=6969 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=6970 PPID=6926 
+EXEC: PID=6970 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_Release 
+FORK: PID=6971 PPID=6926 
+EXEC: PID=6971 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=6972 PPID=6926 
+EXEC: PID=6972 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=6973 PPID=6926 
+EXEC: PID=6973 CMD=apt-config shell EtcDir Dir::Etc 
+FORK: PID=6974 PPID=6926 
+EXEC: PID=6974 CMD=apt-config shell SourceList Dir::Etc::sourcelist 
+FORK: PID=6975 PPID=6926 
+EXEC: PID=6975 CMD=stat -c %Y /etc/apt//sources.list 
+FORK: PID=6976 PPID=6926 
+EXEC: PID=6976 CMD=cat /var/lib/update-notifier/updates-available 
+FORK: PID=6977 PPID=6913 
+EXEC: PID=6977 CMD=/bin/sh /etc/update-motd.d/91-release-upgrade 
+EXEC: PID=6977 CMD=/bin/sh /etc/update-motd.d/91-release-upgrade 
+EXEC: PID=6977 CMD=/bin/sh -e /usr/lib/update-manager/release-upgrade-motd 
+EXEC: PID=6977 CMD=/bin/sh -e /usr/lib/update-manager/release-upgrade-motd 
+FORK: PID=6978 PPID=6977 
+EXEC: PID=6978 CMD=cat /var/lib/update-notifier/release-upgrade-available 
+FORK: PID=6979 PPID=6913 
+EXEC: PID=6979 CMD=/bin/sh /etc/update-motd.d/98-reboot-required 
+EXEC: PID=6979 CMD=/bin/sh /etc/update-motd.d/98-reboot-required 
+EXEC: PID=6979 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-reboot-required 
+EXEC: PID=6979 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-reboot-required 
+FORK: PID=6980 PPID=6913 
+EXEC: PID=6980 CMD=/bin/sh /etc/update-motd.d/99-footer 
+EXEC: PID=6980 CMD=/bin/sh /etc/update-motd.d/99-footer 
+FORK: PID=6981 PPID=6907 
+FORK: PID=6982 PPID=6981 
+EXEC: PID=6982 CMD=bash -c sleep 20; pkill -SIGINT logger 
+FORK: PID=6983 PPID=6982 
+EXEC: PID=6983 CMD=sleep 20 
+FORK: PID=6984 PPID=1403 
+FORK: PID=6985 PPID=1403 
+FORK: PID=6986 PPID=1403 
+FORK: PID=6987 PPID=1473 
+EXEC: PID=6987 CMD=
+FORK: PID=6988 PPID=1473 
+FORK: PID=6989 PPID=1473 
+FORK: PID=6990 PPID=1562 
+EXEC: PID=6990 CMD=
+FORK: PID=6991 PPID=1562 
+FORK: PID=6992 PPID=1562 
+FORK: PID=6993 PPID=1473 
+EXEC: PID=6993 CMD=
+FORK: PID=6994 PPID=1473 
+FORK: PID=6995 PPID=1473 
+FORK: PID=6996 PPID=1562 
+EXEC: PID=6996 CMD=
+FORK: PID=6997 PPID=1562 
+FORK: PID=6998 PPID=1562 
+FORK: PID=6999 PPID=1473 
+EXEC: PID=6999 CMD=
+FORK: PID=7000 PPID=1473 
+FORK: PID=7001 PPID=1473 
+FORK: PID=7002 PPID=1562 
+EXEC: PID=7002 CMD=
+FORK: PID=7003 PPID=1562 
+FORK: PID=7004 PPID=1562 
+FORK: PID=7005 PPID=1473 
+EXEC: PID=7005 CMD=
+FORK: PID=7006 PPID=1473 
+FORK: PID=7007 PPID=1473 
+FORK: PID=7008 PPID=1562 
+EXEC: PID=7008 CMD=
+FORK: PID=7009 PPID=1562 
+FORK: PID=7010 PPID=1562 
+FORK: PID=7011 PPID=6982 
+EXEC: PID=7011 CMD=pkill -SIGINT logger 
+FORK: PID=7012 PPID=767 
+EXEC: PID=7012 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_removed 
+EXEC: PID=7012 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_removed 
+FORK: PID=7013 PPID=767 
+EXEC: PID=7013 CMD=/usr/lib/ConsoleKit/run-seat.d/udev-acl.ck seat_removed 
+FORK: PID=7014 PPID=1 
+FORK: PID=7015 PPID=1403 
+FORK: PID=7016 PPID=1403 
+FORK: PID=7017 PPID=1403 
+FORK: PID=7018 PPID=1403 
+FORK: PID=7019 PPID=1403 
+FORK: PID=7020 PPID=1473 
+EXEC: PID=7020 CMD=
+FORK: PID=7021 PPID=1473 
+FORK: PID=7022 PPID=1473 
+FORK: PID=7023 PPID=1562 
+EXEC: PID=7023 CMD=
+FORK: PID=7024 PPID=1562 
+FORK: PID=7025 PPID=1562 
+FORK: PID=7026 PPID=1513 
+FORK: PID=7027 PPID=7026 
+EXEC: PID=7027 CMD=gedit /home/kalana/Desktop/logger/log.txt 
+FORK: PID=7028 PPID=1 
+FORK: PID=7029 PPID=1473 
+EXEC: PID=7029 CMD=
+FORK: PID=7030 PPID=1473 
+FORK: PID=7031 PPID=1473 
+FORK: PID=7032 PPID=1562 
+EXEC: PID=7032 CMD=
+FORK: PID=7033 PPID=1562 
+FORK: PID=7034 PPID=1562 
+FORK: PID=7035 PPID=1473 
+EXEC: PID=7035 CMD=
+FORK: PID=7036 PPID=1473 
+FORK: PID=7037 PPID=1473 
+FORK: PID=7038 PPID=1562 
+EXEC: PID=7038 CMD=
+FORK: PID=7039 PPID=1562 
+FORK: PID=7040 PPID=1562 
+FORK: PID=7041 PPID=1473 
+EXEC: PID=7041 CMD=
+FORK: PID=7042 PPID=1473 
+FORK: PID=7043 PPID=1473 
+FORK: PID=7044 PPID=1562 
+EXEC: PID=7044 CMD=
+FORK: PID=7045 PPID=1562 
+FORK: PID=7046 PPID=1562 
+FORK: PID=7047 PPID=1473 
+EXEC: PID=7047 CMD=
+FORK: PID=7048 PPID=1473 
+FORK: PID=7049 PPID=1473 
+FORK: PID=7050 PPID=1562 
+EXEC: PID=7050 CMD=
+FORK: PID=7051 PPID=1562 
+FORK: PID=7052 PPID=1562 
+FORK: PID=7053 PPID=1473 
+EXEC: PID=7053 CMD=
+FORK: PID=7054 PPID=1473 
+FORK: PID=7055 PPID=1473 
+FORK: PID=7056 PPID=1562 
+EXEC: PID=7056 CMD=
+FORK: PID=7057 PPID=1562 
+FORK: PID=7058 PPID=1562 
+FORK: PID=7059 PPID=1473 
+EXEC: PID=7059 CMD=
+FORK: PID=7060 PPID=1473 
+FORK: PID=7061 PPID=1473 
+FORK: PID=7062 PPID=1562 
+EXEC: PID=7062 CMD=
+FORK: PID=7063 PPID=1562 
+FORK: PID=7064 PPID=1562 
+FORK: PID=7065 PPID=1473 
+EXEC: PID=7065 CMD=
+FORK: PID=7066 PPID=1473 
+FORK: PID=7067 PPID=1473 
+FORK: PID=7068 PPID=1562 
+EXEC: PID=7068 CMD=
+FORK: PID=7069 PPID=1562 
+FORK: PID=7070 PPID=1562 
+FORK: PID=7071 PPID=1473 
+EXEC: PID=7071 CMD=
+FORK: PID=7072 PPID=1473 
+FORK: PID=7073 PPID=1473 
+FORK: PID=7074 PPID=1562 
+EXEC: PID=7074 CMD=
+FORK: PID=7075 PPID=1562 
+FORK: PID=7076 PPID=1562 
+FORK: PID=7077 PPID=1473 
+EXEC: PID=7077 CMD=
+FORK: PID=7078 PPID=1473 
+FORK: PID=7079 PPID=1473 
+FORK: PID=7080 PPID=1562 
+EXEC: PID=7080 CMD=
+FORK: PID=7081 PPID=1562 
+FORK: PID=7082 PPID=1562 
+FORK: PID=7083 PPID=1473 
+EXEC: PID=7083 CMD=
+FORK: PID=7084 PPID=1473 
+FORK: PID=7085 PPID=1473 
+FORK: PID=7086 PPID=1562 
+EXEC: PID=7086 CMD=
+FORK: PID=7087 PPID=1562 
+FORK: PID=7088 PPID=1562 
+FORK: PID=7089 PPID=1473 
+EXEC: PID=7089 CMD=
+FORK: PID=7090 PPID=1473 
+FORK: PID=7091 PPID=1473 
+FORK: PID=7092 PPID=1562 
+EXEC: PID=7092 CMD=
+FORK: PID=7093 PPID=1562 
+FORK: PID=7094 PPID=1562 
+FORK: PID=7095 PPID=1473 
+EXEC: PID=7095 CMD=
+FORK: PID=7096 PPID=1473 
+FORK: PID=7097 PPID=1473 
+FORK: PID=7098 PPID=1562 
+EXEC: PID=7098 CMD=
+FORK: PID=7099 PPID=1562 
+FORK: PID=7100 PPID=1562 
+FORK: PID=7101 PPID=1473 
+EXEC: PID=7101 CMD=
+FORK: PID=7102 PPID=1473 
+FORK: PID=7103 PPID=1473 
+FORK: PID=7104 PPID=1562 
+EXEC: PID=7104 CMD=
+FORK: PID=7105 PPID=1562 
+FORK: PID=7106 PPID=1562 
+FORK: PID=7107 PPID=1 
+FORK: PID=7108 PPID=724 
+EXEC: PID=7108 CMD=/usr/lib/NetworkManager/nm-dhcp-client.action 
+FORK: PID=7109 PPID=1 
+FORK: PID=7110 PPID=1473 
+EXEC: PID=7110 CMD=
+FORK: PID=7111 PPID=1473 
+FORK: PID=7112 PPID=1473 
+FORK: PID=7113 PPID=1562 
+EXEC: PID=7113 CMD=
+FORK: PID=7114 PPID=1562 
+FORK: PID=7115 PPID=1562 
+FORK: PID=7116 PPID=1473 
+EXEC: PID=7116 CMD=
+FORK: PID=7117 PPID=1473 
+FORK: PID=7118 PPID=1473 
+FORK: PID=7119 PPID=1562 
+EXEC: PID=7119 CMD=
+FORK: PID=7120 PPID=1562 
+FORK: PID=7121 PPID=1562 
+FORK: PID=7122 PPID=1473 
+EXEC: PID=7122 CMD=
+FORK: PID=7123 PPID=1473 
+FORK: PID=7124 PPID=1473 
+FORK: PID=7125 PPID=1562 
+EXEC: PID=7125 CMD=
+FORK: PID=7126 PPID=1562 
+FORK: PID=7127 PPID=1562 
+FORK: PID=7128 PPID=1473 
+EXEC: PID=7128 CMD=
+FORK: PID=7129 PPID=1473 
+FORK: PID=7130 PPID=1473 
+FORK: PID=7131 PPID=1562 
+EXEC: PID=7131 CMD=
+FORK: PID=7132 PPID=1562 
+FORK: PID=7133 PPID=1562 
+FORK: PID=7134 PPID=1473 
+EXEC: PID=7134 CMD=
+FORK: PID=7135 PPID=1473 
+FORK: PID=7136 PPID=1473 
+FORK: PID=7137 PPID=1562 
+EXEC: PID=7137 CMD=
+FORK: PID=7138 PPID=1562 
+FORK: PID=7139 PPID=1562 
+FORK: PID=7140 PPID=1473 
+EXEC: PID=7140 CMD=
+FORK: PID=7141 PPID=1473 
+FORK: PID=7142 PPID=1473 
+FORK: PID=7143 PPID=1562 
+EXEC: PID=7143 CMD=
+FORK: PID=7144 PPID=1562 
+FORK: PID=7145 PPID=1562 
+FORK: PID=7146 PPID=1403 
+FORK: PID=7147 PPID=1473 
+EXEC: PID=7147 CMD=
+FORK: PID=7148 PPID=1473 
+FORK: PID=7149 PPID=1473 
+FORK: PID=7150 PPID=1562 
+EXEC: PID=7150 CMD=
+FORK: PID=7151 PPID=1562 
+FORK: PID=7152 PPID=1562 
+FORK: PID=7153 PPID=1473 
+EXEC: PID=7153 CMD=
+FORK: PID=7154 PPID=1473 
+FORK: PID=7155 PPID=1473 
+FORK: PID=7156 PPID=1562 
+EXEC: PID=7156 CMD=
+FORK: PID=7157 PPID=1562 
+FORK: PID=7158 PPID=1562 
+FORK: PID=7159 PPID=1473 
+EXEC: PID=7159 CMD=
+FORK: PID=7160 PPID=1473 
+FORK: PID=7161 PPID=1473 
+FORK: PID=7162 PPID=1562 
+EXEC: PID=7162 CMD=
+FORK: PID=7163 PPID=1562 
+FORK: PID=7164 PPID=1562 
+FORK: PID=7165 PPID=1473 
+EXEC: PID=7165 CMD=
+FORK: PID=7166 PPID=1473 
+FORK: PID=7167 PPID=1473 
+FORK: PID=7168 PPID=1562 
+EXEC: PID=7168 CMD=
+FORK: PID=7169 PPID=1562 
+FORK: PID=7170 PPID=1562 
+FORK: PID=7171 PPID=1473 
+EXEC: PID=7171 CMD=
+FORK: PID=7172 PPID=1473 
+FORK: PID=7173 PPID=1473 
+FORK: PID=7174 PPID=1562 
+EXEC: PID=7174 CMD=
+FORK: PID=7175 PPID=1562 
+FORK: PID=7176 PPID=1562 
+FORK: PID=7177 PPID=1473 
+EXEC: PID=7177 CMD=
+FORK: PID=7178 PPID=1473 
+FORK: PID=7179 PPID=1473 
+FORK: PID=7180 PPID=1562 
+EXEC: PID=7180 CMD=
+FORK: PID=7181 PPID=1562 
+FORK: PID=7182 PPID=1562 
+FORK: PID=7183 PPID=1473 
+EXEC: PID=7183 CMD=
+FORK: PID=7184 PPID=1473 
+FORK: PID=7185 PPID=1473 
+FORK: PID=7186 PPID=1562 
+EXEC: PID=7186 CMD=
+FORK: PID=7187 PPID=1562 
+FORK: PID=7188 PPID=1562 
+FORK: PID=7189 PPID=1473 
+EXEC: PID=7189 CMD=
+FORK: PID=7190 PPID=1473 
+FORK: PID=7191 PPID=1473 
+FORK: PID=7192 PPID=1562 
+EXEC: PID=7192 CMD=
+FORK: PID=7193 PPID=1562 
+FORK: PID=7194 PPID=1562 
+FORK: PID=7195 PPID=1473 
+EXEC: PID=7195 CMD=
+FORK: PID=7196 PPID=1473 
+FORK: PID=7197 PPID=1473 
+FORK: PID=7198 PPID=1562 
+EXEC: PID=7198 CMD=
+FORK: PID=7199 PPID=1562 
+FORK: PID=7200 PPID=1562 
+FORK: PID=7201 PPID=1473 
+EXEC: PID=7201 CMD=
+FORK: PID=7202 PPID=1473 
+FORK: PID=7203 PPID=1473 
+FORK: PID=7204 PPID=1562 
+EXEC: PID=7204 CMD=
+FORK: PID=7205 PPID=1562 
+FORK: PID=7206 PPID=1562 
+FORK: PID=7207 PPID=1473 
+EXEC: PID=7207 CMD=
+FORK: PID=7208 PPID=1473 
+FORK: PID=7209 PPID=1473 
+FORK: PID=7210 PPID=1562 
+EXEC: PID=7210 CMD=
+FORK: PID=7211 PPID=1562 
+FORK: PID=7212 PPID=1562 
+FORK: PID=7213 PPID=1473 
+EXEC: PID=7213 CMD=
+FORK: PID=7214 PPID=1473 
+FORK: PID=7215 PPID=1473 
+FORK: PID=7216 PPID=1562 
+EXEC: PID=7216 CMD=
+FORK: PID=7217 PPID=1562 
+FORK: PID=7218 PPID=1562 
+FORK: PID=7219 PPID=1473 
+EXEC: PID=7219 CMD=
+FORK: PID=7220 PPID=1473 
+FORK: PID=7221 PPID=1473 
+FORK: PID=7222 PPID=1562 
+EXEC: PID=7222 CMD=
+FORK: PID=7223 PPID=1562 
+FORK: PID=7224 PPID=1562 
+FORK: PID=7225 PPID=1473 
+EXEC: PID=7225 CMD=
+FORK: PID=7226 PPID=1473 
+FORK: PID=7227 PPID=1473 
+FORK: PID=7228 PPID=1562 
+EXEC: PID=7228 CMD=
+FORK: PID=7229 PPID=1562 
+FORK: PID=7230 PPID=1562 
+FORK: PID=7231 PPID=1473 
+EXEC: PID=7231 CMD=
+FORK: PID=7232 PPID=1473 
+FORK: PID=7233 PPID=1473 
+FORK: PID=7234 PPID=1562 
+EXEC: PID=7234 CMD=
+FORK: PID=7235 PPID=1562 
+FORK: PID=7236 PPID=1562 
+FORK: PID=7237 PPID=1473 
+EXEC: PID=7237 CMD=
+FORK: PID=7238 PPID=1473 
+FORK: PID=7239 PPID=1473 
+FORK: PID=7240 PPID=1562 
+EXEC: PID=7240 CMD=
+FORK: PID=7241 PPID=1562 
+FORK: PID=7242 PPID=1562 
+FORK: PID=7243 PPID=1473 
+EXEC: PID=7243 CMD=
+FORK: PID=7244 PPID=1473 
+FORK: PID=7245 PPID=1473 
+FORK: PID=7246 PPID=1562 
+EXEC: PID=7246 CMD=
+FORK: PID=7247 PPID=1562 
+FORK: PID=7248 PPID=1562 
+FORK: PID=7249 PPID=1473 
+EXEC: PID=7249 CMD=
+FORK: PID=7250 PPID=1473 
+FORK: PID=7251 PPID=1473 
+FORK: PID=7252 PPID=1562 
+EXEC: PID=7252 CMD=
+FORK: PID=7253 PPID=1562 
+FORK: PID=7254 PPID=1562 
+FORK: PID=7255 PPID=1473 
+EXEC: PID=7255 CMD=
+FORK: PID=7256 PPID=1473 
+FORK: PID=7257 PPID=1473 
+FORK: PID=7258 PPID=1562 
+EXEC: PID=7258 CMD=
+FORK: PID=7259 PPID=1562 
+FORK: PID=7260 PPID=1562 
+FORK: PID=7261 PPID=1473 
+EXEC: PID=7261 CMD=
+FORK: PID=7262 PPID=1473 
+FORK: PID=7263 PPID=1473 
+FORK: PID=7264 PPID=1562 
+EXEC: PID=7264 CMD=
+FORK: PID=7265 PPID=1562 
+FORK: PID=7266 PPID=1562 
+FORK: PID=7267 PPID=1473 
+EXEC: PID=7267 CMD=
+FORK: PID=7268 PPID=1473 
+FORK: PID=7269 PPID=1473 
+FORK: PID=7270 PPID=1562 
+EXEC: PID=7270 CMD=
+FORK: PID=7271 PPID=1562 
+FORK: PID=7272 PPID=1562 
+FORK: PID=7273 PPID=1403 
+FORK: PID=7274 PPID=1473 
+EXEC: PID=7274 CMD=
+FORK: PID=7275 PPID=1473 
+FORK: PID=7276 PPID=1473 
+FORK: PID=7277 PPID=1562 
+EXEC: PID=7277 CMD=
+FORK: PID=7278 PPID=1562 
+FORK: PID=7279 PPID=1562 
+FORK: PID=7280 PPID=1473 
+EXEC: PID=7280 CMD=
+FORK: PID=7281 PPID=1473 
+FORK: PID=7282 PPID=1473 
+FORK: PID=7283 PPID=1562 
+EXEC: PID=7283 CMD=
+FORK: PID=7284 PPID=1562 
+FORK: PID=7285 PPID=1562 
+FORK: PID=7286 PPID=1473 
+EXEC: PID=7286 CMD=
+FORK: PID=7287 PPID=1473 
+FORK: PID=7288 PPID=1473 
+FORK: PID=7289 PPID=1562 
+EXEC: PID=7289 CMD=
+FORK: PID=7290 PPID=1562 
+FORK: PID=7291 PPID=1562 
+FORK: PID=7292 PPID=1473 
+EXEC: PID=7292 CMD=
+FORK: PID=7293 PPID=1473 
+FORK: PID=7294 PPID=1473 
+FORK: PID=7295 PPID=1562 
+EXEC: PID=7295 CMD=
+FORK: PID=7296 PPID=1562 
+FORK: PID=7297 PPID=1562 
+FORK: PID=7298 PPID=1473 
+EXEC: PID=7298 CMD=
+FORK: PID=7299 PPID=1473 
+FORK: PID=7300 PPID=1473 
+FORK: PID=7301 PPID=1562 
+EXEC: PID=7301 CMD=
+FORK: PID=7302 PPID=1562 
+FORK: PID=7303 PPID=1562 
+FORK: PID=7304 PPID=1473 
+EXEC: PID=7304 CMD=
+FORK: PID=7305 PPID=1473 
+FORK: PID=7306 PPID=1473 
+FORK: PID=7307 PPID=1562 
+EXEC: PID=7307 CMD=
+FORK: PID=7308 PPID=1562 
+FORK: PID=7309 PPID=1562 
+FORK: PID=7310 PPID=1473 
+EXEC: PID=7310 CMD=
+FORK: PID=7311 PPID=1473 
+FORK: PID=7312 PPID=1473 
+FORK: PID=7313 PPID=1562 
+EXEC: PID=7313 CMD=
+FORK: PID=7314 PPID=1562 
+FORK: PID=7315 PPID=1562 
+FORK: PID=7316 PPID=1473 
+EXEC: PID=7316 CMD=
+FORK: PID=7317 PPID=1473 
+FORK: PID=7318 PPID=1473 
+FORK: PID=7319 PPID=1562 
+EXEC: PID=7319 CMD=
+FORK: PID=7320 PPID=1562 
+FORK: PID=7321 PPID=1562 
+FORK: PID=7322 PPID=1 
+FORK: PID=7323 PPID=1473 
+EXEC: PID=7323 CMD=
+FORK: PID=7324 PPID=1473 
+FORK: PID=7325 PPID=1473 
+FORK: PID=7326 PPID=1562 
+EXEC: PID=7326 CMD=
+FORK: PID=7327 PPID=1562 
+FORK: PID=7328 PPID=1562 
+FORK: PID=7329 PPID=1403 
+FORK: PID=7330 PPID=1517 
+FORK: PID=7331 PPID=7330 
+EXEC: PID=7331 CMD=/bin/sh /usr/bin/firefox 
+EXEC: PID=7331 CMD=/bin/sh /usr/bin/firefox 
+FORK: PID=7332 PPID=7331 
+EXEC: PID=7332 CMD=/bin/sh /usr/bin/which /usr/bin/firefox 
+EXEC: PID=7332 CMD=/bin/sh /usr/bin/which /usr/bin/firefox 
+EXEC: PID=7331 CMD=/usr/lib/firefox/firefox 
+FORK: PID=7333 PPID=7331 
+FORK: PID=7334 PPID=1 
+FORK: PID=7335 PPID=1 
+FORK: PID=7336 PPID=1 
+FORK: PID=7337 PPID=1 
+FORK: PID=7338 PPID=1 
+FORK: PID=7339 PPID=1 
+FORK: PID=7340 PPID=1 
+FORK: PID=7341 PPID=1 
+FORK: PID=7342 PPID=1 
+FORK: PID=7343 PPID=1 
+FORK: PID=7344 PPID=1 
+FORK: PID=7345 PPID=1 
+FORK: PID=7346 PPID=1 
+FORK: PID=7347 PPID=1 
+FORK: PID=7348 PPID=1 
+FORK: PID=7349 PPID=1 
+FORK: PID=7350 PPID=1 
+FORK: PID=7351 PPID=1 
+FORK: PID=7352 PPID=1 
+FORK: PID=7353 PPID=1 
+FORK: PID=7354 PPID=1 
+FORK: PID=7355 PPID=1 
+FORK: PID=7356 PPID=1 
+FORK: PID=7357 PPID=1 
+FORK: PID=7358 PPID=1 
+FORK: PID=7359 PPID=1 
+FORK: PID=7360 PPID=1 
+FORK: PID=7361 PPID=1473 
+EXEC: PID=7361 CMD=
+FORK: PID=7362 PPID=1473 
+FORK: PID=7363 PPID=1473 
+FORK: PID=7364 PPID=1562 
+EXEC: PID=7364 CMD=
+FORK: PID=7365 PPID=1562 
+FORK: PID=7366 PPID=1562 
+FORK: PID=7367 PPID=1 
+FORK: PID=7368 PPID=1 
+FORK: PID=7369 PPID=1473 
+EXEC: PID=7369 CMD=
+FORK: PID=7370 PPID=1473 
+FORK: PID=7371 PPID=1473 
+FORK: PID=7372 PPID=1562 
+EXEC: PID=7372 CMD=
+FORK: PID=7373 PPID=1562 
+FORK: PID=7374 PPID=1562 
+FORK: PID=7375 PPID=1 
+FORK: PID=7376 PPID=1473 
+EXEC: PID=7376 CMD=
+FORK: PID=7377 PPID=1473 
+FORK: PID=7378 PPID=1473 
+FORK: PID=7379 PPID=1562 
+EXEC: PID=7379 CMD=
+FORK: PID=7380 PPID=1562 
+FORK: PID=7381 PPID=1562 
+FORK: PID=7382 PPID=1 
+FORK: PID=7383 PPID=1 
+FORK: PID=7384 PPID=1 
+FORK: PID=7385 PPID=1473 
+EXEC: PID=7385 CMD=
+FORK: PID=7386 PPID=1473 
+FORK: PID=7387 PPID=1473 
+FORK: PID=7388 PPID=1562 
+EXEC: PID=7388 CMD=
+FORK: PID=7389 PPID=1562 
+FORK: PID=7390 PPID=1562 
+FORK: PID=7391 PPID=1473 
+EXEC: PID=7391 CMD=
+FORK: PID=7392 PPID=1473 
+FORK: PID=7393 PPID=1473 
+FORK: PID=7394 PPID=1562 
+EXEC: PID=7394 CMD=
+FORK: PID=7395 PPID=1562 
+FORK: PID=7396 PPID=1562 
+FORK: PID=7397 PPID=1473 
+EXEC: PID=7397 CMD=
+FORK: PID=7398 PPID=1473 
+FORK: PID=7399 PPID=1473 
+FORK:

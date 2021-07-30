@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Attacker Side</title>
+        <style type="text/css">
+            #viz {
+                width: 800px;
+                height: 600px;
+            }
+        </style>
+        <script src="https://rawgit.com/neo4j-contrib/neovis.js/master/dist/neovis.js"></script>
+    </head>   
+    <script>
+        function draw() {
+            var config = {
+                container_id: "viz",
+                server_url: "bolt://localhost:11003",
+                server_user: "neo4j",
+                server_password: "131kalana",
+                labels: {
+                    "entry_process": {
+                        caption: "_pid",
+                        image: "nodes/red.png"
+                    },
+                    "process": {
+                        caption: "_pid",
+                        image: "nodes/purple.png"
+                    }
+                },
+                relationships: {
+                    "spawns": {
+                        caption: true,
+                        thickness: "weight"
+                        
+                    }
+                },
+                arrows: true,
+                initial_cypher: "MATCH p=(:entry_process)-[:spawns]->(:process) MATCH q=(:process)-[:spawns]->(:process)  return p, q"
+                //match q=(:background_process)-[:spawns]->(:background_process) match z=(:background_process)-[:spawns]->(:attack_process) return p, q, z
+            }
+
+            var viz = new NeoVis.default(config);
+            viz.render();
+        }
+    </script>
+    <body onload="draw()">
+        <div style="padding: 5px; border: 2px solid black; width: 30%; font-size: 10px;">
+            <h3>Legend:</h3>
+            <p style="color: black; background-color: red; padding: 5px; color:azure;">Attack entry process node</p>
+            <p style="color: black; background-color: #8555ff; padding: 5px;">Attack process nodes</p>
+        </div>
+        <div id="viz"></div>
+    </body>
+</html>

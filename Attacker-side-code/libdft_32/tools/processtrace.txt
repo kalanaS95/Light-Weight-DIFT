@@ -1,0 +1,20 @@
+ 1592 17420 kalana   kalana   /bin/bash /home/kalana/Desktop/Multi-host-screen-grab/attack-script.sh
+
+17420 17429 kalana   kalana   /bin/bash /home/kalana/Desktop/Multi-host-screen-grab/attack-script.sh
+
+17420 17429 kalana   kalana   sshpass -p zzzzzzzzz scp screengrab.zip kalana@172.25.1.5:/tmp
+
+17429 17439 kalana   kalana   sshpass -p zzzzzzzzz scp screengrab.zip kalana@172.25.1.5:/tmp
+
+17429 17439 kalana   kalana   scp screengrab.zip kalana@172.25.1.5:/tmp
+
+17439 17452 kalana   kalana   scp screengrab.zip kalana@172.25.1.5:/tmp
+
+ 1592 17420 kalana   kalana   /bin/bash /home/kalana/Desktop/Multi-host-screen-grab/attack-script.sh
+
+17420 17462 kalana   kalana   /bin/bash /home/kalana/Desktop/Multi-host-screen-grab/attack-script.sh
+
+17420 17462 kalana   kalana   sshpass -p zzzzzzzzz ssh -t kalana@172.25.1.5 cd /tmp; unzip screengrab.zip; cd screengrab; sudo apt-get install libx11-dev libpng-dev; make clean; make; ./screengrab /home/kalana/Desktop/attack
+
+17462 17469 kalana   kalana   sshpass -p zzzzzzzzz ssh -t kalana@172.25.1.5 cd /tmp; unzip screengrab.zip; cd screengrab; sudo apt-get install libx11-dev libpng-dev; make clean; make; ./screengrab /home/kalana/Desktop/attack
+

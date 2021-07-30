@@ -1,0 +1,2760 @@
+EXEC: PID=24703 CMD=/usr/lib/ConsoleKit/run-seat.d/udev-acl.ck seat_removed 
+FORK: PID=24704 PPID=806 
+EXEC: PID=24704 CMD=/usr/lib/ConsoleKit/ck-collect-session-info --uid 0 --pid 24627 
+FORK: PID=24705 PPID=806 
+EXEC: PID=24705 CMD=/usr/lib/ConsoleKit/run-seat.d/udev-acl.ck seat_added 
+FORK: PID=24706 PPID=806 
+EXEC: PID=24706 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_added 
+EXEC: PID=24706 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_added 
+FORK: PID=24707 PPID=24627 
+EXEC: PID=24707 CMD=sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin /bin/run-parts --lsbsysinit /etc/update-motd.d > /var/run/motd.new 
+FORK: PID=24708 PPID=24707 
+EXEC: PID=24708 CMD=/usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin /bin/run-parts --lsbsysinit /etc/update-motd.d 
+EXEC: PID=24708 CMD=/bin/run-parts --lsbsysinit /etc/update-motd.d 
+FORK: PID=24709 PPID=24708 
+EXEC: PID=24709 CMD=/bin/sh /etc/update-motd.d/00-header 
+EXEC: PID=24709 CMD=/bin/sh /etc/update-motd.d/00-header 
+FORK: PID=24710 PPID=24709 
+EXEC: PID=24710 CMD=uname -a 
+FORK: PID=24711 PPID=24709 
+EXEC: PID=24711 CMD=/usr/bin/python /usr/bin/lsb_release -s -d 
+EXEC: PID=24711 CMD=/usr/bin/python /usr/bin/lsb_release -s -d 
+FORK: PID=24712 PPID=24708 
+EXEC: PID=24712 CMD=/bin/sh /etc/update-motd.d/10-help-text 
+EXEC: PID=24712 CMD=/bin/sh /etc/update-motd.d/10-help-text 
+FORK: PID=24713 PPID=24712 
+FORK: PID=24714 PPID=24712 
+EXEC: PID=24714 CMD=grep -qs \-server 
+EXEC: PID=24713 CMD=uname -r 
+FORK: PID=24715 PPID=24708 
+EXEC: PID=24715 CMD=/bin/sh /etc/update-motd.d/20-cpu-checker 
+EXEC: PID=24715 CMD=/bin/sh /etc/update-motd.d/20-cpu-checker 
+EXEC: PID=24715 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-cpu-checker 
+EXEC: PID=24715 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-cpu-checker 
+FORK: PID=24716 PPID=24715 
+EXEC: PID=24716 CMD=/bin/sh /usr/bin/check-bios-nx 
+EXEC: PID=24716 CMD=/bin/sh /usr/bin/check-bios-nx 
+FORK: PID=24717 PPID=24716 
+EXEC: PID=24717 CMD=getopt -o h --long verbose,help -n check-bios-nx -- 
+FORK: PID=24718 PPID=24716 
+EXEC: PID=24718 CMD=awk -f - /proc/cpuinfo 
+FORK: PID=24719 PPID=24718 
+EXEC: PID=24719 CMD=sh -c uname -m 
+FORK: PID=24720 PPID=24719 
+EXEC: PID=24720 CMD=uname -m 
+FORK: PID=24721 PPID=24708 
+EXEC: PID=24721 CMD=/bin/sh /etc/update-motd.d/90-updates-available 
+EXEC: PID=24721 CMD=/bin/sh /etc/update-motd.d/90-updates-available 
+EXEC: PID=24721 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-updates-available 
+EXEC: PID=24721 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-updates-available 
+FORK: PID=24722 PPID=24721 
+EXEC: PID=24722 CMD=stat -c %Y /var/lib/update-notifier/updates-available 
+FORK: PID=24723 PPID=24721 
+EXEC: PID=24723 CMD=apt-config shell StateDir Dir::State 
+FORK: PID=24724 PPID=24721 
+EXEC: PID=24724 CMD=apt-config shell ListDir Dir::State::Lists 
+FORK: PID=24725 PPID=24721 
+EXEC: PID=24725 CMD=stat -c %Y /var/lib/apt//lists//lock 
+FORK: PID=24726 PPID=24721 
+EXEC: PID=24726 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_Release 
+FORK: PID=24727 PPID=24721 
+EXEC: PID=24727 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_Release.gpg 
+FORK: PID=24728 PPID=24721 
+EXEC: PID=24728 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_main_binary-i386_Packages 
+FORK: PID=24729 PPID=24721 
+EXEC: PID=24729 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_main_source_Sources 
+FORK: PID=24730 PPID=24721 
+EXEC: PID=24730 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_multiverse_binary-i386_Packages 
+FORK: PID=24731 PPID=24721 
+EXEC: PID=24731 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_multiverse_source_Sources 
+FORK: PID=24732 PPID=24721 
+EXEC: PID=24732 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_restricted_binary-i386_Packages 
+FORK: PID=24733 PPID=24721 
+EXEC: PID=24733 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_restricted_source_Sources 
+FORK: PID=24734 PPID=24721 
+EXEC: PID=24734 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_universe_binary-i386_Packages 
+FORK: PID=24735 PPID=24721 
+EXEC: PID=24735 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_universe_source_Sources 
+FORK: PID=24736 PPID=24721 
+EXEC: PID=24736 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_Release 
+FORK: PID=24737 PPID=24721 
+EXEC: PID=24737 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_Release.gpg 
+FORK: PID=24738 PPID=24721 
+EXEC: PID=24738 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_main_binary-i386_Packages 
+FORK: PID=24739 PPID=24721 
+EXEC: PID=24739 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_main_source_Sources 
+FORK: PID=24740 PPID=24721 
+EXEC: PID=24740 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_multiverse_binary-i386_Packages 
+FORK: PID=24741 PPID=24721 
+EXEC: PID=24741 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_multiverse_source_Sources 
+FORK: PID=24742 PPID=24721 
+EXEC: PID=24742 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_restricted_binary-i386_Packages 
+FORK: PID=24743 PPID=24721 
+EXEC: PID=24743 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_restricted_source_Sources 
+FORK: PID=24744 PPID=24721 
+EXEC: PID=24744 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_universe_binary-i386_Packages 
+FORK: PID=24745 PPID=24721 
+EXEC: PID=24745 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_universe_source_Sources 
+FORK: PID=24746 PPID=24721 
+EXEC: PID=24746 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_Release 
+FORK: PID=24747 PPID=24721 
+EXEC: PID=24747 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=24748 PPID=24721 
+EXEC: PID=24748 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=24749 PPID=24721 
+EXEC: PID=24749 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_main_source_Sources 
+FORK: PID=24750 PPID=24721 
+EXEC: PID=24750 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_multiverse_binary-i386_Packages 
+FORK: PID=24751 PPID=24721 
+EXEC: PID=24751 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_multiverse_source_Sources 
+FORK: PID=24752 PPID=24721 
+EXEC: PID=24752 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_restricted_binary-i386_Packages 
+FORK: PID=24753 PPID=24721 
+EXEC: PID=24753 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_restricted_source_Sources 
+FORK: PID=24754 PPID=24721 
+EXEC: PID=24754 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_universe_binary-i386_Packages 
+FORK: PID=24755 PPID=24721 
+EXEC: PID=24755 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_universe_source_Sources 
+FORK: PID=24756 PPID=24721 
+EXEC: PID=24756 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_Release 
+FORK: PID=24757 PPID=24721 
+EXEC: PID=24757 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=24758 PPID=24721 
+EXEC: PID=24758 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=24759 PPID=24721 
+EXEC: PID=24759 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_Release 
+FORK: PID=24760 PPID=24721 
+EXEC: PID=24760 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=24761 PPID=24721 
+EXEC: PID=24761 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=24762 PPID=24721 
+EXEC: PID=24762 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_Release 
+FORK: PID=24763 PPID=24721 
+EXEC: PID=24763 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=24764 PPID=24721 
+EXEC: PID=24764 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=24765 PPID=24721 
+EXEC: PID=24765 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_Release 
+FORK: PID=24766 PPID=24721 
+EXEC: PID=24766 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=24767 PPID=24721 
+EXEC: PID=24767 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=24768 PPID=24721 
+EXEC: PID=24768 CMD=apt-config shell EtcDir Dir::Etc 
+FORK: PID=24769 PPID=24721 
+EXEC: PID=24769 CMD=apt-config shell SourceList Dir::Etc::sourcelist 
+FORK: PID=24770 PPID=24721 
+EXEC: PID=24770 CMD=stat -c %Y /etc/apt//sources.list 
+FORK: PID=24771 PPID=24721 
+EXEC: PID=24771 CMD=cat /var/lib/update-notifier/updates-available 
+FORK: PID=24772 PPID=24708 
+EXEC: PID=24772 CMD=/bin/sh /etc/update-motd.d/91-release-upgrade 
+EXEC: PID=24772 CMD=/bin/sh /etc/update-motd.d/91-release-upgrade 
+EXEC: PID=24772 CMD=/bin/sh -e /usr/lib/update-manager/release-upgrade-motd 
+EXEC: PID=24772 CMD=/bin/sh -e /usr/lib/update-manager/release-upgrade-motd 
+FORK: PID=24773 PPID=24772 
+EXEC: PID=24773 CMD=cat /var/lib/update-notifier/release-upgrade-available 
+FORK: PID=24774 PPID=24708 
+EXEC: PID=24774 CMD=/bin/sh /etc/update-motd.d/98-reboot-required 
+EXEC: PID=24774 CMD=/bin/sh /etc/update-motd.d/98-reboot-required 
+EXEC: PID=24774 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-reboot-required 
+EXEC: PID=24774 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-reboot-required 
+FORK: PID=24775 PPID=24708 
+EXEC: PID=24775 CMD=/bin/sh /etc/update-motd.d/99-footer 
+EXEC: PID=24775 CMD=/bin/sh /etc/update-motd.d/99-footer 
+FORK: PID=24776 PPID=24627 
+FORK: PID=24777 PPID=24776 
+EXEC: PID=24777 CMD=bash -c scp -t /tmp 
+EXEC: PID=24777 CMD=scp -t /tmp 
+FORK: PID=24778 PPID=806 
+EXEC: PID=24778 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_removed 
+EXEC: PID=24778 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_removed 
+FORK: PID=24779 PPID=806 
+FORK: PID=24780 PPID=639 
+EXEC: PID=24780 CMD=/usr/sbin/sshd -D -R 
+EXEC: PID=24779 CMD=/usr/lib/ConsoleKit/run-seat.d/udev-acl.ck seat_removed 
+FORK: PID=24781 PPID=24780 
+FORK: PID=24782 PPID=806 
+EXEC: PID=24782 CMD=/usr/lib/ConsoleKit/ck-collect-session-info --uid 0 --pid 24780 
+FORK: PID=24783 PPID=806 
+EXEC: PID=24783 CMD=/usr/lib/ConsoleKit/run-seat.d/udev-acl.ck seat_added 
+FORK: PID=24784 PPID=806 
+EXEC: PID=24784 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_added 
+EXEC: PID=24784 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_added 
+FORK: PID=24785 PPID=24780 
+EXEC: PID=24785 CMD=sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin /bin/run-parts --lsbsysinit /etc/update-motd.d > /var/run/motd.new 
+FORK: PID=24786 PPID=24785 
+EXEC: PID=24786 CMD=/usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin /bin/run-parts --lsbsysinit /etc/update-motd.d 
+EXEC: PID=24786 CMD=/bin/run-parts --lsbsysinit /etc/update-motd.d 
+FORK: PID=24787 PPID=24786 
+EXEC: PID=24787 CMD=/bin/sh /etc/update-motd.d/00-header 
+EXEC: PID=24787 CMD=/bin/sh /etc/update-motd.d/00-header 
+FORK: PID=24788 PPID=24787 
+EXEC: PID=24788 CMD=uname -a 
+FORK: PID=24789 PPID=24787 
+EXEC: PID=24789 CMD=/usr/bin/python /usr/bin/lsb_release -s -d 
+EXEC: PID=24789 CMD=/usr/bin/python /usr/bin/lsb_release -s -d 
+FORK: PID=24790 PPID=24786 
+EXEC: PID=24790 CMD=/bin/sh /etc/update-motd.d/10-help-text 
+EXEC: PID=24790 CMD=/bin/sh /etc/update-motd.d/10-help-text 
+FORK: PID=24791 PPID=24790 
+FORK: PID=24792 PPID=24790 
+EXEC: PID=24792 CMD=grep -qs \-server 
+EXEC: PID=24791 CMD=uname -r 
+FORK: PID=24793 PPID=24786 
+EXEC: PID=24793 CMD=/bin/sh /etc/update-motd.d/20-cpu-checker 
+EXEC: PID=24793 CMD=/bin/sh /etc/update-motd.d/20-cpu-checker 
+EXEC: PID=24793 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-cpu-checker 
+EXEC: PID=24793 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-cpu-checker 
+FORK: PID=24794 PPID=24793 
+EXEC: PID=24794 CMD=/bin/sh /usr/bin/check-bios-nx 
+EXEC: PID=24794 CMD=/bin/sh /usr/bin/check-bios-nx 
+FORK: PID=24795 PPID=24794 
+EXEC: PID=24795 CMD=getopt -o h --long verbose,help -n check-bios-nx -- 
+FORK: PID=24796 PPID=24794 
+EXEC: PID=24796 CMD=awk -f - /proc/cpuinfo 
+FORK: PID=24797 PPID=24796 
+EXEC: PID=24797 CMD=sh -c uname -m 
+FORK: PID=24798 PPID=24797 
+EXEC: PID=24798 CMD=uname -m 
+FORK: PID=24799 PPID=24786 
+EXEC: PID=24799 CMD=/bin/sh /etc/update-motd.d/90-updates-available 
+EXEC: PID=24799 CMD=/bin/sh /etc/update-motd.d/90-updates-available 
+EXEC: PID=24799 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-updates-available 
+EXEC: PID=24799 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-updates-available 
+FORK: PID=24800 PPID=24799 
+EXEC: PID=24800 CMD=stat -c %Y /var/lib/update-notifier/updates-available 
+FORK: PID=24801 PPID=24799 
+EXEC: PID=24801 CMD=apt-config shell StateDir Dir::State 
+FORK: PID=24802 PPID=24799 
+EXEC: PID=24802 CMD=apt-config shell ListDir Dir::State::Lists 
+FORK: PID=24803 PPID=24799 
+EXEC: PID=24803 CMD=stat -c %Y /var/lib/apt//lists//lock 
+FORK: PID=24804 PPID=24799 
+EXEC: PID=24804 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_Release 
+FORK: PID=24805 PPID=24799 
+EXEC: PID=24805 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_Release.gpg 
+FORK: PID=24806 PPID=24799 
+EXEC: PID=24806 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_main_binary-i386_Packages 
+FORK: PID=24807 PPID=24799 
+EXEC: PID=24807 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_main_source_Sources 
+FORK: PID=24808 PPID=24799 
+EXEC: PID=24808 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_multiverse_binary-i386_Packages 
+FORK: PID=24809 PPID=24799 
+EXEC: PID=24809 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_multiverse_source_Sources 
+FORK: PID=24810 PPID=24799 
+EXEC: PID=24810 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_restricted_binary-i386_Packages 
+FORK: PID=24811 PPID=24799 
+EXEC: PID=24811 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_restricted_source_Sources 
+FORK: PID=24812 PPID=24799 
+EXEC: PID=24812 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_universe_binary-i386_Packages 
+FORK: PID=24813 PPID=24799 
+EXEC: PID=24813 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_universe_source_Sources 
+FORK: PID=24814 PPID=24799 
+EXEC: PID=24814 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_Release 
+FORK: PID=24815 PPID=24799 
+EXEC: PID=24815 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_Release.gpg 
+FORK: PID=24816 PPID=24799 
+EXEC: PID=24816 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_main_binary-i386_Packages 
+FORK: PID=24817 PPID=24799 
+EXEC: PID=24817 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_main_source_Sources 
+FORK: PID=24818 PPID=24799 
+EXEC: PID=24818 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_multiverse_binary-i386_Packages 
+FORK: PID=24819 PPID=24799 
+EXEC: PID=24819 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_multiverse_source_Sources 
+FORK: PID=24820 PPID=24799 
+EXEC: PID=24820 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_restricted_binary-i386_Packages 
+FORK: PID=24821 PPID=24799 
+EXEC: PID=24821 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_restricted_source_Sources 
+FORK: PID=24822 PPID=24799 
+EXEC: PID=24822 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_universe_binary-i386_Packages 
+FORK: PID=24823 PPID=24799 
+EXEC: PID=24823 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_universe_source_Sources 
+FORK: PID=24824 PPID=24799 
+EXEC: PID=24824 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_Release 
+FORK: PID=24825 PPID=24799 
+EXEC: PID=24825 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=24826 PPID=24799 
+EXEC: PID=24826 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=24827 PPID=24799 
+EXEC: PID=24827 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_main_source_Sources 
+FORK: PID=24828 PPID=24799 
+EXEC: PID=24828 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_multiverse_binary-i386_Packages 
+FORK: PID=24829 PPID=24799 
+EXEC: PID=24829 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_multiverse_source_Sources 
+FORK: PID=24830 PPID=24799 
+EXEC: PID=24830 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_restricted_binary-i386_Packages 
+FORK: PID=24831 PPID=24799 
+EXEC: PID=24831 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_restricted_source_Sources 
+FORK: PID=24832 PPID=24799 
+EXEC: PID=24832 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_universe_binary-i386_Packages 
+FORK: PID=24833 PPID=24799 
+EXEC: PID=24833 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_universe_source_Sources 
+FORK: PID=24834 PPID=24799 
+EXEC: PID=24834 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_Release 
+FORK: PID=24835 PPID=24799 
+EXEC: PID=24835 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=24836 PPID=24799 
+EXEC: PID=24836 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=24837 PPID=24799 
+EXEC: PID=24837 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_Release 
+FORK: PID=24838 PPID=24799 
+EXEC: PID=24838 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=24839 PPID=24799 
+EXEC: PID=24839 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=24840 PPID=24799 
+EXEC: PID=24840 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_Release 
+FORK: PID=24841 PPID=24799 
+EXEC: PID=24841 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=24842 PPID=24799 
+EXEC: PID=24842 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=24843 PPID=24799 
+EXEC: PID=24843 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_Release 
+FORK: PID=24844 PPID=24799 
+EXEC: PID=24844 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=24845 PPID=24799 
+EXEC: PID=24845 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=24846 PPID=24799 
+EXEC: PID=24846 CMD=apt-config shell EtcDir Dir::Etc 
+FORK: PID=24847 PPID=24799 
+EXEC: PID=24847 CMD=apt-config shell SourceList Dir::Etc::sourcelist 
+FORK: PID=24848 PPID=24799 
+EXEC: PID=24848 CMD=stat -c %Y /etc/apt//sources.list 
+FORK: PID=24849 PPID=24799 
+EXEC: PID=24849 CMD=cat /var/lib/update-notifier/updates-available 
+FORK: PID=24850 PPID=24786 
+EXEC: PID=24850 CMD=/bin/sh /etc/update-motd.d/91-release-upgrade 
+EXEC: PID=24850 CMD=/bin/sh /etc/update-motd.d/91-release-upgrade 
+EXEC: PID=24850 CMD=/bin/sh -e /usr/lib/update-manager/release-upgrade-motd 
+EXEC: PID=24850 CMD=/bin/sh -e /usr/lib/update-manager/release-upgrade-motd 
+FORK: PID=24851 PPID=24850 
+EXEC: PID=24851 CMD=cat /var/lib/update-notifier/release-upgrade-available 
+FORK: PID=24852 PPID=24786 
+EXEC: PID=24852 CMD=/bin/sh /etc/update-motd.d/98-reboot-required 
+EXEC: PID=24852 CMD=/bin/sh /etc/update-motd.d/98-reboot-required 
+EXEC: PID=24852 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-reboot-required 
+EXEC: PID=24852 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-reboot-required 
+FORK: PID=24853 PPID=24786 
+EXEC: PID=24853 CMD=/bin/sh /etc/update-motd.d/99-footer 
+EXEC: PID=24853 CMD=/bin/sh /etc/update-motd.d/99-footer 
+FORK: PID=24854 PPID=24780 
+FORK: PID=24855 PPID=24854 
+EXEC: PID=24855 CMD=bash -c cd /tmp; unzip screengrab.zip; cd screengrab; sudo apt-get install libx11-dev libpng-dev; make clean; make; ./screengrab /home/kalana/Desktop/attack 
+FORK: PID=24856 PPID=24855 
+EXEC: PID=24856 CMD=unzip screengrab.zip 
+FORK: PID=24857 PPID=24855 
+EXEC: PID=24857 CMD=sudo apt-get install libx11-dev libpng-dev 
+EXEC: PID=24857 CMD=apt-get install libx11-dev libpng-dev 
+FORK: PID=24858 PPID=24855 
+EXEC: PID=24858 CMD=make clean 
+FORK: PID=24859 PPID=24858 
+EXEC: PID=24859 CMD=rm screengrab implant implant-1 implant-send sock_server 
+FORK: PID=24860 PPID=24855 
+EXEC: PID=24860 CMD=make 
+FORK: PID=24861 PPID=24860 
+EXEC: PID=24861 CMD=gcc -O3 screengrab.c -o screengrab -lpng -lm -lX11 
+FORK: PID=24862 PPID=24861 
+EXEC: PID=24862 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/cc1 -quiet screengrab.c -D_FORTIFY_SOURCE=2 -quiet -dumpbase screengrab.c -mtune=generic -march=i486 -auxbase screengrab -O3 -fstack-protector -o /tmp/ccjDzbkD.s 
+FORK: PID=24863 PPID=24861 
+EXEC: PID=24863 CMD=as -Qy -o /tmp/ccuomZZa.o /tmp/ccjDzbkD.s 
+FORK: PID=24864 PPID=24861 
+EXEC: PID=24864 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/collect2 --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o screengrab -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/ccuomZZa.o -lpng -lm -lX11 -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=24865 PPID=24864 
+EXEC: PID=24865 CMD=/usr/bin/ld --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o screengrab -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/ccuomZZa.o -lpng -lm -lX11 -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=24866 PPID=24860 
+EXEC: PID=24866 CMD=gcc -o implant implant-core.c 
+FORK: PID=24867 PPID=24866 
+EXEC: PID=24867 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/cc1 -quiet implant-core.c -D_FORTIFY_SOURCE=2 -quiet -dumpbase implant-core.c -mtune=generic -march=i486 -auxbase implant-core -fstack-protector -o /tmp/ccgbtcTI.s 
+FORK: PID=24868 PPID=24866 
+EXEC: PID=24868 CMD=as -Qy -o /tmp/ccCUhtHg.o /tmp/ccgbtcTI.s 
+FORK: PID=24869 PPID=24866 
+EXEC: PID=24869 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/collect2 --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o implant -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/ccCUhtHg.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=24870 PPID=24869 
+EXEC: PID=24870 CMD=/usr/bin/ld --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o implant -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/ccCUhtHg.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=24871 PPID=24860 
+EXEC: PID=24871 CMD=gcc -o implant-1 implant-core-1.c 
+FORK: PID=24872 PPID=24871 
+EXEC: PID=24872 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/cc1 -quiet implant-core-1.c -D_FORTIFY_SOURCE=2 -quiet -dumpbase implant-core-1.c -mtune=generic -march=i486 -auxbase implant-core-1 -fstack-protector -o /tmp/cc1BhLkH.s 
+FORK: PID=24873 PPID=24871 
+EXEC: PID=24873 CMD=as -Qy -o /tmp/ccj1Jogf.o /tmp/cc1BhLkH.s 
+FORK: PID=24874 PPID=24871 
+EXEC: PID=24874 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/collect2 --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o implant-1 -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/ccj1Jogf.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=24875 PPID=24874 
+EXEC: PID=24875 CMD=/usr/bin/ld --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o implant-1 -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/ccj1Jogf.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=24876 PPID=24860 
+EXEC: PID=24876 CMD=gcc -o implant-send implant-send.c 
+FORK: PID=24877 PPID=24876 
+EXEC: PID=24877 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/cc1 -quiet implant-send.c -D_FORTIFY_SOURCE=2 -quiet -dumpbase implant-send.c -mtune=generic -march=i486 -auxbase implant-send -fstack-protector -o /tmp/ccnV8KsK.s 
+FORK: PID=24878 PPID=24876 
+EXEC: PID=24878 CMD=as -Qy -o /tmp/cckyrewi.o /tmp/ccnV8KsK.s 
+FORK: PID=24879 PPID=24876 
+EXEC: PID=24879 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/collect2 --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o implant-send -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/cckyrewi.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=24880 PPID=24879 
+EXEC: PID=24880 CMD=/usr/bin/ld --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o implant-send -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/cckyrewi.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=24881 PPID=24860 
+EXEC: PID=24881 CMD=gcc -o sock_server sock_server.c 
+FORK: PID=24882 PPID=24881 
+EXEC: PID=24882 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/cc1 -quiet sock_server.c -D_FORTIFY_SOURCE=2 -quiet -dumpbase sock_server.c -mtune=generic -march=i486 -auxbase sock_server -fstack-protector -o /tmp/ccChWtyM.s 
+FORK: PID=24883 PPID=24881 
+EXEC: PID=24883 CMD=as -Qy -o /tmp/ccIcdkJk.o /tmp/ccChWtyM.s 
+FORK: PID=24884 PPID=24881 
+EXEC: PID=24884 CMD=/usr/lib/gcc/i486-linux-gnu/4.4.3/collect2 --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o sock_server -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/ccIcdkJk.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=24885 PPID=24884 
+EXEC: PID=24885 CMD=/usr/bin/ld --build-id --eh-frame-hdr -m elf_i386 --hash-style=both -dynamic-linker /lib/ld-linux.so.2 -o sock_server -z relro /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crt1.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbegin.o -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3 -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/i486-linux-gnu/4.4.3/../../.. -L/usr/lib/i486-linux-gnu /tmp/ccIcdkJk.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i486-linux-gnu/4.4.3/crtend.o /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o 
+FORK: PID=24886 PPID=24855 
+EXEC: PID=24886 CMD=./screengrab /home/kalana/Desktop/attack 
+FORK: PID=24887 PPID=1386 
+EXEC: PID=24887 CMD=
+FORK: PID=24888 PPID=1386 
+FORK: PID=24889 PPID=1386 
+FORK: PID=24890 PPID=1316 
+FORK: PID=24891 PPID=1316 
+FORK: PID=24892 PPID=1316 
+FORK: PID=24893 PPID=1316 
+FORK: PID=24894 PPID=806 
+EXEC: PID=24894 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_removed 
+EXEC: PID=24894 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_removed 
+FORK: PID=24895 PPID=806 
+FORK: PID=24896 PPID=639 
+EXEC: PID=24896 CMD=/usr/sbin/sshd -D -R 
+EXEC: PID=24895 CMD=/usr/lib/ConsoleKit/run-seat.d/udev-acl.ck seat_removed 
+FORK: PID=24897 PPID=24896 
+FORK: PID=24898 PPID=806 
+EXEC: PID=24898 CMD=/usr/lib/ConsoleKit/ck-collect-session-info --uid 0 --pid 24896 
+FORK: PID=24899 PPID=806 
+EXEC: PID=24899 CMD=/usr/lib/ConsoleKit/run-seat.d/udev-acl.ck seat_added 
+FORK: PID=24900 PPID=806 
+EXEC: PID=24900 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_added 
+EXEC: PID=24900 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_added 
+FORK: PID=24901 PPID=24896 
+EXEC: PID=24901 CMD=sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin /bin/run-parts --lsbsysinit /etc/update-motd.d > /var/run/motd.new 
+FORK: PID=24902 PPID=24901 
+EXEC: PID=24902 CMD=/usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin /bin/run-parts --lsbsysinit /etc/update-motd.d 
+EXEC: PID=24902 CMD=/bin/run-parts --lsbsysinit /etc/update-motd.d 
+FORK: PID=24903 PPID=24902 
+EXEC: PID=24903 CMD=/bin/sh /etc/update-motd.d/00-header 
+EXEC: PID=24903 CMD=/bin/sh /etc/update-motd.d/00-header 
+FORK: PID=24904 PPID=24903 
+EXEC: PID=24904 CMD=uname -a 
+FORK: PID=24905 PPID=24903 
+EXEC: PID=24905 CMD=/usr/bin/python /usr/bin/lsb_release -s -d 
+EXEC: PID=24905 CMD=/usr/bin/python /usr/bin/lsb_release -s -d 
+FORK: PID=24906 PPID=24902 
+EXEC: PID=24906 CMD=/bin/sh /etc/update-motd.d/10-help-text 
+EXEC: PID=24906 CMD=/bin/sh /etc/update-motd.d/10-help-text 
+FORK: PID=24907 PPID=24906 
+FORK: PID=24908 PPID=24906 
+EXEC: PID=24908 CMD=grep -qs \-server 
+EXEC: PID=24907 CMD=uname -r 
+FORK: PID=24909 PPID=24902 
+EXEC: PID=24909 CMD=/bin/sh /etc/update-motd.d/20-cpu-checker 
+EXEC: PID=24909 CMD=/bin/sh /etc/update-motd.d/20-cpu-checker 
+EXEC: PID=24909 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-cpu-checker 
+EXEC: PID=24909 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-cpu-checker 
+FORK: PID=24910 PPID=24909 
+EXEC: PID=24910 CMD=/bin/sh /usr/bin/check-bios-nx 
+EXEC: PID=24910 CMD=/bin/sh /usr/bin/check-bios-nx 
+FORK: PID=24911 PPID=24910 
+EXEC: PID=24911 CMD=getopt -o h --long verbose,help -n check-bios-nx -- 
+FORK: PID=24912 PPID=24910 
+EXEC: PID=24912 CMD=awk -f - /proc/cpuinfo 
+FORK: PID=24913 PPID=24912 
+EXEC: PID=24913 CMD=sh -c uname -m 
+FORK: PID=24914 PPID=24913 
+EXEC: PID=24914 CMD=uname -m 
+FORK: PID=24915 PPID=24902 
+EXEC: PID=24915 CMD=/bin/sh /etc/update-motd.d/90-updates-available 
+EXEC: PID=24915 CMD=/bin/sh /etc/update-motd.d/90-updates-available 
+EXEC: PID=24915 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-updates-available 
+EXEC: PID=24915 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-updates-available 
+FORK: PID=24916 PPID=24915 
+EXEC: PID=24916 CMD=stat -c %Y /var/lib/update-notifier/updates-available 
+FORK: PID=24917 PPID=24915 
+EXEC: PID=24917 CMD=apt-config shell StateDir Dir::State 
+FORK: PID=24918 PPID=24915 
+EXEC: PID=24918 CMD=apt-config shell ListDir Dir::State::Lists 
+FORK: PID=24919 PPID=24915 
+EXEC: PID=24919 CMD=stat -c %Y /var/lib/apt//lists//lock 
+FORK: PID=24920 PPID=24915 
+EXEC: PID=24920 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_Release 
+FORK: PID=24921 PPID=24915 
+EXEC: PID=24921 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_Release.gpg 
+FORK: PID=24922 PPID=24915 
+EXEC: PID=24922 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_main_binary-i386_Packages 
+FORK: PID=24923 PPID=24915 
+EXEC: PID=24923 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_main_source_Sources 
+FORK: PID=24924 PPID=24915 
+EXEC: PID=24924 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_multiverse_binary-i386_Packages 
+FORK: PID=24925 PPID=24915 
+EXEC: PID=24925 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_multiverse_source_Sources 
+FORK: PID=24926 PPID=24915 
+EXEC: PID=24926 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_restricted_binary-i386_Packages 
+FORK: PID=24927 PPID=24915 
+EXEC: PID=24927 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_restricted_source_Sources 
+FORK: PID=24928 PPID=24915 
+EXEC: PID=24928 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_universe_binary-i386_Packages 
+FORK: PID=24929 PPID=24915 
+EXEC: PID=24929 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-security_universe_source_Sources 
+FORK: PID=24930 PPID=24915 
+EXEC: PID=24930 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_Release 
+FORK: PID=24931 PPID=24915 
+EXEC: PID=24931 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_Release.gpg 
+FORK: PID=24932 PPID=24915 
+EXEC: PID=24932 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_main_binary-i386_Packages 
+FORK: PID=24933 PPID=24915 
+EXEC: PID=24933 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_main_source_Sources 
+FORK: PID=24934 PPID=24915 
+EXEC: PID=24934 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_multiverse_binary-i386_Packages 
+FORK: PID=24935 PPID=24915 
+EXEC: PID=24935 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_multiverse_source_Sources 
+FORK: PID=24936 PPID=24915 
+EXEC: PID=24936 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_restricted_binary-i386_Packages 
+FORK: PID=24937 PPID=24915 
+EXEC: PID=24937 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_restricted_source_Sources 
+FORK: PID=24938 PPID=24915 
+EXEC: PID=24938 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_universe_binary-i386_Packages 
+FORK: PID=24939 PPID=24915 
+EXEC: PID=24939 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid-updates_universe_source_Sources 
+FORK: PID=24940 PPID=24915 
+EXEC: PID=24940 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_Release 
+FORK: PID=24941 PPID=24915 
+EXEC: PID=24941 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=24942 PPID=24915 
+EXEC: PID=24942 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=24943 PPID=24915 
+EXEC: PID=24943 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_main_source_Sources 
+FORK: PID=24944 PPID=24915 
+EXEC: PID=24944 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_multiverse_binary-i386_Packages 
+FORK: PID=24945 PPID=24915 
+EXEC: PID=24945 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_multiverse_source_Sources 
+FORK: PID=24946 PPID=24915 
+EXEC: PID=24946 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_restricted_binary-i386_Packages 
+FORK: PID=24947 PPID=24915 
+EXEC: PID=24947 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_restricted_source_Sources 
+FORK: PID=24948 PPID=24915 
+EXEC: PID=24948 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_universe_binary-i386_Packages 
+FORK: PID=24949 PPID=24915 
+EXEC: PID=24949 CMD=stat -c %Y /var/lib/apt//lists//old-releases.ubuntu.com_ubuntu_dists_lucid_universe_source_Sources 
+FORK: PID=24950 PPID=24915 
+EXEC: PID=24950 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_Release 
+FORK: PID=24951 PPID=24915 
+EXEC: PID=24951 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=24952 PPID=24915 
+EXEC: PID=24952 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_git-core_ppa_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=24953 PPID=24915 
+EXEC: PID=24953 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_Release 
+FORK: PID=24954 PPID=24915 
+EXEC: PID=24954 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=24955 PPID=24915 
+EXEC: PID=24955 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_ubuntu-mozilla-security_ppa_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=24956 PPID=24915 
+EXEC: PID=24956 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_Release 
+FORK: PID=24957 PPID=24915 
+EXEC: PID=24957 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=24958 PPID=24915 
+EXEC: PID=24958 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-2_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=24959 PPID=24915 
+EXEC: PID=24959 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_Release 
+FORK: PID=24960 PPID=24915 
+EXEC: PID=24960 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_Release.gpg 
+FORK: PID=24961 PPID=24915 
+EXEC: PID=24961 CMD=stat -c %Y /var/lib/apt//lists//ppa.launchpad.net_webupd8team_sublime-text-3_ubuntu_dists_lucid_main_binary-i386_Packages 
+FORK: PID=24962 PPID=24915 
+EXEC: PID=24962 CMD=apt-config shell EtcDir Dir::Etc 
+FORK: PID=24963 PPID=24915 
+EXEC: PID=24963 CMD=apt-config shell SourceList Dir::Etc::sourcelist 
+FORK: PID=24964 PPID=24915 
+EXEC: PID=24964 CMD=stat -c %Y /etc/apt//sources.list 
+FORK: PID=24965 PPID=24915 
+EXEC: PID=24965 CMD=cat /var/lib/update-notifier/updates-available 
+FORK: PID=24966 PPID=24902 
+EXEC: PID=24966 CMD=/bin/sh /etc/update-motd.d/91-release-upgrade 
+EXEC: PID=24966 CMD=/bin/sh /etc/update-motd.d/91-release-upgrade 
+EXEC: PID=24966 CMD=/bin/sh -e /usr/lib/update-manager/release-upgrade-motd 
+EXEC: PID=24966 CMD=/bin/sh -e /usr/lib/update-manager/release-upgrade-motd 
+FORK: PID=24967 PPID=24966 
+EXEC: PID=24967 CMD=cat /var/lib/update-notifier/release-upgrade-available 
+FORK: PID=24968 PPID=24902 
+EXEC: PID=24968 CMD=/bin/sh /etc/update-motd.d/98-reboot-required 
+EXEC: PID=24968 CMD=/bin/sh /etc/update-motd.d/98-reboot-required 
+EXEC: PID=24968 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-reboot-required 
+EXEC: PID=24968 CMD=/bin/sh -e /usr/lib/update-notifier/update-motd-reboot-required 
+FORK: PID=24969 PPID=24902 
+EXEC: PID=24969 CMD=/bin/sh /etc/update-motd.d/99-footer 
+EXEC: PID=24969 CMD=/bin/sh /etc/update-motd.d/99-footer 
+FORK: PID=24970 PPID=24896 
+FORK: PID=24971 PPID=24970 
+EXEC: PID=24971 CMD=bash -c sleep 20; pkill -SIGINT logger 
+FORK: PID=24972 PPID=24971 
+EXEC: PID=24972 CMD=sleep 20 
+FORK: PID=24973 PPID=1316 
+FORK: PID=24974 PPID=1316 
+FORK: PID=24975 PPID=1316 
+FORK: PID=24976 PPID=1386 
+EXEC: PID=24976 CMD=
+FORK: PID=24977 PPID=1386 
+FORK: PID=24978 PPID=1386 
+FORK: PID=24979 PPID=1386 
+EXEC: PID=24979 CMD=
+FORK: PID=24980 PPID=1386 
+FORK: PID=24981 PPID=1386 
+FORK: PID=24982 PPID=1386 
+EXEC: PID=24982 CMD=
+FORK: PID=24983 PPID=1386 
+FORK: PID=24984 PPID=1386 
+FORK: PID=24985 PPID=1386 
+EXEC: PID=24985 CMD=
+FORK: PID=24986 PPID=1386 
+FORK: PID=24987 PPID=1386 
+FORK: PID=24988 PPID=24971 
+EXEC: PID=24988 CMD=pkill -SIGINT logger 
+FORK: PID=24989 PPID=806 
+EXEC: PID=24989 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_removed 
+EXEC: PID=24989 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_removed 
+FORK: PID=24990 PPID=806 
+EXEC: PID=24990 CMD=/usr/lib/ConsoleKit/run-seat.d/udev-acl.ck seat_removed 
+FORK: PID=24991 PPID=1 
+FORK: PID=24992 PPID=1386 
+EXEC: PID=24992 CMD=
+FORK: PID=24993 PPID=1386 
+FORK: PID=24994 PPID=1386 
+FORK: PID=24995 PPID=1386 
+EXEC: PID=24995 CMD=
+FORK: PID=24996 PPID=1386 
+FORK: PID=24997 PPID=1386 
+FORK: PID=24998 PPID=1386 
+EXEC: PID=24998 CMD=
+FORK: PID=24999 PPID=1386 
+FORK: PID=25000 PPID=1386 
+FORK: PID=25001 PPID=1386 
+EXEC: PID=25001 CMD=
+FORK: PID=25002 PPID=1386 
+FORK: PID=25003 PPID=1386 
+FORK: PID=25004 PPID=1386 
+EXEC: PID=25004 CMD=
+FORK: PID=25005 PPID=1386 
+FORK: PID=25006 PPID=1386 
+FORK: PID=25007 PPID=1386 
+EXEC: PID=25007 CMD=
+FORK: PID=25008 PPID=1386 
+FORK: PID=25009 PPID=1386 
+FORK: PID=25010 PPID=1386 
+EXEC: PID=25010 CMD=
+FORK: PID=25011 PPID=1386 
+FORK: PID=25012 PPID=1386 
+FORK: PID=25013 PPID=1386 
+EXEC: PID=25013 CMD=
+FORK: PID=25014 PPID=1386 
+FORK: PID=25015 PPID=1386 
+FORK: PID=25016 PPID=1386 
+EXEC: PID=25016 CMD=
+FORK: PID=25017 PPID=1386 
+FORK: PID=25018 PPID=1386 
+FORK: PID=25019 PPID=1386 
+EXEC: PID=25019 CMD=
+FORK: PID=25020 PPID=1386 
+FORK: PID=25021 PPID=1386 
+FORK: PID=25022 PPID=1386 
+EXEC: PID=25022 CMD=
+FORK: PID=25023 PPID=1386 
+FORK: PID=25024 PPID=1386 
+FORK: PID=25025 PPID=1386 
+EXEC: PID=25025 CMD=
+FORK: PID=25026 PPID=1386 
+FORK: PID=25027 PPID=1386 
+FORK: PID=25028 PPID=1386 
+EXEC: PID=25028 CMD=
+FORK: PID=25029 PPID=1386 
+FORK: PID=25030 PPID=1386 
+FORK: PID=25031 PPID=1386 
+EXEC: PID=25031 CMD=
+FORK: PID=25032 PPID=1386 
+FORK: PID=25033 PPID=1386 
+FORK: PID=25034 PPID=1386 
+EXEC: PID=25034 CMD=
+FORK: PID=25035 PPID=1386 
+FORK: PID=25036 PPID=1386 
+FORK: PID=25037 PPID=1386 
+EXEC: PID=25037 CMD=
+FORK: PID=25038 PPID=1386 
+FORK: PID=25039 PPID=1386 
+FORK: PID=25040 PPID=1386 
+EXEC: PID=25040 CMD=
+FORK: PID=25041 PPID=1386 
+FORK: PID=25042 PPID=1386 
+FORK: PID=25043 PPID=1386 
+EXEC: PID=25043 CMD=
+FORK: PID=25044 PPID=1386 
+FORK: PID=25045 PPID=1386 
+FORK: PID=25046 PPID=1386 
+EXEC: PID=25046 CMD=
+FORK: PID=25047 PPID=1386 
+FORK: PID=25048 PPID=1386 
+FORK: PID=25049 PPID=1386 
+EXEC: PID=25049 CMD=
+FORK: PID=25050 PPID=1386 
+FORK: PID=25051 PPID=1386 
+FORK: PID=25052 PPID=1386 
+EXEC: PID=25052 CMD=
+FORK: PID=25053 PPID=1386 
+FORK: PID=25054 PPID=1386 
+FORK: PID=25055 PPID=1386 
+EXEC: PID=25055 CMD=
+FORK: PID=25056 PPID=1386 
+FORK: PID=25057 PPID=1386 
+FORK: PID=25058 PPID=1386 
+EXEC: PID=25058 CMD=
+FORK: PID=25059 PPID=1386 
+FORK: PID=25060 PPID=1386 
+FORK: PID=25061 PPID=1386 
+EXEC: PID=25061 CMD=
+FORK: PID=25062 PPID=1386 
+FORK: PID=25063 PPID=1386 
+FORK: PID=25064 PPID=1386 
+EXEC: PID=25064 CMD=
+FORK: PID=25065 PPID=1386 
+FORK: PID=25066 PPID=1386 
+FORK: PID=25067 PPID=1386 
+EXEC: PID=25067 CMD=
+FORK: PID=25068 PPID=1386 
+FORK: PID=25069 PPID=1386 
+FORK: PID=25070 PPID=1386 
+EXEC: PID=25070 CMD=
+FORK: PID=25071 PPID=1386 
+FORK: PID=25072 PPID=1386 
+FORK: PID=25073 PPID=1 
+FORK: PID=25074 PPID=937 
+EXEC: PID=25074 CMD=/usr/lib/NetworkManager/nm-dhcp-client.action 
+FORK: PID=25075 PPID=1 
+FORK: PID=25076 PPID=1386 
+EXEC: PID=25076 CMD=
+FORK: PID=25077 PPID=1386 
+FORK: PID=25078 PPID=1386 
+FORK: PID=25079 PPID=1386 
+EXEC: PID=25079 CMD=
+FORK: PID=25080 PPID=1386 
+FORK: PID=25081 PPID=1386 
+FORK: PID=25082 PPID=1386 
+EXEC: PID=25082 CMD=
+FORK: PID=25083 PPID=1386 
+FORK: PID=25084 PPID=1386 
+FORK: PID=25085 PPID=1386 
+EXEC: PID=25085 CMD=
+FORK: PID=25086 PPID=1386 
+FORK: PID=25087 PPID=1386 
+FORK: PID=25088 PPID=1386 
+EXEC: PID=25088 CMD=
+FORK: PID=25089 PPID=1386 
+FORK: PID=25090 PPID=1386 
+FORK: PID=25091 PPID=1386 
+EXEC: PID=25091 CMD=
+FORK: PID=25092 PPID=1386 
+FORK: PID=25093 PPID=1386 
+FORK: PID=25094 PPID=1386 
+EXEC: PID=25094 CMD=
+FORK: PID=25095 PPID=1386 
+FORK: PID=25096 PPID=1386 
+FORK: PID=25097 PPID=1386 
+EXEC: PID=25097 CMD=
+FORK: PID=25098 PPID=1386 
+FORK: PID=25099 PPID=1386 
+FORK: PID=25100 PPID=1386 
+EXEC: PID=25100 CMD=
+FORK: PID=25101 PPID=1386 
+FORK: PID=25102 PPID=1386 
+FORK: PID=25103 PPID=1386 
+EXEC: PID=25103 CMD=
+FORK: PID=25104 PPID=1386 
+FORK: PID=25105 PPID=1386 
+FORK: PID=25106 PPID=1386 
+EXEC: PID=25106 CMD=
+FORK: PID=25107 PPID=1386 
+FORK: PID=25108 PPID=1386 
+FORK: PID=25109 PPID=1386 
+EXEC: PID=25109 CMD=
+FORK: PID=25110 PPID=1386 
+FORK: PID=25111 PPID=1386 
+FORK: PID=25112 PPID=1386 
+EXEC: PID=25112 CMD=
+FORK: PID=25113 PPID=1386 
+FORK: PID=25114 PPID=1386 
+FORK: PID=25115 PPID=1386 
+EXEC: PID=25115 CMD=
+FORK: PID=25116 PPID=1386 
+FORK: PID=25117 PPID=1386 
+FORK: PID=25118 PPID=1386 
+EXEC: PID=25118 CMD=
+FORK: PID=25119 PPID=1386 
+FORK: PID=25120 PPID=1386 
+FORK: PID=25121 PPID=1386 
+EXEC: PID=25121 CMD=
+FORK: PID=25122 PPID=1386 
+FORK: PID=25123 PPID=1386 
+FORK: PID=25124 PPID=1386 
+EXEC: PID=25124 CMD=
+FORK: PID=25125 PPID=1386 
+FORK: PID=25126 PPID=1386 
+FORK: PID=25127 PPID=1386 
+EXEC: PID=25127 CMD=
+FORK: PID=25128 PPID=1386 
+FORK: PID=25129 PPID=1386 
+FORK: PID=25130 PPID=1386 
+EXEC: PID=25130 CMD=
+FORK: PID=25131 PPID=1386 
+FORK: PID=25132 PPID=1386 
+FORK: PID=25133 PPID=1386 
+EXEC: PID=25133 CMD=
+FORK: PID=25134 PPID=1386 
+FORK: PID=25135 PPID=1386 
+FORK: PID=25136 PPID=1386 
+EXEC: PID=25136 CMD=
+FORK: PID=25137 PPID=1386 
+FORK: PID=25138 PPID=1386 
+FORK: PID=25139 PPID=1386 
+EXEC: PID=25139 CMD=
+FORK: PID=25140 PPID=1386 
+FORK: PID=25141 PPID=1386 
+FORK: PID=25142 PPID=1386 
+EXEC: PID=25142 CMD=
+FORK: PID=25143 PPID=1386 
+FORK: PID=25144 PPID=1386 
+FORK: PID=25145 PPID=1386 
+EXEC: PID=25145 CMD=
+FORK: PID=25146 PPID=1386 
+FORK: PID=25147 PPID=1386 
+FORK: PID=25148 PPID=1386 
+EXEC: PID=25148 CMD=
+FORK: PID=25149 PPID=1386 
+FORK: PID=25150 PPID=1386 
+FORK: PID=25151 PPID=1386 
+EXEC: PID=25151 CMD=
+FORK: PID=25152 PPID=1386 
+FORK: PID=25153 PPID=1386 
+FORK: PID=25154 PPID=1386 
+EXEC: PID=25154 CMD=
+FORK: PID=25155 PPID=1386 
+FORK: PID=25156 PPID=1386 
+FORK: PID=25157 PPID=1386 
+EXEC: PID=25157 CMD=
+FORK: PID=25158 PPID=1386 
+FORK: PID=25159 PPID=1386 
+FORK: PID=25160 PPID=1386 
+EXEC: PID=25160 CMD=
+FORK: PID=25161 PPID=1386 
+FORK: PID=25162 PPID=1386 
+FORK: PID=25163 PPID=1386 
+EXEC: PID=25163 CMD=
+FORK: PID=25164 PPID=1386 
+FORK: PID=25165 PPID=1386 
+FORK: PID=25166 PPID=1386 
+EXEC: PID=25166 CMD=
+FORK: PID=25167 PPID=1386 
+FORK: PID=25168 PPID=1386 
+FORK: PID=25169 PPID=1386 
+EXEC: PID=25169 CMD=
+FORK: PID=25170 PPID=1386 
+FORK: PID=25171 PPID=1386 
+FORK: PID=25172 PPID=1386 
+EXEC: PID=25172 CMD=
+FORK: PID=25173 PPID=1386 
+FORK: PID=25174 PPID=1386 
+FORK: PID=25175 PPID=1386 
+EXEC: PID=25175 CMD=
+FORK: PID=25176 PPID=1386 
+FORK: PID=25177 PPID=1386 
+FORK: PID=25178 PPID=1386 
+EXEC: PID=25178 CMD=
+FORK: PID=25179 PPID=1386 
+FORK: PID=25180 PPID=1386 
+FORK: PID=25181 PPID=1386 
+EXEC: PID=25181 CMD=
+FORK: PID=25182 PPID=1386 
+FORK: PID=25183 PPID=1386 
+FORK: PID=25184 PPID=1386 
+EXEC: PID=25184 CMD=
+FORK: PID=25185 PPID=1386 
+FORK: PID=25186 PPID=1386 
+FORK: PID=25187 PPID=1386 
+EXEC: PID=25187 CMD=
+FORK: PID=25188 PPID=1386 
+FORK: PID=25189 PPID=1386 
+FORK: PID=25190 PPID=1386 
+EXEC: PID=25190 CMD=
+FORK: PID=25191 PPID=1386 
+FORK: PID=25192 PPID=1386 
+FORK: PID=25193 PPID=1316 
+FORK: PID=25194 PPID=1316 
+FORK: PID=25195 PPID=1316 
+FORK: PID=25196 PPID=1386 
+EXEC: PID=25196 CMD=
+FORK: PID=25197 PPID=1386 
+FORK: PID=25198 PPID=1386 
+FORK: PID=25199 PPID=1426 
+FORK: PID=25200 PPID=25199 
+EXEC: PID=25200 CMD=gedit /home/kalana/Desktop/logger/log.txt 
+FORK: PID=25201 PPID=1 
+FORK: PID=25202 PPID=1386 
+EXEC: PID=25202 CMD=
+FORK: PID=25203 PPID=1386 
+FORK: PID=25204 PPID=1386 
+FORK: PID=25205 PPID=1386 
+EXEC: PID=25205 CMD=
+FORK: PID=25206 PPID=1386 
+FORK: PID=25207 PPID=1386 
+FORK: PID=25208 PPID=1386 
+EXEC: PID=25208 CMD=
+FORK: PID=25209 PPID=1386 
+FORK: PID=25210 PPID=1386 
+FORK: PID=25211 PPID=1386 
+EXEC: PID=25211 CMD=
+FORK: PID=25212 PPID=1386 
+FORK: PID=25213 PPID=1386 
+FORK: PID=25214 PPID=1386 
+EXEC: PID=25214 CMD=
+FORK: PID=25215 PPID=1386 
+FORK: PID=25216 PPID=1386 
+FORK: PID=25217 PPID=1386 
+EXEC: PID=25217 CMD=
+FORK: PID=25218 PPID=1386 
+FORK: PID=25219 PPID=1386 
+FORK: PID=25220 PPID=1386 
+EXEC: PID=25220 CMD=
+FORK: PID=25221 PPID=1386 
+FORK: PID=25222 PPID=1386 
+FORK: PID=25223 PPID=1386 
+EXEC: PID=25223 CMD=
+FORK: PID=25224 PPID=1386 
+FORK: PID=25225 PPID=1386 
+FORK: PID=25226 PPID=1386 
+EXEC: PID=25226 CMD=
+FORK: PID=25227 PPID=1386 
+FORK: PID=25228 PPID=1386 
+FORK: PID=25229 PPID=1316 
+FORK: PID=25230 PPID=1386 
+EXEC: PID=25230 CMD=
+FORK: PID=25231 PPID=1386 
+FORK: PID=25232 PPID=1386 
+FORK: PID=25233 PPID=1386 
+EXEC: PID=25233 CMD=
+FORK: PID=25234 PPID=1386 
+FORK: PID=25235 PPID=1386 
+FORK: PID=25236 PPID=1386 
+EXEC: PID=25236 CMD=
+FORK: PID=25237 PPID=1386 
+FORK: PID=25238 PPID=1386 
+FORK: PID=25239 PPID=1386 
+EXEC: PID=25239 CMD=
+FORK: PID=25240 PPID=1386 
+FORK: PID=25241 PPID=1386 
+FORK: PID=25242 PPID=1 
+FORK: PID=25243 PPID=937 
+EXEC: PID=25243 CMD=/usr/lib/NetworkManager/nm-dhcp-client.action 
+FORK: PID=25244 PPID=1 
+FORK: PID=25245 PPID=1386 
+EXEC: PID=25245 CMD=
+FORK: PID=25246 PPID=1386 
+FORK: PID=25247 PPID=1386 
+FORK: PID=25248 PPID=1386 
+EXEC: PID=25248 CMD=
+FORK: PID=25249 PPID=1386 
+FORK: PID=25250 PPID=1386 
+FORK: PID=25251 PPID=1386 
+EXEC: PID=25251 CMD=
+FORK: PID=25252 PPID=1386 
+FORK: PID=25253 PPID=1386 
+FORK: PID=25254 PPID=1386 
+EXEC: PID=25254 CMD=
+FORK: PID=25255 PPID=1386 
+FORK: PID=25256 PPID=1386 
+FORK: PID=25257 PPID=1386 
+EXEC: PID=25257 CMD=
+FORK: PID=25258 PPID=1386 
+FORK: PID=25259 PPID=1386 
+FORK: PID=25260 PPID=1386 
+EXEC: PID=25260 CMD=
+FORK: PID=25261 PPID=1386 
+FORK: PID=25262 PPID=1386 
+FORK: PID=25263 PPID=1386 
+EXEC: PID=25263 CMD=
+FORK: PID=25264 PPID=1386 
+FORK: PID=25265 PPID=1386 
+FORK: PID=25266 PPID=1386 
+EXEC: PID=25266 CMD=
+FORK: PID=25267 PPID=1386 
+FORK: PID=25268 PPID=1386 
+FORK: PID=25269 PPID=1386 
+EXEC: PID=25269 CMD=
+FORK: PID=25270 PPID=1386 
+FORK: PID=25271 PPID=1386 
+FORK: PID=25272 PPID=1386 
+EXEC: PID=25272 CMD=
+FORK: PID=25273 PPID=1386 
+FORK: PID=25274 PPID=1386 
+FORK: PID=25275 PPID=1386 
+EXEC: PID=25275 CMD=
+FORK: PID=25276 PPID=1386 
+FORK: PID=25277 PPID=1386 
+FORK: PID=25278 PPID=1386 
+EXEC: PID=25278 CMD=
+FORK: PID=25279 PPID=1386 
+FORK: PID=25280 PPID=1386 
+FORK: PID=25281 PPID=1386 
+EXEC: PID=25281 CMD=
+FORK: PID=25282 PPID=1386 
+FORK: PID=25283 PPID=1386 
+FORK: PID=25284 PPID=1386 
+EXEC: PID=25284 CMD=
+FORK: PID=25285 PPID=1386 
+FORK: PID=25286 PPID=1386 
+FORK: PID=25287 PPID=1386 
+EXEC: PID=25287 CMD=
+FORK: PID=25288 PPID=1386 
+FORK: PID=25289 PPID=1386 
+FORK: PID=25290 PPID=1386 
+EXEC: PID=25290 CMD=
+FORK: PID=25291 PPID=1386 
+FORK: PID=25292 PPID=1386 
+FORK: PID=25293 PPID=1386 
+EXEC: PID=25293 CMD=
+FORK: PID=25294 PPID=1386 
+FORK: PID=25295 PPID=1386 
+FORK: PID=25296 PPID=1386 
+EXEC: PID=25296 CMD=
+FORK: PID=25297 PPID=1386 
+FORK: PID=25298 PPID=1386 
+FORK: PID=25299 PPID=1386 
+EXEC: PID=25299 CMD=
+FORK: PID=25300 PPID=1386 
+FORK: PID=25301 PPID=1386 
+FORK: PID=25302 PPID=1386 
+EXEC: PID=25302 CMD=
+FORK: PID=25303 PPID=1386 
+FORK: PID=25304 PPID=1386 
+FORK: PID=25305 PPID=1386 
+EXEC: PID=25305 CMD=
+FORK: PID=25306 PPID=1386 
+FORK: PID=25307 PPID=1386 
+FORK: PID=25308 PPID=1386 
+EXEC: PID=25308 CMD=
+FORK: PID=25309 PPID=1386 
+FORK: PID=25310 PPID=1386 
+FORK: PID=25311 PPID=1316 
+FORK: PID=25312 PPID=1316 
+FORK: PID=25313 PPID=1316 
+FORK: PID=25314 PPID=1316 
+FORK: PID=25315 PPID=1316 
+FORK: PID=25316 PPID=1386 
+EXEC: PID=25316 CMD=
+FORK: PID=25317 PPID=1386 
+FORK: PID=25318 PPID=1386 
+FORK: PID=25319 PPID=1386 
+EXEC: PID=25319 CMD=
+FORK: PID=25320 PPID=1386 
+FORK: PID=25321 PPID=1386 
+FORK: PID=25322 PPID=1386 
+EXEC: PID=25322 CMD=
+FORK: PID=25323 PPID=1386 
+FORK: PID=25324 PPID=1386 
+FORK: PID=25325 PPID=1386 
+EXEC: PID=25325 CMD=
+FORK: PID=25326 PPID=1386 
+FORK: PID=25327 PPID=1386 
+FORK: PID=25328 PPID=1386 
+EXEC: PID=25328 CMD=
+FORK: PID=25329 PPID=1386 
+FORK: PID=25330 PPID=1386 
+FORK: PID=25331 PPID=1386 
+EXEC: PID=25331 CMD=
+FORK: PID=25332 PPID=1386 
+FORK: PID=25333 PPID=1386 
+FORK: PID=25334 PPID=1386 
+EXEC: PID=25334 CMD=
+FORK: PID=25335 PPID=1386 
+FORK: PID=25336 PPID=1386 
+FORK: PID=25337 PPID=1386 
+EXEC: PID=25337 CMD=
+FORK: PID=25338 PPID=1386 
+FORK: PID=25339 PPID=1386 
+FORK: PID=25340 PPID=1386 
+EXEC: PID=25340 CMD=
+FORK: PID=25341 PPID=1386 
+FORK: PID=25342 PPID=1386 
+FORK: PID=25343 PPID=1386 
+EXEC: PID=25343 CMD=
+FORK: PID=25344 PPID=1386 
+FORK: PID=25345 PPID=1386 
+FORK: PID=25346 PPID=1386 
+EXEC: PID=25346 CMD=
+FORK: PID=25347 PPID=1386 
+FORK: PID=25348 PPID=1386 
+FORK: PID=25349 PPID=1316 
+FORK: PID=25350 PPID=1316 
+FORK: PID=25351 PPID=1386 
+EXEC: PID=25351 CMD=
+FORK: PID=25352 PPID=1386 
+FORK: PID=25353 PPID=1386 
+FORK: PID=25354 PPID=1386 
+EXEC: PID=25354 CMD=
+FORK: PID=25355 PPID=1386 
+FORK: PID=25356 PPID=1386 
+FORK: PID=25357 PPID=1386 
+EXEC: PID=25357 CMD=
+FORK: PID=25358 PPID=1386 
+FORK: PID=25359 PPID=1386 
+FORK: PID=25360 PPID=1386 
+EXEC: PID=25360 CMD=
+FORK: PID=25361 PPID=1386 
+FORK: PID=25362 PPID=1386 
+FORK: PID=25363 PPID=1386 
+EXEC: PID=25363 CMD=
+FORK: PID=25364 PPID=1386 
+FORK: PID=25365 PPID=1386 
+FORK: PID=25366 PPID=1386 
+EXEC: PID=25366 CMD=
+FORK: PID=25367 PPID=1386 
+FORK: PID=25368 PPID=1386 
+FORK: PID=25369 PPID=1386 
+EXEC: PID=25369 CMD=
+FORK: PID=25370 PPID=1386 
+FORK: PID=25371 PPID=1386 
+FORK: PID=25372 PPID=1386 
+EXEC: PID=25372 CMD=
+FORK: PID=25373 PPID=1386 
+FORK: PID=25374 PPID=1386 
+FORK: PID=25375 PPID=1386 
+EXEC: PID=25375 CMD=
+FORK: PID=25376 PPID=1386 
+FORK: PID=25377 PPID=1386 
+FORK: PID=25378 PPID=1386 
+EXEC: PID=25378 CMD=
+FORK: PID=25379 PPID=1386 
+FORK: PID=25380 PPID=1386 
+FORK: PID=25381 PPID=1386 
+EXEC: PID=25381 CMD=
+FORK: PID=25382 PPID=1386 
+FORK: PID=25383 PPID=1386 
+FORK: PID=25384 PPID=1386 
+EXEC: PID=25384 CMD=
+FORK: PID=25385 PPID=1386 
+FORK: PID=25386 PPID=1386 
+FORK: PID=25387 PPID=1386 
+EXEC: PID=25387 CMD=
+FORK: PID=25388 PPID=1386 
+FORK: PID=25389 PPID=1386 
+FORK: PID=25390 PPID=1386 
+EXEC: PID=25390 CMD=
+FORK: PID=25391 PPID=1386 
+FORK: PID=25392 PPID=1386 
+FORK: PID=25393 PPID=1386 
+EXEC: PID=25393 CMD=
+FORK: PID=25394 PPID=1386 
+FORK: PID=25395 PPID=1386 
+FORK: PID=25396 PPID=1386 
+EXEC: PID=25396 CMD=
+FORK: PID=25397 PPID=1386 
+FORK: PID=25398 PPID=1386 
+FORK: PID=25399 PPID=1386 
+EXEC: PID=25399 CMD=
+FORK: PID=25400 PPID=1386 
+FORK: PID=25401 PPID=1386 
+FORK: PID=25402 PPID=1386 
+EXEC: PID=25402 CMD=
+FORK: PID=25403 PPID=1386 
+FORK: PID=25404 PPID=1386 
+FORK: PID=25405 PPID=1386 
+EXEC: PID=25405 CMD=
+FORK: PID=25406 PPID=1386 
+FORK: PID=25407 PPID=1386 
+FORK: PID=25408 PPID=1386 
+EXEC: PID=25408 CMD=
+FORK: PID=25409 PPID=1386 
+FORK: PID=25410 PPID=1386 
+FORK: PID=25411 PPID=1386 
+EXEC: PID=25411 CMD=
+FORK: PID=25412 PPID=1386 
+FORK: PID=25413 PPID=1386 
+FORK: PID=25414 PPID=1 
+FORK: PID=25415 PPID=937 
+EXEC: PID=25415 CMD=/usr/lib/NetworkManager/nm-dhcp-client.action 
+FORK: PID=25416 PPID=1 
+FORK: PID=25417 PPID=1386 
+EXEC: PID=25417 CMD=
+FORK: PID=25418 PPID=1386 
+FORK: PID=25419 PPID=1386 
+FORK: PID=25420 PPID=1386 
+EXEC: PID=25420 CMD=
+FORK: PID=25421 PPID=1386 
+FORK: PID=25422 PPID=1386 
+FORK: PID=25423 PPID=1386 
+EXEC: PID=25423 CMD=
+FORK: PID=25424 PPID=1386 
+FORK: PID=25425 PPID=1386 
+FORK: PID=25426 PPID=1386 
+EXEC: PID=25426 CMD=
+FORK: PID=25427 PPID=1386 
+FORK: PID=25428 PPID=1386 
+FORK: PID=25429 PPID=1386 
+EXEC: PID=25429 CMD=
+FORK: PID=25430 PPID=1386 
+FORK: PID=25431 PPID=1386 
+FORK: PID=25432 PPID=1386 
+EXEC: PID=25432 CMD=
+FORK: PID=25433 PPID=1386 
+FORK: PID=25434 PPID=1386 
+FORK: PID=25435 PPID=1386 
+EXEC: PID=25435 CMD=
+FORK: PID=25436 PPID=1386 
+FORK: PID=25437 PPID=1386 
+FORK: PID=25438 PPID=1386 
+EXEC: PID=25438 CMD=
+FORK: PID=25439 PPID=1386 
+FORK: PID=25440 PPID=1386 
+FORK: PID=25441 PPID=1386 
+EXEC: PID=25441 CMD=
+FORK: PID=25442 PPID=1386 
+FORK: PID=25443 PPID=1386 
+FORK: PID=25444 PPID=1386 
+EXEC: PID=25444 CMD=
+FORK: PID=25445 PPID=1386 
+FORK: PID=25446 PPID=1386 
+FORK: PID=25447 PPID=1386 
+EXEC: PID=25447 CMD=
+FORK: PID=25448 PPID=1386 
+FORK: PID=25449 PPID=1386 
+FORK: PID=25450 PPID=1386 
+EXEC: PID=25450 CMD=
+FORK: PID=25451 PPID=1386 
+FORK: PID=25452 PPID=1386 
+FORK: PID=25453 PPID=1386 
+EXEC: PID=25453 CMD=
+FORK: PID=25454 PPID=1386 
+FORK: PID=25455 PPID=1386 
+FORK: PID=25456 PPID=1386 
+EXEC: PID=25456 CMD=
+FORK: PID=25457 PPID=1386 
+FORK: PID=25458 PPID=1386 
+FORK: PID=25459 PPID=1386 
+EXEC: PID=25459 CMD=
+FORK: PID=25460 PPID=1386 
+FORK: PID=25461 PPID=1386 
+FORK: PID=25462 PPID=1386 
+EXEC: PID=25462 CMD=
+FORK: PID=25463 PPID=1386 
+FORK: PID=25464 PPID=1386 
+FORK: PID=25465 PPID=1386 
+EXEC: PID=25465 CMD=
+FORK: PID=25466 PPID=1386 
+FORK: PID=25467 PPID=1386 
+FORK: PID=25468 PPID=1316 
+FORK: PID=25469 PPID=1316 
+FORK: PID=25470 PPID=1316 
+FORK: PID=25471 PPID=1386 
+EXEC: PID=25471 CMD=
+FORK: PID=25472 PPID=1386 
+FORK: PID=25473 PPID=1386 
+FORK: PID=25474 PPID=1386 
+EXEC: PID=25474 CMD=
+FORK: PID=25475 PPID=1386 
+FORK: PID=25476 PPID=1386 
+FORK: PID=25477 PPID=1386 
+EXEC: PID=25477 CMD=
+FORK: PID=25478 PPID=1386 
+FORK: PID=25479 PPID=1386 
+FORK: PID=25480 PPID=1386 
+EXEC: PID=25480 CMD=
+FORK: PID=25481 PPID=1386 
+FORK: PID=25482 PPID=1386 
+FORK: PID=25483 PPID=1386 
+EXEC: PID=25483 CMD=
+FORK: PID=25484 PPID=1386 
+FORK: PID=25485 PPID=1386 
+FORK: PID=25486 PPID=1386 
+EXEC: PID=25486 CMD=
+FORK: PID=25487 PPID=1386 
+FORK: PID=25488 PPID=1386 
+FORK: PID=25489 PPID=1386 
+EXEC: PID=25489 CMD=
+FORK: PID=25490 PPID=1386 
+FORK: PID=25491 PPID=1386 
+FORK: PID=25492 PPID=1386 
+EXEC: PID=25492 CMD=
+FORK: PID=25493 PPID=1386 
+FORK: PID=25494 PPID=1386 
+FORK: PID=25495 PPID=1386 
+EXEC: PID=25495 CMD=
+FORK: PID=25496 PPID=1386 
+FORK: PID=25497 PPID=1386 
+FORK: PID=25498 PPID=1386 
+EXEC: PID=25498 CMD=
+FORK: PID=25499 PPID=1386 
+FORK: PID=25500 PPID=1386 
+FORK: PID=25501 PPID=1386 
+EXEC: PID=25501 CMD=
+FORK: PID=25502 PPID=1386 
+FORK: PID=25503 PPID=1386 
+FORK: PID=25504 PPID=1386 
+EXEC: PID=25504 CMD=
+FORK: PID=25505 PPID=1386 
+FORK: PID=25506 PPID=1386 
+FORK: PID=25507 PPID=1386 
+EXEC: PID=25507 CMD=
+FORK: PID=25508 PPID=1386 
+FORK: PID=25509 PPID=1386 
+FORK: PID=25510 PPID=1386 
+EXEC: PID=25510 CMD=
+FORK: PID=25511 PPID=1386 
+FORK: PID=25512 PPID=1386 
+FORK: PID=25513 PPID=1386 
+EXEC: PID=25513 CMD=
+FORK: PID=25514 PPID=1386 
+FORK: PID=25515 PPID=1386 
+FORK: PID=25516 PPID=1386 
+EXEC: PID=25516 CMD=
+FORK: PID=25517 PPID=1386 
+FORK: PID=25518 PPID=1386 
+FORK: PID=25519 PPID=1386 
+EXEC: PID=25519 CMD=
+FORK: PID=25520 PPID=1386 
+FORK: PID=25521 PPID=1386 
+FORK: PID=25522 PPID=1386 
+EXEC: PID=25522 CMD=
+FORK: PID=25523 PPID=1386 
+FORK: PID=25524 PPID=1386 
+FORK: PID=25525 PPID=1386 
+EXEC: PID=25525 CMD=
+FORK: PID=25526 PPID=1386 
+FORK: PID=25527 PPID=1386 
+FORK: PID=25528 PPID=1386 
+EXEC: PID=25528 CMD=
+FORK: PID=25529 PPID=1386 
+FORK: PID=25530 PPID=1386 
+FORK: PID=25531 PPID=1386 
+EXEC: PID=25531 CMD=
+FORK: PID=25532 PPID=1386 
+FORK: PID=25533 PPID=1386 
+FORK: PID=25534 PPID=1386 
+EXEC: PID=25534 CMD=
+FORK: PID=25535 PPID=1386 
+FORK: PID=25536 PPID=1386 
+FORK: PID=25537 PPID=1386 
+EXEC: PID=25537 CMD=
+FORK: PID=25538 PPID=1386 
+FORK: PID=25539 PPID=1386 
+FORK: PID=25540 PPID=1386 
+EXEC: PID=25540 CMD=
+FORK: PID=25541 PPID=1386 
+FORK: PID=25542 PPID=1386 
+FORK: PID=25543 PPID=1386 
+EXEC: PID=25543 CMD=
+FORK: PID=25544 PPID=1386 
+FORK: PID=25545 PPID=1386 
+FORK: PID=25546 PPID=1386 
+EXEC: PID=25546 CMD=
+FORK: PID=25547 PPID=1386 
+FORK: PID=25548 PPID=1386 
+FORK: PID=25549 PPID=1386 
+EXEC: PID=25549 CMD=
+FORK: PID=25550 PPID=1386 
+FORK: PID=25551 PPID=1386 
+FORK: PID=25552 PPID=1386 
+EXEC: PID=25552 CMD=
+FORK: PID=25553 PPID=1386 
+FORK: PID=25554 PPID=1386 
+FORK: PID=25555 PPID=1386 
+EXEC: PID=25555 CMD=
+FORK: PID=25556 PPID=1386 
+FORK: PID=25557 PPID=1386 
+FORK: PID=25558 PPID=1386 
+EXEC: PID=25558 CMD=
+FORK: PID=25559 PPID=1386 
+FORK: PID=25560 PPID=1386 
+FORK: PID=25561 PPID=1386 
+EXEC: PID=25561 CMD=
+FORK: PID=25562 PPID=1386 
+FORK: PID=25563 PPID=1386 
+FORK: PID=25564 PPID=1386 
+EXEC: PID=25564 CMD=
+FORK: PID=25565 PPID=1386 
+FORK: PID=25566 PPID=1386 
+FORK: PID=25567 PPID=1386 
+EXEC: PID=25567 CMD=
+FORK: PID=25568 PPID=1386 
+FORK: PID=25569 PPID=1386 
+FORK: PID=25570 PPID=1386 
+EXEC: PID=25570 CMD=
+FORK: PID=25571 PPID=1386 
+FORK: PID=25572 PPID=1386 
+FORK: PID=25573 PPID=1386 
+EXEC: PID=25573 CMD=
+FORK: PID=25574 PPID=1386 
+FORK: PID=25575 PPID=1386 
+FORK: PID=25576 PPID=1 
+FORK: PID=25577 PPID=937 
+EXEC: PID=25577 CMD=/usr/lib/NetworkManager/nm-dhcp-client.action 
+FORK: PID=25578 PPID=1 
+FORK: PID=25579 PPID=1386 
+EXEC: PID=25579 CMD=
+FORK: PID=25580 PPID=1386 
+FORK: PID=25581 PPID=1386 
+FORK: PID=25582 PPID=1386 
+EXEC: PID=25582 CMD=
+FORK: PID=25583 PPID=1386 
+FORK: PID=25584 PPID=1386 
+FORK: PID=25585 PPID=1386 
+EXEC: PID=25585 CMD=
+FORK: PID=25586 PPID=1386 
+FORK: PID=25587 PPID=1386 
+FORK: PID=25588 PPID=1316 
+FORK: PID=25589 PPID=1316 
+FORK: PID=25590 PPID=1386 
+EXEC: PID=25590 CMD=
+FORK: PID=25591 PPID=1386 
+FORK: PID=25592 PPID=1386 
+FORK: PID=25593 PPID=1386 
+EXEC: PID=25593 CMD=
+FORK: PID=25594 PPID=1386 
+FORK: PID=25595 PPID=1386 
+FORK: PID=25596 PPID=1386 
+EXEC: PID=25596 CMD=
+FORK: PID=25597 PPID=1386 
+FORK: PID=25598 PPID=1386 
+FORK: PID=25599 PPID=1386 
+EXEC: PID=25599 CMD=
+FORK: PID=25600 PPID=1386 
+FORK: PID=25601 PPID=1386 
+FORK: PID=25602 PPID=1386 
+EXEC: PID=25602 CMD=
+FORK: PID=25603 PPID=1386 
+FORK: PID=25604 PPID=1386 
+FORK: PID=25605 PPID=1386 
+EXEC: PID=25605 CMD=
+FORK: PID=25606 PPID=1386 
+FORK: PID=25607 PPID=1386 
+FORK: PID=25608 PPID=1386 
+EXEC: PID=25608 CMD=
+FORK: PID=25609 PPID=1386 
+FORK: PID=25610 PPID=1386 
+FORK: PID=25611 PPID=1386 
+EXEC: PID=25611 CMD=
+FORK: PID=25612 PPID=1386 
+FORK: PID=25613 PPID=1386 
+FORK: PID=25614 PPID=1386 
+EXEC: PID=25614 CMD=
+FORK: PID=25615 PPID=1386 
+FORK: PID=25616 PPID=1386 
+FORK: PID=25617 PPID=1386 
+EXEC: PID=25617 CMD=
+FORK: PID=25618 PPID=1386 
+FORK: PID=25619 PPID=1386 
+FORK: PID=25620 PPID=1386 
+EXEC: PID=25620 CMD=
+FORK: PID=25621 PPID=1386 
+FORK: PID=25622 PPID=1386 
+FORK: PID=25623 PPID=1386 
+EXEC: PID=25623 CMD=
+FORK: PID=25624 PPID=1386 
+FORK: PID=25625 PPID=1386 
+FORK: PID=25626 PPID=1386 
+EXEC: PID=25626 CMD=
+FORK: PID=25627 PPID=1386 
+FORK: PID=25628 PPID=1386 
+FORK: PID=25629 PPID=1386 
+EXEC: PID=25629 CMD=
+FORK: PID=25630 PPID=1386 
+FORK: PID=25631 PPID=1386 
+FORK: PID=25632 PPID=1386 
+EXEC: PID=25632 CMD=
+FORK: PID=25633 PPID=1386 
+FORK: PID=25634 PPID=1386 
+FORK: PID=25635 PPID=1386 
+EXEC: PID=25635 CMD=
+FORK: PID=25636 PPID=1386 
+FORK: PID=25637 PPID=1386 
+FORK: PID=25638 PPID=1386 
+EXEC: PID=25638 CMD=
+FORK: PID=25639 PPID=1386 
+FORK: PID=25640 PPID=1386 
+FORK: PID=25641 PPID=1386 
+EXEC: PID=25641 CMD=
+FORK: PID=25642 PPID=1386 
+FORK: PID=25643 PPID=1386 
+FORK: PID=25644 PPID=1386 
+EXEC: PID=25644 CMD=
+FORK: PID=25645 PPID=1386 
+FORK: PID=25646 PPID=1386 
+FORK: PID=25647 PPID=1386 
+EXEC: PID=25647 CMD=
+FORK: PID=25648 PPID=1386 
+FORK: PID=25649 PPID=1386 
+FORK: PID=25650 PPID=1386 
+EXEC: PID=25650 CMD=
+FORK: PID=25651 PPID=1386 
+FORK: PID=25652 PPID=1386 
+FORK: PID=25653 PPID=1386 
+EXEC: PID=25653 CMD=
+FORK: PID=25654 PPID=1386 
+FORK: PID=25655 PPID=1386 
+FORK: PID=25656 PPID=1386 
+EXEC: PID=25656 CMD=
+FORK: PID=25657 PPID=1386 
+FORK: PID=25658 PPID=1386 
+FORK: PID=25659 PPID=1386 
+EXEC: PID=25659 CMD=
+FORK: PID=25660 PPID=1386 
+FORK: PID=25661 PPID=1386 
+FORK: PID=25662 PPID=1386 
+EXEC: PID=25662 CMD=
+FORK: PID=25663 PPID=1386 
+FORK: PID=25664 PPID=1386 
+FORK: PID=25665 PPID=1386 
+EXEC: PID=25665 CMD=
+FORK: PID=25666 PPID=1386 
+FORK: PID=25667 PPID=1386 
+FORK: PID=25668 PPID=1386 
+EXEC: PID=25668 CMD=
+FORK: PID=25669 PPID=1386 
+FORK: PID=25670 PPID=1386 
+FORK: PID=25671 PPID=1386 
+EXEC: PID=25671 CMD=
+FORK: PID=25672 PPID=1386 
+FORK: PID=25673 PPID=1386 
+FORK: PID=25674 PPID=1386 
+EXEC: PID=25674 CMD=
+FORK: PID=25675 PPID=1386 
+FORK: PID=25676 PPID=1386 
+FORK: PID=25677 PPID=1386 
+EXEC: PID=25677 CMD=
+FORK: PID=25678 PPID=1386 
+FORK: PID=25679 PPID=1386 
+FORK: PID=25680 PPID=1386 
+EXEC: PID=25680 CMD=
+FORK: PID=25681 PPID=1386 
+FORK: PID=25682 PPID=1386 
+FORK: PID=25683 PPID=1386 
+EXEC: PID=25683 CMD=
+FORK: PID=25684 PPID=1386 
+FORK: PID=25685 PPID=1386 
+FORK: PID=25686 PPID=1386 
+EXEC: PID=25686 CMD=
+FORK: PID=25687 PPID=1386 
+FORK: PID=25688 PPID=1386 
+FORK: PID=25689 PPID=1386 
+EXEC: PID=25689 CMD=
+FORK: PID=25690 PPID=1386 
+FORK: PID=25691 PPID=1386 
+FORK: PID=25692 PPID=1386 
+EXEC: PID=25692 CMD=
+FORK: PID=25693 PPID=1386 
+FORK: PID=25694 PPID=1386 
+FORK: PID=25695 PPID=1386 
+EXEC: PID=25695 CMD=
+FORK: PID=25696 PPID=1386 
+FORK: PID=25697 PPID=1386 
+FORK: PID=25698 PPID=1386 
+EXEC: PID=25698 CMD=
+FORK: PID=25699 PPID=1386 
+FORK: PID=25700 PPID=1386 
+FORK: PID=25701 PPID=1386 
+EXEC: PID=25701 CMD=
+FORK: PID=25702 PPID=1386 
+FORK: PID=25703 PPID=1386 
+FORK: PID=25704 PPID=1386 
+EXEC: PID=25704 CMD=
+FORK: PID=25705 PPID=1386 
+FORK: PID=25706 PPID=1386 
+FORK: PID=25707 PPID=1386 
+EXEC: PID=25707 CMD=
+FORK: PID=25708 PPID=1386 
+FORK: PID=25709 PPID=1386 
+FORK: PID=25710 PPID=1316 
+FORK: PID=25711 PPID=1316 
+FORK: PID=25712 PPID=1386 
+EXEC: PID=25712 CMD=
+FORK: PID=25713 PPID=1386 
+FORK: PID=25714 PPID=1386 
+FORK: PID=25715 PPID=1386 
+EXEC: PID=25715 CMD=
+FORK: PID=25716 PPID=1386 
+FORK: PID=25717 PPID=1386 
+FORK: PID=25718 PPID=1386 
+EXEC: PID=25718 CMD=
+FORK: PID=25719 PPID=1386 
+FORK: PID=25720 PPID=1386 
+FORK: PID=25721 PPID=1386 
+EXEC: PID=25721 CMD=
+FORK: PID=25722 PPID=1386 
+FORK: PID=25723 PPID=1386 
+FORK: PID=25724 PPID=1386 
+EXEC: PID=25724 CMD=
+FORK: PID=25725 PPID=1386 
+FORK: PID=25726 PPID=1386 
+FORK: PID=25727 PPID=1386 
+EXEC: PID=25727 CMD=
+FORK: PID=25728 PPID=1386 
+FORK: PID=25729 PPID=1386 
+FORK: PID=25730 PPID=1386 
+EXEC: PID=25730 CMD=
+FORK: PID=25731 PPID=1386 
+FORK: PID=25732 PPID=1386 
+FORK: PID=25733 PPID=1386 
+EXEC: PID=25733 CMD=
+FORK: PID=25734 PPID=1386 
+FORK: PID=25735 PPID=1386 
+FORK: PID=25736 PPID=1386 
+EXEC: PID=25736 CMD=
+FORK: PID=25737 PPID=1386 
+FORK: PID=25738 PPID=1386 
+FORK: PID=25739 PPID=1386 
+EXEC: PID=25739 CMD=
+FORK: PID=25740 PPID=1386 
+FORK: PID=25741 PPID=1386 
+FORK: PID=25742 PPID=1386 
+EXEC: PID=25742 CMD=
+FORK: PID=25743 PPID=1386 
+FORK: PID=25744 PPID=1386 
+FORK: PID=25745 PPID=1386 
+EXEC: PID=25745 CMD=
+FORK: PID=25746 PPID=1386 
+FORK: PID=25747 PPID=1386 
+FORK: PID=25748 PPID=1386 
+EXEC: PID=25748 CMD=
+FORK: PID=25749 PPID=1386 
+FORK: PID=25750 PPID=1386 
+FORK: PID=25751 PPID=1386 
+EXEC: PID=25751 CMD=
+FORK: PID=25752 PPID=1386 
+FORK: PID=25753 PPID=1386 
+FORK: PID=25754 PPID=1386 
+EXEC: PID=25754 CMD=
+FORK: PID=25755 PPID=1386 
+FORK: PID=25756 PPID=1386 
+FORK: PID=25757 PPID=1386 
+EXEC: PID=25757 CMD=
+FORK: PID=25758 PPID=1386 
+FORK: PID=25759 PPID=1386 
+FORK: PID=25760 PPID=1 
+FORK: PID=25761 PPID=937 
+EXEC: PID=25761 CMD=/usr/lib/NetworkManager/nm-dhcp-client.action 
+FORK: PID=25762 PPID=1 
+FORK: PID=25763 PPID=1386 
+EXEC: PID=25763 CMD=
+FORK: PID=25764 PPID=1386 
+FORK: PID=25765 PPID=1386 
+FORK: PID=25766 PPID=1386 
+EXEC: PID=25766 CMD=
+FORK: PID=25767 PPID=1386 
+FORK: PID=25768 PPID=1386 
+FORK: PID=25769 PPID=1386 
+EXEC: PID=25769 CMD=
+FORK: PID=25770 PPID=1386 
+FORK: PID=25771 PPID=1386 
+FORK: PID=25772 PPID=1386 
+EXEC: PID=25772 CMD=
+FORK: PID=25773 PPID=1386 
+FORK: PID=25774 PPID=1386 
+FORK: PID=25775 PPID=1386 
+EXEC: PID=25775 CMD=
+FORK: PID=25776 PPID=1386 
+FORK: PID=25777 PPID=1386 
+FORK: PID=25778 PPID=1386 
+EXEC: PID=25778 CMD=
+FORK: PID=25779 PPID=1386 
+FORK: PID=25780 PPID=1386 
+FORK: PID=25781 PPID=1386 
+EXEC: PID=25781 CMD=
+FORK: PID=25782 PPID=1386 
+FORK: PID=25783 PPID=1386 
+FORK: PID=25784 PPID=1386 
+EXEC: PID=25784 CMD=
+FORK: PID=25785 PPID=1386 
+FORK: PID=25786 PPID=1386 
+FORK: PID=25787 PPID=1386 
+EXEC: PID=25787 CMD=
+FORK: PID=25788 PPID=1386 
+FORK: PID=25789 PPID=1386 
+FORK: PID=25790 PPID=1386 
+EXEC: PID=25790 CMD=
+FORK: PID=25791 PPID=1386 
+FORK: PID=25792 PPID=1386 
+FORK: PID=25793 PPID=1386 
+EXEC: PID=25793 CMD=
+FORK: PID=25794 PPID=1386 
+FORK: PID=25795 PPID=1386 
+FORK: PID=25796 PPID=1386 
+EXEC: PID=25796 CMD=
+FORK: PID=25797 PPID=1386 
+FORK: PID=25798 PPID=1386 
+FORK: PID=25799 PPID=1386 
+EXEC: PID=25799 CMD=
+FORK: PID=25800 PPID=1386 
+FORK: PID=25801 PPID=1386 
+FORK: PID=25802 PPID=1386 
+EXEC: PID=25802 CMD=
+FORK: PID=25803 PPID=1386 
+FORK: PID=25804 PPID=1386 
+FORK: PID=25805 PPID=1386 
+EXEC: PID=25805 CMD=
+FORK: PID=25806 PPID=1386 
+FORK: PID=25807 PPID=1386 
+FORK: PID=25808 PPID=1386 
+EXEC: PID=25808 CMD=
+FORK: PID=25809 PPID=1386 
+FORK: PID=25810 PPID=1386 
+FORK: PID=25811 PPID=1386 
+EXEC: PID=25811 CMD=
+FORK: PID=25812 PPID=1386 
+FORK: PID=25813 PPID=1386 
+FORK: PID=25814 PPID=1386 
+EXEC: PID=25814 CMD=
+FORK: PID=25815 PPID=1386 
+FORK: PID=25816 PPID=1386 
+FORK: PID=25817 PPID=1386 
+EXEC: PID=25817 CMD=
+FORK: PID=25818 PPID=1386 
+FORK: PID=25819 PPID=1386 
+FORK: PID=25820 PPID=1386 
+EXEC: PID=25820 CMD=
+FORK: PID=25821 PPID=1386 
+FORK: PID=25822 PPID=1386 
+FORK: PID=25823 PPID=1386 
+EXEC: PID=25823 CMD=
+FORK: PID=25824 PPID=1386 
+FORK: PID=25825 PPID=1386 
+FORK: PID=25826 PPID=1386 
+EXEC: PID=25826 CMD=
+FORK: PID=25827 PPID=1386 
+FORK: PID=25828 PPID=1386 
+FORK: PID=25829 PPID=1316 
+FORK: PID=25830 PPID=1316 
+FORK: PID=25831 PPID=1386 
+EXEC: PID=25831 CMD=
+FORK: PID=25832 PPID=1386 
+FORK: PID=25833 PPID=1386 
+FORK: PID=25834 PPID=1386 
+EXEC: PID=25834 CMD=
+FORK: PID=25835 PPID=1386 
+FORK: PID=25836 PPID=1386 
+FORK: PID=25837 PPID=1386 
+EXEC: PID=25837 CMD=
+FORK: PID=25838 PPID=1386 
+FORK: PID=25839 PPID=1386 
+FORK: PID=25840 PPID=1386 
+EXEC: PID=25840 CMD=
+FORK: PID=25841 PPID=1386 
+FORK: PID=25842 PPID=1386 
+FORK: PID=25843 PPID=1386 
+EXEC: PID=25843 CMD=
+FORK: PID=25844 PPID=1386 
+FORK: PID=25845 PPID=1386 
+FORK: PID=25846 PPID=1386 
+EXEC: PID=25846 CMD=
+FORK: PID=25847 PPID=1386 
+FORK: PID=25848 PPID=1386 
+FORK: PID=25849 PPID=1386 
+EXEC: PID=25849 CMD=
+FORK: PID=25850 PPID=1386 
+FORK: PID=25851 PPID=1386 
+FORK: PID=25852 PPID=1386 
+EXEC: PID=25852 CMD=
+FORK: PID=25853 PPID=1386 
+FORK: PID=25854 PPID=1386 
+FORK: PID=25855 PPID=1386 
+EXEC: PID=25855 CMD=
+FORK: PID=25856 PPID=1386 
+FORK: PID=25857 PPID=1386 
+FORK: PID=25858 PPID=1386 
+EXEC: PID=25858 CMD=
+FORK: PID=25859 PPID=1386 
+FORK: PID=25860 PPID=1386 
+FORK: PID=25861 PPID=1386 
+EXEC: PID=25861 CMD=
+FORK: PID=25862 PPID=1386 
+FORK: PID=25863 PPID=1386 
+FORK: PID=25864 PPID=1386 
+EXEC: PID=25864 CMD=
+FORK: PID=25865 PPID=1386 
+FORK: PID=25866 PPID=1386 
+FORK: PID=25867 PPID=1386 
+EXEC: PID=25867 CMD=
+FORK: PID=25868 PPID=1386 
+FORK: PID=25869 PPID=1386 
+FORK: PID=25870 PPID=1386 
+EXEC: PID=25870 CMD=
+FORK: PID=25871 PPID=1386 
+FORK: PID=25872 PPID=1386 
+FORK: PID=25873 PPID=1386 
+EXEC: PID=25873 CMD=
+FORK: PID=25874 PPID=1386 
+FORK: PID=25875 PPID=1386 
+FORK: PID=25876 PPID=1386 
+EXEC: PID=25876 CMD=
+FORK: PID=25877 PPID=1386 
+FORK: PID=25878 PPID=1386 
+FORK: PID=25879 PPID=1386 
+EXEC: PID=25879 CMD=
+FORK: PID=25880 PPID=1386 
+FORK: PID=25881 PPID=1386 
+FORK: PID=25882 PPID=1386 
+EXEC: PID=25882 CMD=
+FORK: PID=25883 PPID=1386 
+FORK: PID=25884 PPID=1386 
+FORK: PID=25885 PPID=1386 
+EXEC: PID=25885 CMD=
+FORK: PID=25886 PPID=1386 
+FORK: PID=25887 PPID=1386 
+FORK: PID=25888 PPID=1386 
+EXEC: PID=25888 CMD=
+FORK: PID=25889 PPID=1386 
+FORK: PID=25890 PPID=1386 
+FORK: PID=25891 PPID=1386 
+EXEC: PID=25891 CMD=
+FORK: PID=25892 PPID=1386 
+FORK: PID=25893 PPID=1386 
+FORK: PID=25894 PPID=1386 
+EXEC: PID=25894 CMD=
+FORK: PID=25895 PPID=1386 
+FORK: PID=25896 PPID=1386 
+FORK: PID=25897 PPID=1386 
+EXEC: PID=25897 CMD=
+FORK: PID=25898 PPID=1386 
+FORK: PID=25899 PPID=1386 
+FORK: PID=25900 PPID=1386 
+EXEC: PID=25900 CMD=
+FORK: PID=25901 PPID=1386 
+FORK: PID=25902 PPID=1386 
+FORK: PID=25903 PPID=1386 
+EXEC: PID=25903 CMD=
+FORK: PID=25904 PPID=1386 
+FORK: PID=25905 PPID=1386 
+FORK: PID=25906 PPID=1386 
+EXEC: PID=25906 CMD=
+FORK: PID=25907 PPID=1386 
+FORK: PID=25908 PPID=1386 
+FORK: PID=25909 PPID=1386 
+EXEC: PID=25909 CMD=
+FORK: PID=25910 PPID=1386 
+FORK: PID=25911 PPID=1386 
+FORK: PID=25912 PPID=1386 
+EXEC: PID=25912 CMD=
+FORK: PID=25913 PPID=1386 
+FORK: PID=25914 PPID=1386 
+FORK: PID=25915 PPID=1386 
+EXEC: PID=25915 CMD=
+FORK: PID=25916 PPID=1386 
+FORK: PID=25917 PPID=1386 
+FORK: PID=25918 PPID=1 
+FORK: PID=25919 PPID=937 
+EXEC: PID=25919 CMD=/usr/lib/NetworkManager/nm-dhcp-client.action 
+FORK: PID=25920 PPID=1 
+FORK: PID=25921 PPID=1386 
+EXEC: PID=25921 CMD=
+FORK: PID=25922 PPID=1386 
+FORK: PID=25923 PPID=1386 
+FORK: PID=25924 PPID=1386 
+EXEC: PID=25924 CMD=
+FORK: PID=25925 PPID=1386 
+FORK: PID=25926 PPID=1386 
+FORK: PID=25927 PPID=1386 
+EXEC: PID=25927 CMD=
+FORK: PID=25928 PPID=1386 
+FORK: PID=25929 PPID=1386 
+FORK: PID=25930 PPID=1386 
+EXEC: PID=25930 CMD=
+FORK: PID=25931 PPID=1386 
+FORK: PID=25932 PPID=1386 
+FORK: PID=25933 PPID=1386 
+EXEC: PID=25933 CMD=
+FORK: PID=25934 PPID=1386 
+FORK: PID=25935 PPID=1386 
+FORK: PID=25936 PPID=1386 
+EXEC: PID=25936 CMD=
+FORK: PID=25937 PPID=1386 
+FORK: PID=25938 PPID=1386 
+FORK: PID=25939 PPID=1386 
+EXEC: PID=25939 CMD=
+FORK: PID=25940 PPID=1386 
+FORK: PID=25941 PPID=1386 
+FORK: PID=25942 PPID=1386 
+EXEC: PID=25942 CMD=
+FORK: PID=25943 PPID=1386 
+FORK: PID=25944 PPID=1386 
+FORK: PID=25945 PPID=1386 
+EXEC: PID=25945 CMD=
+FORK: PID=25946 PPID=1386 
+FORK: PID=25947 PPID=1386 
+FORK: PID=25948 PPID=1316 
+FORK: PID=25949 PPID=1316 
+FORK: PID=25950 PPID=1386 
+EXEC: PID=25950 CMD=
+FORK: PID=25951 PPID=1386 
+FORK: PID=25952 PPID=1386 
+FORK: PID=25953 PPID=1386 
+EXEC: PID=25953 CMD=
+FORK: PID=25954 PPID=1386 
+FORK: PID=25955 PPID=1386 
+FORK: PID=25956 PPID=1386 
+EXEC: PID=25956 CMD=
+FORK: PID=25957 PPID=1386 
+FORK: PID=25958 PPID=1386 
+FORK: PID=25959 PPID=1386 
+EXEC: PID=25959 CMD=
+FORK: PID=25960 PPID=1386 
+FORK: PID=25961 PPID=1386 
+FORK: PID=25962 PPID=1386 
+EXEC: PID=25962 CMD=
+FORK: PID=25963 PPID=1386 
+FORK: PID=25964 PPID=1386 
+FORK: PID=25965 PPID=1386 
+EXEC: PID=25965 CMD=
+FORK: PID=25966 PPID=1386 
+FORK: PID=25967 PPID=1386 
+FORK: PID=25968 PPID=1386 
+EXEC: PID=25968 CMD=
+FORK: PID=25969 PPID=1386 
+FORK: PID=25970 PPID=1386 
+FORK: PID=25971 PPID=1386 
+EXEC: PID=25971 CMD=
+FORK: PID=25972 PPID=1386 
+FORK: PID=25973 PPID=1386 
+FORK: PID=25974 PPID=1386 
+EXEC: PID=25974 CMD=
+FORK: PID=25975 PPID=1386 
+FORK: PID=25976 PPID=1386 
+FORK: PID=25977 PPID=1386 
+EXEC: PID=25977 CMD=
+FORK: PID=25978 PPID=1386 
+FORK: PID=25979 PPID=1386 
+FORK: PID=25980 PPID=1386 
+EXEC: PID=25980 CMD=
+FORK: PID=25981 PPID=1386 
+FORK: PID=25982 PPID=1386 
+FORK: PID=25983 PPID=1386 
+EXEC: PID=25983 CMD=
+FORK: PID=25984 PPID=1386 
+FORK: PID=25985 PPID=1386 
+FORK: PID=25986 PPID=1386 
+EXEC: PID=25986 CMD=
+FORK: PID=25987 PPID=1386 
+FORK: PID=25988 PPID=1386 
+FORK: PID=25989 PPID=1386 
+EXEC: PID=25989 CMD=
+FORK: PID=25990 PPID=1386 
+FORK: PID=25991 PPID=1386 
+FORK: PID=25992 PPID=1386 
+EXEC: PID=25992 CMD=
+FORK: PID=25993 PPID=1386 
+FORK: PID=25994 PPID=1386 
+FORK: PID=25995 PPID=1386 
+EXEC: PID=25995 CMD=
+FORK: PID=25996 PPID=1386 
+FORK: PID=25997 PPID=1386 
+FORK: PID=25998 PPID=1386 
+EXEC: PID=25998 CMD=
+FORK: PID=25999 PPID=1386 
+FORK: PID=26000 PPID=1386 
+FORK: PID=26001 PPID=1386 
+EXEC: PID=26001 CMD=
+FORK: PID=26002 PPID=1386 
+FORK: PID=26003 PPID=1386 
+FORK: PID=26004 PPID=1386 
+EXEC: PID=26004 CMD=
+FORK: PID=26005 PPID=1386 
+FORK: PID=26006 PPID=1386 
+FORK: PID=26007 PPID=1386 
+EXEC: PID=26007 CMD=
+FORK: PID=26008 PPID=1386 
+FORK: PID=26009 PPID=1386 
+FORK: PID=26010 PPID=1386 
+EXEC: PID=26010 CMD=
+FORK: PID=26011 PPID=1386 
+FORK: PID=26012 PPID=1386 
+FORK: PID=26013 PPID=1386 
+EXEC: PID=26013 CMD=
+FORK: PID=26014 PPID=1386 
+FORK: PID=26015 PPID=1386 
+FORK: PID=26016 PPID=1386 
+EXEC: PID=26016 CMD=
+FORK: PID=26017 PPID=1386 
+FORK: PID=26018 PPID=1386 
+FORK: PID=26019 PPID=1386 
+EXEC: PID=26019 CMD=
+FORK: PID=26020 PPID=1386 
+FORK: PID=26021 PPID=1386 
+FORK: PID=26022 PPID=1386 
+EXEC: PID=26022 CMD=
+FORK: PID=26023 PPID=1386 
+FORK: PID=26024 PPID=1386 
+FORK: PID=26025 PPID=1386 
+EXEC: PID=26025 CMD=
+FORK: PID=26026 PPID=1386 
+FORK: PID=26027 PPID=1386 
+FORK: PID=26028 PPID=1386 
+EXEC: PID=26028 CMD=
+FORK: PID=26029 PPID=1386 
+FORK: PID=26030 PPID=1386 
+FORK: PID=26031 PPID=1386 
+EXEC: PID=26031 CMD=
+FORK: PID=26032 PPID=1386 
+FORK: PID=26033 PPID=1386 
+FORK: PID=26034 PPID=1386 
+EXEC: PID=26034 CMD=
+FORK: PID=26035 PPID=1386 
+FORK: PID=26036 PPID=1386 
+FORK: PID=26037 PPID=1386 
+EXEC: PID=26037 CMD=
+FORK: PID=26038 PPID=1386 
+FORK: PID=26039 PPID=1386 
+FORK: PID=26040 PPID=1386 
+EXEC: PID=26040 CMD=
+FORK: PID=26041 PPID=1386 
+FORK: PID=26042 PPID=1386 
+FORK: PID=26043 PPID=1386 
+EXEC: PID=26043 CMD=
+FORK: PID=26044 PPID=1386 
+FORK: PID=26045 PPID=1386 
+FORK: PID=26046 PPID=1386 
+EXEC: PID=26046 CMD=
+FORK: PID=26047 PPID=1386 
+FORK: PID=26048 PPID=1386 
+FORK: PID=26049 PPID=1386 
+EXEC: PID=26049 CMD=
+FORK: PID=26050 PPID=1386 
+FORK: PID=26051 PPID=1386 
+FORK: PID=26052 PPID=1386 
+EXEC: PID=26052 CMD=
+FORK: PID=26053 PPID=1386 
+FORK: PID=26054 PPID=1386 
+FORK: PID=26055 PPID=1386 
+EXEC: PID=26055 CMD=
+FORK: PID=26056 PPID=1386 
+FORK: PID=26057 PPID=1386 
+FORK: PID=26058 PPID=1386 
+EXEC: PID=26058 CMD=
+FORK: PID=26059 PPID=1386 
+FORK: PID=26060 PPID=1386 
+FORK: PID=26061 PPID=1386 
+EXEC: PID=26061 CMD=
+FORK: PID=26062 PPID=1386 
+FORK: PID=26063 PPID=1386 
+FORK: PID=26064 PPID=1386 
+EXEC: PID=26064 CMD=
+FORK: PID=26065 PPID=1386 
+FORK: PID=26066 PPID=1386 
+FORK: PID=26067 PPID=1386 
+EXEC: PID=26067 CMD=
+FORK: PID=26068 PPID=1386 
+FORK: PID=26069 PPID=1386 
+FORK: PID=26070 PPID=1316 
+FORK: PID=26071 PPID=1316 
+FORK: PID=26072 PPID=1316 
+FORK: PID=26073 PPID=1386 
+EXEC: PID=26073 CMD=
+FORK: PID=26074 PPID=1386 
+FORK: PID=26075 PPID=1386 
+FORK: PID=26076 PPID=1386 
+EXEC: PID=26076 CMD=
+FORK: PID=26077 PPID=1386 
+FORK: PID=26078 PPID=1386 
+FORK: PID=26079 PPID=1386 
+EXEC: PID=26079 CMD=
+FORK: PID=26080 PPID=1386 
+FORK: PID=26081 PPID=1386 
+FORK: PID=26082 PPID=1386 
+EXEC: PID=26082 CMD=
+FORK: PID=26083 PPID=1386 
+FORK: PID=26084 PPID=1386 
+FORK: PID=26085 PPID=1386 
+EXEC: PID=26085 CMD=
+FORK: PID=26086 PPID=1386 
+FORK: PID=26087 PPID=1386 
+FORK: PID=26088 PPID=1386 
+EXEC: PID=26088 CMD=
+FORK: PID=26089 PPID=1386 
+FORK: PID=26090 PPID=1386 
+FORK: PID=26091 PPID=1386 
+EXEC: PID=26091 CMD=
+FORK: PID=26092 PPID=1386 
+FORK: PID=26093 PPID=1386 
+FORK: PID=26094 PPID=1386 
+EXEC: PID=26094 CMD=
+FORK: PID=26095 PPID=1386 
+FORK: PID=26096 PPID=1386 
+FORK: PID=26097 PPID=1386 
+EXEC: PID=26097 CMD=
+FORK: PID=26098 PPID=1386 
+FORK: PID=26099 PPID=1386 
+FORK: PID=26100 PPID=1 
+FORK: PID=26101 PPID=937 
+EXEC: PID=26101 CMD=/usr/lib/NetworkManager/nm-dhcp-client.action 
+FORK: PID=26102 PPID=1 
+FORK: PID=26103 PPID=1386 
+EXEC: PID=26103 CMD=
+FORK: PID=26104 PPID=1386 
+FORK: PID=26105 PPID=1386 
+FORK: PID=26106 PPID=1386 
+EXEC: PID=26106 CMD=
+FORK: PID=26107 PPID=1386 
+FORK: PID=26108 PPID=1386 
+FORK: PID=26109 PPID=1386 
+EXEC: PID=26109 CMD=
+FORK: PID=26110 PPID=1386 
+FORK: PID=26111 PPID=1386 
+FORK: PID=26112 PPID=1386 
+EXEC: PID=26112 CMD=
+FORK: PID=26113 PPID=1386 
+FORK: PID=26114 PPID=1386 
+FORK: PID=26115 PPID=1386 
+EXEC: PID=26115 CMD=
+FORK: PID=26116 PPID=1386 
+FORK: PID=26117 PPID=1386 
+FORK: PID=26118 PPID=1386 
+EXEC: PID=26118 CMD=
+FORK: PID=26119 PPID=1386 
+FORK: PID=26120 PPID=1386 
+FORK: PID=26121 PPID=1386 
+EXEC: PID=26121 CMD=
+FORK: PID=26122 PPID=1386 
+FORK: PID=26123 PPID=1386 
+FORK: PID=26124 PPID=1386 
+EXEC: PID=26124 CMD=
+FORK: PID=26125 PPID=1386 
+FORK: PID=26126 PPID=1386 
+FORK: PID=26127 PPID=1386 
+EXEC: PID=26127 CMD=
+FORK: PID=26128 PPID=1386 
+FORK: PID=26129 PPID=1386 
+FORK: PID=26130 PPID=1386 
+EXEC: PID=26130 CMD=
+FORK: PID=26131 PPID=1386 
+FORK: PID=26132 PPID=1386 
+FORK: PID=26133 PPID=1386 
+EXEC: PID=26133 CMD=
+FORK: PID=26134 PPID=1386 
+FORK: PID=26135 PPID=1386 
+FORK: PID=26136 PPID=1386 
+EXEC: PID=26136 CMD=
+FORK: PID=26137 PPID=1386 
+FORK: PID=26138 PPID=1386 
+FORK: PID=26139 PPID=1386 
+EXEC: PID=26139 CMD=
+FORK: PID=26140 PPID=1386 
+FORK: PID=26141 PPID=1386 
+FORK: PID=26142 PPID=1386 
+EXEC: PID=26142 CMD=
+FORK: PID=26143 PPID=1386 
+FORK: PID=26144 PPID=1386 
+FORK: PID=26145 PPID=1386 
+EXEC: PID=26145 CMD=
+FORK: PID=26146 PPID=1386 
+FORK: PID=26147 PPID=1386 
+FORK: PID=26148 PPID=1386 
+EXEC: PID=26148 CMD=
+FORK: PID=26149 PPID=1386 
+FORK: PID=26150 PPID=1386 
+FORK: PID=26151 PPID=1386 
+EXEC: PID=26151 CMD=
+FORK: PID=26152 PPID=1386 
+FORK: PID=26153 PPID=1386 
+FORK: PID=26154 PPID=1386 
+EXEC: PID=26154 CMD=
+FORK: PID=26155 PPID=1386 
+FORK: PID=26156 PPID=1386 
+FORK: PID=26157 PPID=1386 
+EXEC: PID=26157 CMD=
+FORK: PID=26158 PPID=1386 
+FORK: PID=26159 PPID=1386 
+FORK: PID=26160 PPID=1386 
+EXEC: PID=26160 CMD=
+FORK: PID=26161 PPID=1386 
+FORK: PID=26162 PPID=1386 
+FORK: PID=26163 PPID=1386 
+EXEC: PID=26163 CMD=
+FORK: PID=26164 PPID=1386 
+FORK: PID=26165 PPID=1386 
+FORK: PID=26166 PPID=1386 
+EXEC: PID=26166 CMD=
+FORK: PID=26167 PPID=1386 
+FORK: PID=26168 PPID=1386 
+FORK: PID=26169 PPID=1386 
+EXEC: PID=26169 CMD=
+FORK: PID=26170 PPID=1386 
+FORK: PID=26171 PPID=1386 
+FORK: PID=26172 PPID=1386 
+EXEC: PID=26172 CMD=
+FORK: PID=26173 PPID=1386 
+FORK: PID=26174 PPID=1386 
+FORK: PID=26175 PPID=1386 
+EXEC: PID=26175 CMD=
+FORK: PID=26176 PPID=1386 
+FORK: PID=26177 PPID=1386 
+FORK: PID=26178 PPID=1386 
+EXEC: PID=26178 CMD=
+FORK: PID=26179 PPID=1386 
+FORK: PID=26180 PPID=1386 
+FORK: PID=26181 PPID=1386 
+EXEC: PID=26181 CMD=
+FORK: PID=26182 PPID=1386 
+FORK: PID=26183 PPID=1386 
+FORK: PID=26184 PPID=1386 
+EXEC: PID=26184 CMD=
+FORK: PID=26185 PPID=1386 
+FORK: PID=26186 PPID=1386 
+FORK: PID=26187 PPID=1386 
+EXEC: PID=26187 CMD=
+FORK: PID=26188 PPID=1386 
+FORK: PID=26189 PPID=1386 
+FORK: PID=26190 PPID=1316 
+FORK: PID=26191 PPID=1316 
+FORK: PID=26192 PPID=1386 
+EXEC: PID=26192 CMD=
+FORK: PID=26193 PPID=1386 
+FORK: PID=26194 PPID=1386 
+FORK: PID=26195 PPID=1386 
+EXEC: PID=26195 CMD=
+FORK: PID=26196 PPID=1386 
+FORK: PID=26197 PPID=1386 
+FORK: PID=26198 PPID=1386 
+EXEC: PID=26198 CMD=
+FORK: PID=26199 PPID=1386 
+FORK: PID=26200 PPID=1386 
+FORK: PID=26201 PPID=1386 
+EXEC: PID=26201 CMD=
+FORK: PID=26202 PPID=1386 
+FORK: PID=26203 PPID=1386 
+FORK: PID=26204 PPID=1386 
+EXEC: PID=26204 CMD=
+FORK: PID=26205 PPID=1386 
+FORK: PID=26206 PPID=1386 
+FORK: PID=26207 PPID=1386 
+EXEC: PID=26207 CMD=
+FORK: PID=26208 PPID=1386 
+FORK: PID=26209 PPID=1386 
+FORK: PID=26210 PPID=1386 
+EXEC: PID=26210 CMD=
+FORK: PID=26211 PPID=1386 
+FORK: PID=26212 PPID=1386 
+FORK: PID=26213 PPID=1386 
+EXEC: PID=26213 CMD=
+FORK: PID=26214 PPID=1386 
+FORK: PID=26215 PPID=1386 
+FORK: PID=26216 PPID=1386 
+EXEC: PID=26216 CMD=
+FORK: PID=26217 PPID=1386 
+FORK: PID=26218 PPID=1386 
+FORK: PID=26219 PPID=1386 
+EXEC: PID=26219 CMD=
+FORK: PID=26220 PPID=1386 
+FORK: PID=26221 PPID=1386 
+FORK: PID=26222 PPID=1386 
+EXEC: PID=26222 CMD=
+FORK: PID=26223 PPID=1386 
+FORK: PID=26224 PPID=1386 
+FORK: PID=26225 PPID=1386 
+EXEC: PID=26225 CMD=
+FORK: PID=26226 PPID=1386 
+FORK: PID=26227 PPID=1386 
+FORK: PID=26228 PPID=1386 
+EXEC: PID=26228 CMD=
+FORK: PID=26229 PPID=1386 
+FORK: PID=26230 PPID=1386 
+FORK: PID=26231 PPID=1386 
+EXEC: PID=26231 CMD=
+FORK: PID=26232 PPID=1386 
+FORK: PID=26233 PPID=1386 
+FORK: PID=26234 PPID=1386 
+EXEC: PID=26234 CMD=
+FORK: PID=26235 PPID=1386 
+FORK: PID=26236 PPID=1386 
+FORK: PID=26237 PPID=1386 
+EXEC: PID=26237 CMD=
+FORK: PID=26238 PPID=1386 
+FORK: PID=26239 PPID=1386 
+FORK: PID=26240 PPID=1386 
+EXEC: PID=26240 CMD=
+FORK: PID=26241 PPID=1386 
+FORK: PID=26242 PPID=1386 
+FORK: PID=26243 PPID=1386 
+EXEC: PID=26243 CMD=
+FORK: PID=26244 PPID=1386 
+FORK: PID=26245 PPID=1386 
+FORK: PID=26246 PPID=1386 
+EXEC: PID=26246 CMD=
+FORK: PID=26247 PPID=1386 
+FORK: PID=26248 PPID=1386 
+FORK: PID=26249 PPID=1386 
+EXEC: PID=26249 CMD=
+FORK: PID=26250 PPID=1386 
+FORK: PID=26251 PPID=1386 
+FORK: PID=26252 PPID=1386 
+EXEC: PID=26252 CMD=
+FORK: PID=26253 PPID=1386 
+FORK: PID=26254 PPID=1386 
+FORK: PID=26255 PPID=1386 
+EXEC: PID=26255 CMD=
+FORK: PID=26256 PPID=1386 
+FORK: PID=26257 PPID=1386 
+FORK: PID=26258 PPID=1386 
+EXEC: PID=26258 CMD=
+FORK: PID=26259 PPID=1386 
+FORK: PID=26260 PPID=1386 
+FORK: PID=26261 PPID=1 
+FORK: PID=26262 PPID=937 
+EXEC: PID=26262 CMD=/usr/lib/NetworkManager/nm-dhcp-client.action 
+FORK: PID=26263 PPID=1386 
+EXEC: PID=26263 CMD=
+FORK: PID=26264 PPID=1386 
+FORK: PID=26265 PPID=1386 
+FORK: PID=26266 PPID=1 
+FORK: PID=26267 PPID=1386 
+EXEC: PID=26267 CMD=
+FORK: PID=26268 PPID=1386 
+FORK: PID=26269 PPID=1386 
+FORK: PID=26270 PPID=1386 
+EXEC: PID=26270 CMD=
+FORK: PID=26271 PPID=1386 
+FORK: PID=26272 PPID=1386 
+FORK: PID=26273 PPID=1386 
+EXEC: PID=26273 CMD=
+FORK: PID=26274 PPID=1386 
+FORK: PID=26275 PPID=1386 
+FORK: PID=26276 PPID=1386 
+EXEC: PID=26276 CMD=
+FORK: PID=26277 PPID=1386 
+FORK: PID=26278 PPID=1386 
+FORK: PID=26279 PPID=1386 
+EXEC: PID=26279 CMD=
+FORK: PID=26280 PPID=1386 
+FORK: PID=26281 PPID=1386 
+FORK: PID=26282 PPID=1386 
+EXEC: PID=26282 CMD=
+FORK: PID=26283 PPID=1386 
+FORK: PID=26284 PPID=1386 
+FORK: PID=26285 PPID=1386 
+EXEC: PID=26285 CMD=
+FORK: PID=26286 PPID=1386 
+FORK: PID=26287 PPID=1386 
+FORK: PID=26288 PPID=1386 
+EXEC: PID=26288 CMD=
+FORK: PID=26289 PPID=1386 
+FORK: PID=26290 PPID=1386 
+FORK: PID=26291 PPID=1386 
+EXEC: PID=26291 CMD=
+FORK: PID=26292 PPID=1386 
+FORK: PID=26293 PPID=1386 
+FORK: PID=26294 PPID=1386 
+EXEC: PID=26294 CMD=
+FORK: PID=26295 PPID=1386 
+FORK: PID=26296 PPID=1386 
+FORK: PID=26297 PPID=1386 
+EXEC: PID=26297 CMD=
+FORK: PID=26298 PPID=1386 
+FORK: PID=26299 PPID=1386 
+FORK: PID=26300 PPID=1386 
+EXEC: PID=26300 CMD=
+FORK: PID=26301 PPID=1386 
+FORK: PID=26302 PPID=1386 
+FORK: PID=26303 PPID=1386 
+EXEC: PID=26303 CMD=
+FORK: PID=26304 PPID=1386 
+FORK: PID=26305 PPID=1386 
+FORK: PID=26306 PPID=1386 
+EXEC: PID=26306 CMD=
+FORK: PID=26307 PPID=1386 
+FORK: PID=26308 PPID=1386 
+FORK: PID=26309 PPID=1316 
+FORK: PID=26310 PPID=1316 
+FORK: PID=26311 PPID=1316 
+FORK: PID=26312 PPID=1386 
+EXEC: PID=26312 CMD=
+FORK: PID=26313 PPID=1386 
+FORK: PID=26314 PPID=1386 
+FORK: PID=26315 PPID=1386 
+EXEC: PID=26315 CMD=
+FORK: PID=26316 PPID=1386 
+FORK: PID=26317 PPID=1386 
+FORK: PID=26318 PPID=1386 
+EXEC: PID=26318 CMD=
+FORK: PID=26319 PPID=1386 
+FORK: PID=26320 PPID=1386 
+FORK: PID=26321 PPID=1386 
+EXEC: PID=26321 CMD=
+FORK: PID=26322 PPID=1386 
+FORK: PID=26323 PPID=1386 
+FORK: PID=26324 PPID=1386 
+EXEC: PID=26324 CMD=
+FORK: PID=26325 PPID=1386 
+FORK: PID=26326 PPID=1386 
+FORK: PID=26327 PPID=1386 
+EXEC: PID=26327 CMD=
+FORK: PID=26328 PPID=1386 
+FORK: PID=26329 PPID=1386 
+FORK: PID=26330 PPID=1386 
+EXEC: PID=26330 CMD=
+FORK: PID=26331 PPID=1386 
+FORK: PID=26332 PPID=1386 
+FORK: PID=26333 PPID=1386 
+EXEC: PID=26333 CMD=
+FORK: PID=26334 PPID=1386 
+FORK: PID=26335 PPID=1386 
+FORK: PID=26336 PPID=1386 
+EXEC: PID=26336 CMD=
+FORK: PID=26337 PPID=1386 
+FORK: PID=26338 PPID=1386 
+FORK: PID=26339 PPID=1386 
+EXEC: PID=26339 CMD=
+FORK: PID=26340 PPID=1386 
+FORK: PID=26341 PPID=1386 
+FORK: PID=26342 PPID=1386 
+EXEC: PID=26342 CMD=
+FORK: PID=26343 PPID=1386 
+FORK: PID=26344 PPID=1386 
+FORK: PID=26345 PPID=749 
+FORK: PID=26346 PPID=1 
+FORK: PID=26347 PPID=26345 
+EXEC: PID=26347 CMD=/bin/sh -c    cd / && run-parts --report /etc/cron.hourly 
+FORK: PID=26348 PPID=26347 
+EXEC: PID=26348 CMD=run-parts --report /etc/cron.hourly 
+FORK: PID=26349 PPID=1386 
+EXEC: PID=26349 CMD=
+FORK: PID=26350 PPID=1386 
+FORK: PID=26351 PPID=1386 
+FORK: PID=26352 PPID=1386 
+EXEC: PID=26352 CMD=
+FORK: PID=26353 PPID=1386 
+FORK: PID=26354 PPID=1386 
+FORK: PID=26355 PPID=1386 
+EXEC: PID=26355 CMD=
+FORK: PID=26356 PPID=1386 
+FORK: PID=26357 PPID=1386 
+FORK: PID=26358 PPID=1386 
+EXEC: PID=26358 CMD=
+FORK: PID=26359 PPID=1386 
+FORK: PID=26360 PPID=1386 
+FORK: PID=26361 PPID=1386 
+EXEC: PID=26361 CMD=
+FORK: PID=26362 PPID=1386 
+FORK: PID=26363 PPID=1386 
+FORK: PID=26364 PPID=1386 
+EXEC: PID=26364 CMD=
+FORK: PID=26365 PPID=1386 
+FORK: PID=26366 PPID=1386 
+FORK: PID=26367 PPID=1386 
+EXEC: PID=26367 CMD=
+FORK: PID=26368 PPID=1386 
+FORK: PID=26369 PPID=1386 
+FORK: PID=26370 PPID=1386 
+EXEC: PID=26370 CMD=
+FORK: PID=26371 PPID=1386 
+FORK: PID=26372 PPID=1386 
+FORK: PID=26373 PPID=1386 
+EXEC: PID=26373 CMD=
+FORK: PID=26374 PPID=1386 
+FORK: PID=26375 PPID=1386 
+FORK: PID=26376 PPID=1386 
+EXEC: PID=26376 CMD=
+FORK: PID=26377 PPID=1386 
+FORK: PID=26378 PPID=1386 
+FORK: PID=26379 PPID=1386 
+EXEC: PID=26379 CMD=
+FORK: PID=26380 PPID=1386 
+FORK: PID=26381 PPID=1386 
+FORK: PID=26382 PPID=1386 
+EXEC: PID=26382 CMD=
+FORK: PID=26383 PPID=1386 
+FORK: PID=26384 PPID=1386 
+FORK: PID=26385 PPID=1386 
+EXEC: PID=26385 CMD=
+FORK: PID=26386 PPID=1386 
+FORK: PID=26387 PPID=1386 
+FORK: PID=26388 PPID=1386 
+EXEC: PID=26388 CMD=
+FORK: PID=26389 PPID=1386 
+FORK: PID=26390 PPID=1386 
+FORK: PID=26391 PPID=1386 
+EXEC: PID=26391 CMD=
+FORK: PID=26392 PPID=1386 
+FORK: PID=26393 PPID=1386 
+FORK: PID=26394 PPID=1386 
+EXEC: PID=26394 CMD=
+FORK: PID=26395 PPID=1386 
+FORK: PID=26396 PPID=1386 
+FORK: PID=26397 PPID=1386 
+EXEC: PID=26397 CMD=
+FORK: PID=26398 PPID=1386 
+FORK: PID=26399 PPID=1386 
+FORK: PID=26400 PPID=1386 
+EXEC: PID=26400 CMD=
+FORK: PID=26401 PPID=1386 
+FORK: PID=26402 PPID=1386 
+FORK: PID=26403 PPID=1386 
+EXEC: PID=26403 CMD=
+FORK: PID=26404 PPID=1386 
+FORK: PID=26405 PPID=1386 
+FORK: PID=26406 PPID=1386 
+EXEC: PID=26406 CMD=
+FORK: PID=26407 PPID=1386 
+FORK: PID=26408 PPID=1386 
+FORK: PID=26409 PPID=1386 
+EXEC: PID=26409 CMD=
+FORK: PID=26410 PPID=1386 
+FORK: PID=26411 PPID=1386 
+FORK: PID=26412 PPID=1386 
+EXEC: PID=26412 CMD=
+FORK: PID=26413 PPID=1386 
+FORK: PID=26414 PPID=1386 
+FORK: PID=26415 PPID=1386 
+EXEC: PID=26415 CMD=
+FORK: PID=26416 PPID=1386 
+FORK: PID=26417 PPID=1386 
+FORK: PID=26418 PPID=1386 
+EXEC: PID=26418 CMD=
+FORK: PID=26419 PPID=1386 
+FORK: PID=26420 PPID=1386 
+FORK: PID=26421 PPID=1386 
+EXEC: PID=26421 CMD=
+FORK: PID=26422 PPID=1386 
+FORK: PID=26423 PPID=1386 
+FORK: PID=26424 PPID=1386 
+EXEC: PID=26424 CMD=
+FORK: PID=26425 PPID=1386 
+FORK: PID=26426 PPID=1386 
+FORK: PID=26427 PPID=1316 
+FORK: PID=26428 PPID=1316 
+FORK: PID=26429 PPID=1316 
+FORK: PID=26430 PPID=1386 
+EXEC: PID=26430 CMD=
+FORK: PID=26431 PPID=1386 
+FORK: PID=26432 PPID=1386 
+FORK: PID=26433 PPID=1386 
+EXEC: PID=26433 CMD=
+FORK: PID=26434 PPID=1386 
+FORK: PID=26435 PPID=1386 
+FORK: PID=26436 PPID=1386 
+EXEC: PID=26436 CMD=
+FORK: PID=26437 PPID=1386 
+FORK: PID=26438 PPID=1386 
+FORK: PID=26439 PPID=1386 
+EXEC: PID=26439 CMD=
+FORK: PID=26440 PPID=1386 
+FORK: PID=26441 PPID=1386 
+FORK: PID=26442 PPID=1386 
+EXEC: PID=26442 CMD=
+FORK: PID=26443 PPID=1386 
+FORK: PID=26444 PPID=1386 
+FORK: PID=26445 PPID=1386 
+EXEC: PID=26445 CMD=
+FORK: PID=26446 PPID=1386 
+FORK: PID=26447 PPID=1386 
+FORK: PID=26448 PPID=1386 
+EXEC: PID=26448 CMD=
+FORK: PID=26449 PPID=1386 
+FORK: PID=26450 PPID=1386 
+FORK: PID=26451 PPID=1 
+FORK: PID=26452 PPID=937 
+EXEC: PID=26452 CMD=/usr/lib/NetworkManager/nm-dhcp-client.action 
+FORK: PID=26453 PPID=1 
+FORK: PID=26454 PPID=1386 
+EXEC: PID=26454 CMD=
+FORK: PID=26455 PPID=1386 
+FORK: PID=26456 PPID=1386 
+FORK: PID=26457 PPID=1386 
+EXEC: PID=26457 CMD=
+FORK: PID=26458 PPID=1386 
+FORK: PID=26459 PPID=1386 
+FORK: PID=26460 PPID=1386 
+EXEC: PID=26460 CMD=
+FORK: PID=26461 PPID=1386 
+FORK: PID=26462 PPID=1386 
+FORK: PID=26463 PPID=1386 
+EXEC: PID=26463 CMD=
+FORK: PID=26464 PPID=1386 
+FORK: PID=26465 PPID=1386 
+FORK: PID=26466 PPID=1386 
+EXEC: PID=26466 CMD=
+FORK: PID=26467 PPID=1386 
+FORK: PID=26468 PPID=1386 
+FORK: PID=26469 PPID=1316 
+FORK: PID=26470 PPID=1430 
+FORK: PID=26471 PPID=26470 
+EXEC: PID=26471 CMD=gnome-terminal 
+FORK: PID=26472 PPID=26471 
+EXEC: PID=26472 CMD=gnome-pty-helper 
+FORK: PID=26473 PPID=26471 
+FORK: PID=26474 PPID=1 
+EXEC: PID=26473 CMD=bash 
+FORK: PID=26475 PPID=26473 
+FORK: PID=26476 PPID=26475 
+EXEC: PID=26476 CMD=/bin/sh /usr/bin/lesspipe 
+EXEC: PID=26476 CMD=/bin/sh /usr/bin/lesspipe 
+FORK: PID=26477 PPID=26476 
+EXEC: PID=26477 CMD=basename /usr/bin/lesspipe 
+FORK: PID=26478 PPID=26476 
+FORK: PID=26479 PPID=26478 
+EXEC: PID=26479 CMD=dirname /usr/bin/lesspipe 
+FORK: PID=26480 PPID=26473 
+FORK: PID=26481 PPID=26480 
+EXEC: PID=26481 CMD=dircolors -b 
+FORK: PID=26482 PPID=26473 
+FORK: PID=26483 PPID=26482 
+EXEC: PID=26483 CMD=uname -s 
+FORK: PID=26484 PPID=26473 
+FORK: PID=26485 PPID=26473 
+FORK: PID=26486 PPID=26485 
+FORK: PID=26487 PPID=26485 
+EXEC: PID=26486 CMD=sed -ne /^# START exclude/,/^# FINISH exclude/p /etc/bash_completion 
+FORK: PID=26488 PPID=26473 
+FORK: PID=26489 PPID=26473 
+FORK: PID=26490 PPID=26489 
+EXEC: PID=26490 CMD=uname -o 
+FORK: PID=26491 PPID=1386 
+EXEC: PID=26491 CMD=
+FORK: PID=26492 PPID=1386 
+FORK: PID=26493 PPID=1386 
+FORK: PID=26494 PPID=1 
+FORK: PID=26495 PPID=1 
+FORK: PID=26496 PPID=26473 
+FORK: PID=26497 PPID=26496 
+FORK: PID=26498 PPID=26497 
+EXEC: PID=26498 CMD=expr cd /t : .*[ 	
+><=;|&(:] 
+FORK: PID=26499 PPID=26473 
+FORK: PID=26500 PPID=26499 
+FORK: PID=26501 PPID=26499 
+FORK: PID=26502 PPID=26500 
+FORK: PID=26503 PPID=1386 
+EXEC: PID=26503 CMD=
+FORK: PID=26504 PPID=1386 
+FORK: PID=26505 PPID=1386 
+FORK: PID=26506 PPID=26473 
+FORK: PID=26507 PPID=26506 
+FORK: PID=26508 PPID=26507 
+EXEC: PID=26508 CMD=expr rm -r sc : .*[ 	
+><=;|&(:] 
+FORK: PID=26509 PPID=26473 
+FORK: PID=26510 PPID=26509 
+FORK: PID=26511 PPID=26509 
+FORK: PID=26512 PPID=26510 
+FORK: PID=26513 PPID=26473 
+FORK: PID=26514 PPID=26513 
+FORK: PID=26515 PPID=26513 
+FORK: PID=26516 PPID=26514 
+FORK: PID=26517 PPID=26473 
+EXEC: PID=26517 CMD=rm -r screengrab 
+FORK: PID=26518 PPID=26473 
+FORK: PID=26519 PPID=26518 
+FORK: PID=26520 PPID=26519 
+EXEC: PID=26520 CMD=expr rm scre : .*[ 	
+><=;|&(:] 
+FORK: PID=26521 PPID=26473 
+FORK: PID=26522 PPID=26521 
+FORK: PID=26523 PPID=26521 
+FORK: PID=26524 PPID=26522 
+FORK: PID=26525 PPID=26473 
+FORK: PID=26526 PPID=26525 
+FORK: PID=26527 PPID=26525 
+FORK: PID=26528 PPID=26526 
+FORK: PID=26529 PPID=26473 
+EXEC: PID=26529 CMD=rm screengrab.zip 
+FORK: PID=26530 PPID=1386 
+EXEC: PID=26530 CMD=
+FORK: PID=26531 PPID=1386 
+FORK: PID=26532 PPID=1386 
+FORK: PID=26533 PPID=26473 
+EXEC: PID=26533 CMD=clear 
+FORK: PID=26534 PPID=1386 
+EXEC: PID=26534 CMD=
+FORK: PID=26535 PPID=1386 
+FORK: PID=26536 PPID=1386 
+FORK: PID=26537 PPID=1539 
+FORK: PID=26538 PPID=26537 
+EXEC: PID=26538 CMD=/usr/lib/indicator-session/gtk-logout-helper --shutdown 
+FORK: PID=26539 PPID=1 
+FORK: PID=26540 PPID=806 
+FORK: PID=26541 PPID=26540 
+EXEC: PID=26541 CMD=/bin/sh /usr/lib/ConsoleKit/scripts/ck-system-stop 
+EXEC: PID=26541 CMD=/bin/sh /usr/lib/ConsoleKit/scripts/ck-system-stop 
+FORK: PID=26542 PPID=26541 
+FORK: PID=26543 PPID=1316 
+EXEC: PID=26543 CMD=/usr/bin/gconftool-2 --shutdown 
+FORK: PID=26544 PPID=871 
+FORK: PID=26545 PPID=806 
+EXEC: PID=26545 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_removed 
+EXEC: PID=26545 CMD=/bin/sh /usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck session_removed 
+FORK: PID=26546 PPID=26545 
+FORK: PID=26547 PPID=26546 
+FORK: PID=26548 PPID=26546 
+EXEC: PID=26548 CMD=cut -f 1 -d: 
+EXEC: PID=26547 CMD=getent passwd 1000 
+FORK: PID=26549 PPID=26545 
+EXEC: PID=26542 CMD=/sbin/shutdown -h now 
+FORK: PID=26550 PPID=26542 
+FORK: PID=26551 PPID=1 
+EXEC: PID=26544 CMD=
+EXEC: PID=26544 CMD=
+EXEC: PID=26549 CMD=sed -i \%^/org/freedesktop/ConsoleKit/Session2$%d /var/run/console/kalana 
+FORK: PID=26552 PPID=26545 
+FORK: PID=26553 PPID=1 
+EXEC: PID=26551 CMD=/bin/sh -e /proc/self/fd/12 
+EXEC: PID=26552 CMD=rm -f /var/run/console/kalana 
+FORK: PID=26554 PPID=806 
+FORK: PID=26555 PPID=1392 
+EXEC: PID=26551 CMD=hwclock --rtc=/dev/rtc0 --systohc --utc --noadjfile 
+EXEC: PID=26553 CMD=/bin/sh -e -c exec /sbin/alsa-utils stop /bin/sh 
+EXEC: PID=26553 CMD=/bin/sh /sbin/alsa-utils stop 
+EXEC: PID=26553 CMD=/bin/sh /sbin/alsa-utils stop 
+FORK: PID=26556 PPID=26553 
+FORK: PID=26557 PPID=1141 
+FORK: PID=26558 PPID=26555 
+EXEC: PID=26556 CMD=/bin/sh /usr/bin/which amixer 
+EXEC: PID=26556 CMD=/bin/sh /usr/bin/which amixer 
+FORK: PID=26559 PPID=26553 
+FORK: PID=26560 PPID=1416 
+EXEC: PID=26558 CMD=/usr/lib/libgconf2-4/gconfd-2 
+EXEC: PID=26559 CMD=alsactl store 
+EXEC: PID=26560 CMD=fusermount -u -q -z -- /home/kalana/.gvfs 
+FORK: PID=26561 PPID=26560 
+FORK: PID=26562 PPID=1 
+EXEC: PID=26562 CMD=/bin/sh -e -c exec /etc/init.d/rc $RUNLEVEL /bin/sh 
+EXEC: PID=26562 CMD=/bin/sh /etc/init.d/rc 0 
+EXEC: PID=26562 CMD=/bin/sh /etc/init.d/rc 0 
+FORK: PID=26563 PPID=26562 
+EXEC: PID=26563 CMD=stty onlcr 
+FORK: PID=26564 PPID=26562 
+EXEC: PID=26564 CMD=/bin/sh /etc/rc0.d/K65vboxadd-service stop 
+EXEC: PID=26564 CMD=/bin/sh /etc/rc0.d/K65vboxadd-service stop 
+FORK: PID=26565 PPID=2 
+FORK: PID=26566 PPID=26564 
+EXEC: PID=26566 CMD=/bin/sh /bin/which /etc/rc0.d/K65vboxadd-service 
+EXEC: PID=26566 CMD=/bin/sh /bin/which /etc/rc0.d/K65vboxadd-service 
+FORK: PID=26567 PPID=26564 
+EXEC: PID=26567 CMD=/bin/sh /bin/which start-stop-daemon 
+EXEC: PID=26567 CMD=/bin/sh /bin/which start-stop-daemon 
+FORK: PID=26568 PPID=26564 
+EXEC: PID=26568 CMD=logger -t vboxadd-service.sh Stopping VirtualBox Guest Addition service. 
+FORK: PID=26569 PPID=26564 
+EXEC: PID=26569 CMD=start-stop-daemon --stop --retry 2 --exec /usr/sbin/VBoxService 
+FORK: PID=26570 PPID=26564 
+EXEC: PID=26570 CMD=pidof VBoxService 
+FORK: PID=26571 PPID=26564 
+EXEC: PID=26571 CMD=rm -f /var/run/vboxadd-service.sh 
+FORK: PID=26572 PPID=26564 
+EXEC: PID=26572 CMD=logger -t vboxadd-service.sh VirtualBox Guest Addition service stopped. 
+FORK: PID=26573 PPID=26562 
+EXEC: PID=26573 CMD=/bin/sh /etc/rc0.d/K74bluetooth stop 
+EXEC: PID=26573 CMD=/bin/sh /etc/rc0.d/K74bluetooth stop 
+FORK: PID=26574 PPID=26573 
+EXEC: PID=26574 CMD=pkill -TERM bluetoothd 
+FORK: PID=26575 PPID=26562 
+EXEC: PID=26575 CMD=/bin/sh /etc/rc0.d/K90vboxadd stop 
+EXEC: PID=26575 CMD=/bin/sh /etc/rc0.d/K90vboxadd stop 
+FORK: PID=26576 PPID=26575 
+EXEC: PID=26576 CMD=uname -r 
+FORK: PID=26577 PPID=26575 
+FORK: PID=26578 PPID=26575 
+EXEC: PID=26577 CMD=/sbin/modprobe -c 
+EXEC: PID=26578 CMD=grep -q ^allow_unsupported_modules  *0 
+FORK: PID=26579 PPID=26575 
+EXEC: PID=26579 CMD=/bin/sh /bin/which /etc/rc0.d/K90vboxadd 
+EXEC: PID=26579 CMD=/bin/sh /bin/which /etc/rc0.d/K90vboxadd 
+FORK: PID=26580 PPID=26575 
+EXEC
