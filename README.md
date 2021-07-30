@@ -7,7 +7,7 @@ For additional information, contact: Kalana Sahabandu, email: ksahaban@uw.edu
 
 Acknowledgement: This work was supported by ONR grant N00014-16-1-2710 P00002 and DARPA TC grant DARPA FA8650-15-C-7556.
 
-*Attacker-side Light weight DIFT implementation*
+**Attacker-side Light weight DIFT implementation**
 
 Attacker-side Light weight DIFT was implemented to give security analysts an clear
 picture of the processes created by a malicious program during its execution. This tool
