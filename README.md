@@ -123,9 +123,8 @@ Note: Following installation guide was tested on Ubuntu 20.04 LTS
 
 1. First download the "ubuntu 10.04.1 LTS - 32 bit - attacker.ova" file
 
-    Download Link to the disk image:
-    
-    https://www.dropbox.com/sh/4yc3uhyczi0hjzm/AAC21rVdqkaXlP4nvWILZuUQa?dl=0
+	Download Link to the disk image:
+	https://www.dropbox.com/sh/4yc3uhyczi0hjzm/AAC21rVdqkaXlP4nvWILZuUQa?dl=0
     
 3. Navigate to File → Import appliance (Shortcut Ctrl + I).
 4. Then choose “ubuntu 10.04.1 LTS – 32 bit – attacker.ova” from the file explorer
