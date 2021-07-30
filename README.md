@@ -19,6 +19,7 @@ command.
 ◦ Group which the use belongs to
 and log them into a log file. This file then fed into the below mentioned
 visualization component for post processing
+
 **2. Visualization tool**
 Visualization component is a python script that acts as a post processing tool
 which takes log file produced by the logging tool and produce in-memory python
