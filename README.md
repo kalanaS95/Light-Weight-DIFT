@@ -176,12 +176,14 @@ VirtualBox.)
 
 1. First install neo4j server and command line interface (CLI) using following Linux
     commands
+    ```
     ◦ sudo apt update
     ◦ sudo apt install apt-transport-https ca-certificates curl software-properties-common
     ◦ curl -fsSL https://debian.neo4j.com/neotechnology.gpg.key | sudo apt-key add -
     ◦ sudo add-apt-repository "deb https://debian.neo4j.com stable 4.1"
     ◦ sudo apt install neo4j
     ◦ sudo systemctl enable neo4j.service
+    ```
 2. Finally check if neo4j is successfully installed on the system by running following
     Linux command
     - sudo systemctl status neo4j.service
