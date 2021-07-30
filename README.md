@@ -122,13 +122,16 @@ Note: Following installation guide was tested on Ubuntu 20.04 LTS
 **Installing attacker-side VirtualBox disk image.**
 
 1. First download the "ubuntu 10.04.1 LTS - 32 bit - attacker.ova" file
+
     Download Link to the disk image:
+    
     https://www.dropbox.com/sh/4yc3uhyczi0hjzm/AAC21rVdqkaXlP4nvWILZuUQa?dl=0
-2. Navigate to File → Import appliance (Shortcut Ctrl + I).
-3. Then choose “ubuntu 10.04.1 LTS – 32 bit – attacker.ova” from the file explorer
+    
+3. Navigate to File → Import appliance (Shortcut Ctrl + I).
+4. Then choose “ubuntu 10.04.1 LTS – 32 bit – attacker.ova” from the file explorer
     (VirtualBox images can be found under “VirtualBox Images” directory in the
     unzipped file) window and click next.
-4. From the next window, make sure to choose “include all network adapter MAC
+5. From the next window, make sure to choose “include all network adapter MAC
     addresses” from the MAC Address Policy drop-down menu. And click import.
 	```
 	Note: Passwords for both virtual computers are 131kalana
@@ -155,16 +158,16 @@ https://www.dropbox.com/sh/4yc3uhyczi0hjzm/AAC21rVdqkaXlP4nvWILZuUQa?dl=0
 
 
 3. Repeat step 1- 2 to add victim-side virtual computer to the same network
-```
-Now let’s make sure both computers are on the same network by running following
-command on both attacker and victim virtual computers. (New terminal can be opened
-by clicking Applications → Accessories → Terminal)
+	```
+	Now let’s make sure both computers are on the same network by running following
+	command on both attacker and victim virtual computers. (New terminal can be opened
+	by clicking Applications → Accessories → Terminal)
 
-- ifconfig
+	- ifconfig
 
-if both computers are on the same network. First three parts of their IP address should be
-similar
-```
+	if both computers are on the same network. First three parts of their IP address should be
+	similar
+	```
 
 
 **Installation of Neo4j graphing database system.**
@@ -175,17 +178,17 @@ VirtualBox.)
 1. First install neo4j server and command line interface (CLI) using following Linux
     commands
     ```
-    ◦ sudo apt update
-    ◦ sudo apt install apt-transport-https ca-certificates curl software-properties-common
-    ◦ curl -fsSL https://debian.neo4j.com/neotechnology.gpg.key | sudo apt-key add -
-    ◦ sudo add-apt-repository "deb https://debian.neo4j.com stable 4.1"
-    ◦ sudo apt install neo4j
-    ◦ sudo systemctl enable neo4j.service
+    sudo apt update
+    sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    curl -fsSL https://debian.neo4j.com/neotechnology.gpg.key | sudo apt-key add -
+    sudo add-apt-repository "deb https://debian.neo4j.com stable 4.1"
+    sudo apt install neo4j
+    sudo systemctl enable neo4j.service
     ```
 2. Finally check if neo4j is successfully installed on the system by running following
     Linux command
     ```
-    - sudo systemctl status neo4j.service
+   sudo systemctl status neo4j.service
     ```
 3. Once neo4j server and CLI is installed successfully, now we can install the Neo4j
     front-end. This will allow us to easily create new graphing database through the
@@ -194,11 +197,11 @@ VirtualBox.)
 4. Then execute the following linux command to grant necessary permission to
     execute the APPImage file
     ```
-    - chmod +X neo4j-desktop-1.4.5-x86_64.AppImage
+   chmod +X neo4j-desktop-1.4.5-x86_64.AppImage
     ```
 5. Now let’s make sure, Neo4j front-end works by executing following command.
 	```
-	    - ./neo4j-desktop-1.4.5-x86_64.AppImage
+	./neo4j-desktop-1.4.5-x86_64.AppImage
 	```
 
 
@@ -206,7 +209,7 @@ VirtualBox.)
 
 1. First launch the Neo4j front-end by executing following command
 	 ```
-	    - ./neo4j-desktop-1.4.5-x86_64.AppImage
+	./neo4j-desktop-1.4.5-x86_64.AppImage
 	```
 
 
@@ -252,7 +255,7 @@ VirtualBox.)
 10.Open a new terminal and install the neo4j python driver. To install neo4j driver,
 type following command on the Linux terminal.
 ```
-- pip install neo4j
+pip install neo4j
 ```
 
 ```
@@ -298,21 +301,21 @@ the system.
     command to export environmental variable to setup the Intel Pin executable
     location
     ```
-    - export PIN_HOME=/home/kalana/Desktop/PIN
+    export PIN_HOME=/home/kalana/Desktop/PIN
     ```
 	  ```  
-	    Note: If you want to double check path is correctly setup, run “echo $PIN_HOME”,
-	    it should print out “/home/kalana/Desktop/PIN”.
+	  Note: If you want to double check path is correctly setup, run “echo $PIN_HOME”, 
+	  it should print out “/home/kalana/Desktop/PIN”.
 	```
 3. To run the attack first change directory to the “Multi-host-screengrab” directory
     on the Desktop. To do so, type the following command on the terminal
 	    ```
-	    - cd Desktop/Multi-host-screengrab
+	    cd Desktop/Multi-host-screengrab
 	    ```
 	    
 4. Now lets run the attack by typing following command:
 	```
-	    - $PIN_HOME/pin -follow_execv -t /home/kalana/Desktop/libdft_32/tools/nullpin.so -- /home/kalana/Desktop/Multi-host-screengrab/attack-script-attacker.sh
+	$PIN_HOME/pin -follow_execv -t /home/kalana/Desktop/libdft_32/tools/nullpin.so -- /home/kalana/Desktop/Multi-host-screengrab/attack-script-attacker.sh
 	```
 
 
@@ -355,13 +358,13 @@ replace the files from the first attack when re running the attack.**
 1. First, fire up both virtual computers
 2. Then, to run the attack first change directory to the “Multi-host-screengrab”
     directory on the Desktop. To do so, type the following command on the terminal
-	    ```
-	   - cd Desktop/Multi-host-screengrab
-	   ```
+	```
+	cd Desktop/Multi-host-screengrab
+	```
 	   
 3. Now lets run the attack by typing following command:
 	```
-	 ./attack-script-victim.sh
+	./attack-script-victim.sh
 	```
 
 
