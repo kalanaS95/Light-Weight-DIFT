@@ -133,10 +133,13 @@ Note: Following installation guide was tested on Ubuntu 20.04 LTS
 
 **Installing attacker-side VirtualBox disk image (Installing from scratch).**
 
-1. First download a fresh copy of Ubuntu 10.04 LTS (32-bit) and install it
+1. First download a fresh copy of Ubuntu 10.04 LTS (32-bit) and install it.
+
     ◦ [http://old-releases.ubuntu.com/releases/10.04.0/ubuntu-10.04-desktop-i386.iso](http://old-releases.ubuntu.com/releases/10.04.0/ubuntu-10.04-desktop-i386.iso)
+    
     ◦ During the installation make sure to set username to “kalana” and password to
        “131kalana” (This is a must).
+       
 2. Once installation is complete copy all the contents in the “Attacker-side-code”
     directory to the Desktop of the installed virtual computer
 
