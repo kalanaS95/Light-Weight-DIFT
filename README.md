@@ -354,7 +354,7 @@ not necessary to remove the payload. But it will avoid attacker script asking to
 replace the files from the first attack when re running the attack.**
 
 
-# Analysis of Multi-host screengrab attack on the victim's side
+# Analysis of Multi-host screengrab attack on the victim's perspective
 
 1. First, fire up both virtual computers
 2. Then, to run the attack first change directory to the “Multi-host-screengrab”
