@@ -41,9 +41,9 @@ driver for visualization.
 
 View from the victim’s perspective Light weight DIFT was implemented to capture the
 behavior of the processes during an execution of an malicious remote attack happens
-through SSH and SCP. Victim-side light weight DIFT helps to visualize process trace of
+through SSH and SCP. View from the victim's perspective light weight DIFT helps to visualize process trace of
 a victim system during the execution of a SSH and SCP based attack. Implementation of
-the victim-side light weight DIFT consists of three components.
+view from the victim's perspective light weight DIFT consists of three components.
 
 
 **1. Start and termination script**
@@ -60,11 +60,11 @@ during the time the signal is received.)
 This synchronization mechanism (start and stop signals ) added to only to clearly
 capture processes created during the time frame of the attack.
 
-**2. Victim-side logger**
+**2. View from the victim's perspective logger**
     This component is written using C/C++ to directly connect with Linux kernel
     using Netlink kernel module which will allow us to get process notifications along
     with their PID (Process ID), PPID (Parent Process ID) and executable. At the end
-    of the execution of the victim-side logger, it will produce a log of all the processes
+    of the execution of the View from the victim's perspective logger, it will produce a log of all the processes
     executed in the victim system during the time frame of the attack.
     
 **3. Visualization tool**
@@ -106,8 +106,8 @@ Note: Following installation guide was tested on Ubuntu 20.04 LTS
 1. First download the latest version of virtual box from the following link:
     https://www.virtualbox.org/wiki/Downloads
 2. Once installation is completed, we need to create a NAT network within the
-    virtual box, such that we can network attacker-side virtual computer and the
-    victim-side computer. Following steps will discuss about, how create a NAT
+    virtual box, such that we can network view from the attacker's and the
+    victim's perspective virtual computers. Following steps will discuss about, how create a NAT
     network.
     1. First navigate to File → Preferences (shortcut: Ctrl + G).
     2. Then click on the Network tab on the left side bar and then click on the add
@@ -119,7 +119,7 @@ Note: Following installation guide was tested on Ubuntu 20.04 LTS
 4. Then click OK. Then you will see a NAT under NAT networks called “Multihost-Demo”
 
 
-**Installing attacker-side VirtualBox disk image.**
+**Installing view from the attacker's perspective VirtualBox disk image.**
 
 1. First download the "ubuntu 10.04.1 LTS - 32 bit - attacker.ova" file
 
@@ -136,10 +136,10 @@ Note: Following installation guide was tested on Ubuntu 20.04 LTS
 	Note: Passwords for both virtual computers are 131kalana
 	```
 
-**Installing victim-side VirtualBox disk image.**
+**Installing view from the victim's perspective VirtualBox disk image.**
 
-Follow the steps described in “Installing attacker-side VirtualBox disk image.” section to
-install the victim-side VirtualBox disk image. This time select “ubuntu 10.04.1 LTS – 32
+Follow the steps described in “Installing view from the attackers perspective VirtualBox disk image.” section to
+install view from the victim's perspective VirtualBox disk image. This time select “ubuntu 10.04.1 LTS – 32
 bit – victim.ova” (make sure to select “include all network adapter MAC addresses”)
 
 Download Link to the disk image:
@@ -147,7 +147,7 @@ https://www.dropbox.com/sh/4yc3uhyczi0hjzm/AAC21rVdqkaXlP4nvWILZuUQa?dl=0
 
 **Networking both computers through VirtualBox**
 
-1. First click on the attacker-side virtual computer and then click on the setting
+1. First click on the view from the attacker's perspective virtual computer and then click on the setting
     button on the top of the window
 
 
@@ -156,7 +156,7 @@ https://www.dropbox.com/sh/4yc3uhyczi0hjzm/AAC21rVdqkaXlP4nvWILZuUQa?dl=0
     from the drop down
 
 
-3. Repeat step 1- 2 to add victim-side virtual computer to the same network
+3. Repeat step 1- 2 to add View from the victim's perspective virtual computer to the same network
 	```
 	Now let’s make sure both computers are on the same network by running following
 	command on both attacker and victim virtual computers. (New terminal can be opened
@@ -204,7 +204,7 @@ VirtualBox.)
 	```
 
 
-**Setting-up Neo4j for victim and attacker-side visualization tools**
+**Setting-up Neo4j for view from the victim's and attacker's perspective visualization tools**
 
 1. First launch the Neo4j front-end by executing following command
 	 ```
@@ -243,9 +243,9 @@ VirtualBox.)
 
 
 
-7. Configuring Neo4j for the attacker-side Visualization tool is done!
-8. To configure Neo4j for the victim-side. Repeat steps 3 – 7 mentioned above. Also,
-    make sure to give victim-side database a distinct name. For the purpose of this
+7. Configuring Neo4j for view from the attacker's perspective Visualization tool is done!
+8. To configure Neo4j for view from the victims's perspective . Repeat steps 3 – 7 mentioned above. Also,
+    make sure to give view from the victim's perspective database a distinct name. For the purpose of this
     guide I have used “Process_trace_victim” and same password (131kalana).
 
 
@@ -267,36 +267,36 @@ the system.
 12. Now launch a jupyter notebook instance on the “Neo4j-Graphing-tool” directory
     and open “attacker side.ipynb” file.
 13. On the second cell of the python file, replace the **connection_URI** , **username**
-    and **password** variables with the values we have obtained when creating the
-    attacker-side neo4j database (i.e. process_trace_attacker database in my case)
+    and **password** variables with the values we have obtained when creating 
+    view from the attacker's perspective neo4j database (i.e. process_trace_attacker database in my case)
 
 
 14. Also, in the “Neo4j-Graphing-tool” directory, open the “attacker_side.html” file
     with your favorite IDE and change the **server_URL** , **server_user** and
      **server_password** JavaScript variables inside the draw function to the values we
-    obtained when creating the attacker-side neo4j database (i.e.
+    obtained when creating view from the attacker's perspective neo4j database (i.e.
     process_trace_attacker database in my case)
 
 
 15. Once configuring these parameter, you could run the whole notebook file to make
     sure everything works correctly by clicking kernel→ Restart and Run all. (I have
-    included logs files from previous experiments for both attacker and victim-side
-    visualization tools in the “Neo4j-Graphing-tool”). Once execution is completed,
+    included logs files from previous experiments for both view from the attacker's and victim's
+    perspective visualization tools in the “Neo4j-Graphing-tool”). Once execution is completed,
     you should see an graph similar to following in a new browser window:
 
 
-16. To configure victim-side visualization tool, first stop the Neo4j database related
-    to the attacker-side and start the victim-side database (i.e. Process_trace_victim
+16. To configure view from the victim's perspective visualization tool, first stop the Neo4j database related
+    to the view from the attacker's perspective and start view from the victim's perspective database (i.e. Process_trace_victim
     database in my case). Then open “Victim side.ipynb” on Jupyter notebook and
     repeat steps 13 – 15 (During step 14, change the values in “victim_side.html”
     file). Once you run this file you will be able to see a graph similar to following in
     a new browser window:
 
 
-# Analysis of Multi-host screengrab attack on the attacker side
+# Analysis of Multi-host screengrab attack on attacker's perspective
 
 1. First, fire up both virtual computers.
-2. Then open a terminal in the attacker-side virtual computer and type the following
+2. Then open a terminal in the view from the attacker's perspective virtual computer and type the following
     command to export environmental variable to setup the Intel Pin executable
     location
     ```
@@ -328,6 +328,8 @@ the system.
 	```
 6. Upon completion of the attack. On the victim side Desktop you will be able to see
     a screenshot taken by the attack. On the attacker-side, in “Multi-host-screengrab”
+    directory you will be able to see the log file (“processtrace.txt”) produced by the
+    analysis tool.
 
 6. Now lets transfer processtrace.txt to our host machine using your preferred
     method (i.e. computer that we installed VirtualBox on). When transferring the file,
@@ -336,7 +338,7 @@ the system.
     drive and download it back from the host computer (emailing this file works too)
 7. Then place the downloaded log file (i.e. “processtrace.txt” file) in to the “Neo4j-
     Graphing-tool” directory.
-8. Open a terminal window and launch Neo4j front-end. Then start the attacker-side
+8. Open a terminal window and launch Neo4j front-end. Then start the view from the attacker's perspective
     database (I.e Process_trace_attacker database in my case).
 9. Launch jupyter notebook instance and run the “attacker side.ipynb” file (clicking
     kernel→ Restart and Run all)
@@ -352,7 +354,7 @@ not necessary to remove the payload. But it will avoid attacker script asking to
 replace the files from the first attack when re running the attack.**
 
 
-# Analysis of Multi-host screengrab attack on the victim side
+# Analysis of Multi-host screengrab attack on the victim's side
 
 1. First, fire up both virtual computers
 2. Then, to run the attack first change directory to the “Multi-host-screengrab”
@@ -379,9 +381,9 @@ replace the files from the first attack when re running the attack.**
 4. Upon completion of the attack, on the victim side virtual computer log file
     (named “log.txt”) can be found under directory name “logger” that resides on the
     desktop. Moreover, a screenshot will be created in the victims desktop
-5. Similarly to the attacker-side analysis scenario, transfer this log file to the host
+5. Similarly to the view from the attacker's perspective analysis scenario, transfer this log file to the host
     computer and store it in the “Neo4j-Graphing-tool” directory.
-6. Open a terminal window and launch Neo4j front-end. Then start the attacker-side
+6. Open a terminal window and launch Neo4j front-end. Then start the view from the attacker's perspective
     database (I.e Process_trace_victim database in my case).
 7. Launch jupyter notebook instance and run the “victim side.ipynb” file (clicking
     kernel→ Restart and Run all)
